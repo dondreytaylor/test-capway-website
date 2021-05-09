@@ -1,4 +1,9 @@
-import $ from 'jquery';
+/* eslint-disable no-unused-vars */
+import _ from 'lodash';
 
-window.$ = $;
-window.jQuery = $;
+// page interactions
+const moneySectionButton = document.querySelector('#money-submit-button');
+
+moneySectionButton.addEventListener('click', () => {
+    console.log('navigate to "Account Features" page');
+});
