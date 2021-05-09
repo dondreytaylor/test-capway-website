@@ -1,3 +1,23 @@
+## Usage
+Installation
+```
+npm install
+or
+yarn
+```
+Start dev server for development
+```
+npm start
+or 
+yarn start-yarn
+```
+Build
+```
+npm run build
+or
+yarn build
+```
+
 ![CapWay](readme-assets/capway.png)
 
 Recreate CapWay's landing page using SASS, JS, and HTML. All assets for the site will be provided.
