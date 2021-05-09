@@ -226,8 +226,8 @@ $cards-button-font-color: #fff;
       }
     }
   }
-    .money-button-container {
-      text-align: center;
+  .money-button-container {
+    text-align: center;
   }
 
   .money-button {
@@ -248,6 +248,7 @@ $cards-button-font-color: #fff;
 // ############################
 // #### APP SECTION HEADER ####
 // ############################
+
 $brand-blue: #4babd8;
 $brand-green: #82d49d;
 
@@ -255,6 +256,7 @@ $brand-green: #82d49d;
   background: linear-gradient(45deg, $brand-blue, $brand-green);
   padding: 3rem 0;
   position: relative;
+  overflow: hidden;
 
   @include media($mediaMD, $mediaMAX) {
     background-position: 90% 110%;
@@ -262,16 +264,18 @@ $brand-green: #82d49d;
   }
 
   .card-image {
-    background: url('../img/capway-card_app_section.svg');
-    height: 270px;
-    width: 230px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    right: 100px;
-    top: 90px;
-    position: absolute;
-    // z-index: 1;
+    @include media($mediaMD, $mediaMAX) {
+      background: url('../img/capway-card_app_section.svg');
+      height: 270px;
+      width: 230px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      right: 100px;
+      top: 90px;
+      position: absolute;
+      // z-index: 1;
+    }
   }
   
   .mobile-apps-header {
@@ -308,6 +312,61 @@ $brand-green: #82d49d;
     
     &.apple {
       background-image: url('../img/apple_badge.svg');
+    }
+  }
+}
+
+// ############################
+// #### FEATURED-IN HEADER ####
+// ############################
+$featured-bg-color: #1c1c1f;
+$featured-header-color: #f4f4f8;
+
+.featured-section {
+  background-color: $featured-bg-color;
+  text-align: center;
+  padding: 3.5rem 0 4rem;
+  
+  .featured-header {
+    color: $featured-header-color;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+  }
+
+  .featured-image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .featured-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 32px;
+    width: 112px;
+    margin: 1rem 2rem;
+
+    &.essence {
+      background-image: url('../img/featured-essence.png');
+    }
+
+    &.cnn {
+      background-image: url('../img/featured-cnn.png');
+    }
+
+    &.business-insider {
+      background-image: url('../img/featured-bi.png');
+    }
+
+    &.inc {
+      background-image: url('../img/featured-inc.png');
+    }
+
+    &.forbes {
+      background-image: url('../img/featured-forbes.png');
     }
   }
 }
