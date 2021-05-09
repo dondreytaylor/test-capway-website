@@ -27,7 +27,7 @@ html {
 .header-container {
   font-family: $font-family;
   color: $header-color;
-  background-image: url("../assets/img/background-gradient.png");
+  background-image: url("../img/background-gradient.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ html {
   .header_intro_image {
     width: 23rem;
     height: 23rem;
-    background-image: url("../assets/img/phone-card.png");
+    background-image: url("../img/phone-card.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -97,11 +97,12 @@ $cards-button-font-color: #fff;
   padding: 38px;
   font-family: $font-family;
   background-color: $cards-bg-color;
-  padding: 5rem 0;
+  padding-bottom: 5rem;
 
   .cards-header {
     color: $cards-header-color;
     text-align: center;
+    font-weight: 500;
     @include media($mediaXS, $mediaMD) {
       font-size: 1.5rem;
     }
@@ -156,19 +157,19 @@ $cards-button-font-color: #fff;
   .card_icon-1 {
     width: 7rem;
     height: 6rem;
-    background-image: url('../assets/img/card_icon1.svg');
+    background-image: url('../img/card_icon1.svg');
   }
 
   .card_icon-2 {
     width: 6rem;
     height: 6rem;
-    background-image: url('../assets/img/card_icon2.svg');
+    background-image: url('../img/card_icon2.svg');
   }
 
   .card_icon-3 {
     width: 6rem;
     height: 6rem;
-    background-image: url('../assets/img/card_icon3.svg');
+    background-image: url('../img/card_icon3.svg');
   }
 
   // CARD BACKGROUNDS
@@ -194,39 +195,39 @@ $cards-button-font-color: #fff;
       height: 19rem;
       width: 19rem;
     }
+    
+    &.card-1 {
+      @include media($mediaXS, $mediaMD) {
+        background-color: #c8e6f3;
+      }
+      
+      @include media($mediaMD, $mediaMAX) {
+        background-image: url("../img/card_bg1.png");
+      }
+    }
+    
+    &.card-2 {
+      @include media($mediaXS, $mediaMD) {
+        background-color: #fbe9bc;
+      }
+      
+      @include media($mediaMD, $mediaMAX) {
+        background-image: url("../img/card_bg2.png");
+      }
+    }
+    
+    &.card-3 {
+      @include media($mediaXS, $mediaMD) {
+        background-color: #a8e1bb;
+      }
+      
+      @include media($mediaMD, $mediaMAX) {
+        background-image: url("../img/card_bg3.png");
+      }
+    }
   }
-
-  .card-1 {
-    @include media($mediaXS, $mediaMD) {
-      background-color: #c8e6f3;
-    }
-
-    @include media($mediaMD, $mediaMAX) {
-      background-image: url("../assets/img/card_bg1.png");
-    }
-  }
-
-  .card-2 {
-    @include media($mediaXS, $mediaMD) {
-      background-color: #fbe9bc;
-    }
-
-    @include media($mediaMD, $mediaMAX) {
-      background-image: url("../assets/img/card_bg2.png");
-    }
-  }
-
-  .card-3 {
-    @include media($mediaXS, $mediaMD) {
-      background-color: #a8e1bb;
-    }
-
-    @include media($mediaMD, $mediaMAX) {
-      background-image: url("../assets/img/card_bg3.png");
-    }
-  }
-  .money-button-container {
-    text-align: center;
+    .money-button-container {
+      text-align: center;
   }
 
   .money-button {
@@ -253,6 +254,25 @@ $brand-green: #82d49d;
 .mobile-apps-section {
   background: linear-gradient(45deg, $brand-blue, $brand-green);
   padding: 3rem 0;
+  position: relative;
+
+  @include media($mediaMD, $mediaMAX) {
+    background-position: 90% 110%;
+    background-repeat: no-repeat;
+  }
+
+  .card-image {
+    background: url('../img/capway-card_app_section.svg');
+    height: 270px;
+    width: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    right: 100px;
+    top: 90px;
+    position: absolute;
+    // z-index: 1;
+  }
   
   .mobile-apps-header {
     font-size: 1.5rem;
@@ -261,7 +281,7 @@ $brand-green: #82d49d;
     margin-top: 0;
     color: $header-color;
     @include media($mediaMD, $mediaMAX) {
-      font-size: 2rem;;
+      font-size: 2rem;
     }
   }
 
@@ -270,5 +290,24 @@ $brand-green: #82d49d;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .app-badge {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: .3rem;
+    width: 11rem;
+    height: 4rem;
+    margin: 16px;
+    cursor: pointer;
+
+    &.google {
+      background-image: url('../img/google-play_badge.svg');
+    }
+    
+    &.apple {
+      background-image: url('../img/apple_badge.svg');
+    }
   }
 }
