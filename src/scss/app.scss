@@ -11,14 +11,13 @@
 @import "base/base";
 @import "base/fonts";
 
-$font-family: "Helvetica Neue";
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-color: white;
 $subheader-color: #ffffffcc;
 $header-text-color: #ffffffcc;
 
-
 html {
-    font-family: $font-family;
+  font-family: $font-family;
 }
 
 // ######################
@@ -88,3 +87,188 @@ html {
 // #### MONEY CARD HEADER ####
 // ###########################
 
+$cards-bg-color: #fafafb;
+$cards-header-color: #1c1c1f;
+$cards-button-color: #00ace2;
+$cards-button-font-color: #fff;
+
+.cards_container {
+  margin-top: 32px;
+  padding: 38px;
+  font-family: $font-family;
+  background-color: $cards-bg-color;
+  padding: 5rem 0;
+
+  .cards-header {
+    color: $cards-header-color;
+    text-align: center;
+    @include media($mediaXS, $mediaMD) {
+      font-size: 1.5rem;
+    }
+    @include media($mediaMD, $mediaMAX) {
+      font-size: 2rem;
+    }
+  }
+
+  .cards_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    @include media($mediaXS, $mediaMD) {
+      flex-direction: column;
+    }
+
+    @include media($mediaMD, $mediaMAX) {
+      flex-direction: row;
+    }
+  }
+
+  .card-content {
+    color: #333;
+    font-size: 1rem;
+    @include media($mediaXS, $mediaMD) {
+      font-size: 1rem;
+    }
+    @include media($mediaMD, $mediaMAX) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .card-text {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  // CARD ICONS
+
+  .card_icon {
+    margin: 3rem auto 1.5rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .card_icon-1 {
+    width: 7rem;
+    height: 6rem;
+    background-image: url('../assets/img/card_icon1.svg');
+  }
+
+  .card_icon-2 {
+    width: 6rem;
+    height: 6rem;
+    background-image: url('../assets/img/card_icon2.svg');
+  }
+
+  .card_icon-3 {
+    width: 6rem;
+    height: 6rem;
+    background-image: url('../assets/img/card_icon3.svg');
+  }
+
+  // CARD BACKGROUNDS
+
+  .card {
+    @include media($mediaXS, $mediaMD) {
+      background-image: none;
+      width: 90%;
+      border-radius: .5rem;
+      min-height: 14rem;
+      margin: 0 0 2rem;
+      padding: 10px 0 90px 0;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1),0 2px 4px 0 rgba(0,0,0,.1);
+    }
+
+    @include media($mediaMD, $mediaMAX) {
+      padding: 10px 0 90px 0;
+      margin: 0 0 2rem;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: .5rem;
+      height: 19rem;
+      width: 19rem;
+    }
+  }
+
+  .card-1 {
+    @include media($mediaXS, $mediaMD) {
+      background-color: #c8e6f3;
+    }
+
+    @include media($mediaMD, $mediaMAX) {
+      background-image: url("../assets/img/card_bg1.png");
+    }
+  }
+
+  .card-2 {
+    @include media($mediaXS, $mediaMD) {
+      background-color: #fbe9bc;
+    }
+
+    @include media($mediaMD, $mediaMAX) {
+      background-image: url("../assets/img/card_bg2.png");
+    }
+  }
+
+  .card-3 {
+    @include media($mediaXS, $mediaMD) {
+      background-color: #a8e1bb;
+    }
+
+    @include media($mediaMD, $mediaMAX) {
+      background-image: url("../assets/img/card_bg3.png");
+    }
+  }
+  .money-button-container {
+    text-align: center;
+  }
+
+  .money-button {
+    margin: 0 auto; 
+    font-size: .9rem;
+    color: $cards-button-font-color;
+    background-color: $cards-button-color;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1 ),0 2px 4px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    width: 320px;
+    cursor: pointer;
+  }
+}
+
+// ############################
+// #### APP SECTION HEADER ####
+// ############################
+$brand-blue: #4babd8;
+$brand-green: #82d49d;
+
+.mobile-apps-section {
+  background: linear-gradient(45deg, $brand-blue, $brand-green);
+  padding: 3rem 0;
+  
+  .mobile-apps-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0;
+    color: $header-color;
+    @include media($mediaMD, $mediaMAX) {
+      font-size: 2rem;;
+    }
+  }
+
+  .app-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
