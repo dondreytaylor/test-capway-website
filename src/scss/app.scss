@@ -15,14 +15,22 @@ $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-color: white;
 $subheader-color: #ffffffcc;
 $header-text-color: #ffffffcc;
+$intro-text-color: #fff;
+$email-button-color: #f8d88b;
+$email-text-color: #4a4a4a;
+$link-color: rgba(24,22,22,.8);
 
 html {
   font-family: $font-family;
+  width: 100%;
 
+  body {
+    width: 100%;
+  }
   // adjust font size and rem size for page size
   // @include media($mediaXS, $mediaSM) { font-size: 20px; }
   // @include media($mediaSM, $mediaMD) { font-size: 16px; }
-  // @include media($mediaMD, $mediaMAX) {
+  // @include media($mediaMD, $mediaMAX) {  }
 }
 
 // ######################
@@ -30,6 +38,7 @@ html {
 // ######################
 
 .header-container {
+  padding: 0 25px;
   font-family: $font-family;
   color: $header-color;
   background-image: url("../img/background-gradient.png");
@@ -49,20 +58,50 @@ html {
 
     @include media($mediaMD, $mediaMAX) {
       flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
     }
   }
 
-  .header_intro_text {
-    // margin: 4rem;
+  .header_intro_blurb_container {
+    margin-bottom: 60px;
 
     h2 {
+      margin-top: 0;
+      max-width: 517px;
       color: $header-color;
       font-size: 2.5rem;
+      @include media(1020PX, 1280px) {
+        font-size: 3.3rem;
+      }
+      @include media(1280px, $mediaMAX) {
+        font-size: 3.8rem;
+      }
     }
-
+    
     p {
       color: $header-text-color;
+    }
+
+    p.intro-blurb {
+      line-height: 1.5;
+      color: $intro-text-color;
+      margin: 0 0 2rem;
+      max-width: 25rem;
       font-size: 1.1rem;
+      @include media(1020px, 1280px) {
+        font-size: 1.2rem;
+        max-width: 32rem;
+      }
+      @include media(1280px, $mediaMAX) {
+        font-size: 1.5rem;
+        max-width: 32rem;
+      }
+
+      a.pseudo-link {
+        color: $link-color;
+        text-decoration: none;
+      }
     }
 
     .header_links {
@@ -77,6 +116,45 @@ html {
     .header_spacer {
       margin: 0 0.5rem;
     }
+
+    .email-input-holder {
+      width: 90%;
+      white-space: nowrap;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+      border-radius: .3rem;
+      overflow: hidden;
+      height: 3rem;
+      margin: 0 0 2rem;
+
+      input {
+        width: 70%;
+        border: none;
+        height: inherit;
+        box-sizing: border-box;
+        padding: 0 0 0 1rem;
+        line-height: 1;
+
+      }
+      input::placeholder {
+        color: #9e6565 !important;
+      }
+
+      .email-input-button {
+        vertical-align: top;
+        display: inline-block;
+        left: -.5rem;
+        width: 32%;
+        background-color: $email-button-color;
+        color: $email-text-color;
+        font-size: .9rem;
+        height: inherit;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem 0 0;
+        position: relative;
+        box-sizing: border-box;
+      }
+    }
   }
 
   .header_intro_image {
@@ -85,6 +163,19 @@ html {
     background-image: url("../img/phone-card.png");
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include media($mediaXS, $mediaSubSM) {
+      width: 23rem;
+      height: 23rem;
+    }
+    @include media($mediaSubSM, $mediaMdLg) {
+      width: 36rem;
+      height: 36rem;
+    }
+    @include media($mediaMdLg, $mediaMAX) {
+      width: 40rem;
+      height: 40rem;
+    }
   }
 }
 
@@ -886,12 +977,13 @@ $disclaimers-color: #929596;
       margin-top: 1rem;
       margin-right: 2rem;
       .logo {
+        margin-bottom: 1rem;
         width: 144px;
         height: 40px;
         object-fit: cover;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url('../assets/img/logo-footer.svg');
+        background-image: url('../img/logo-footer.svg');
         cursor: pointer;
       }
     }

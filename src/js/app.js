@@ -13,10 +13,12 @@ const apiUrl = 'https://gateway.dev.cpwys.co/api/v1/content/fetch/learnmoney';
 let selectedArticleView = 'video';
 
 /* page interactions example */
+const emailSubmitButton = document.querySelector('#email-input-button');
+const emailInputField = document.querySelector('#email-input');
 const moneySectionButton = document.querySelector('#money-submit-button');
 
-moneySectionButton.addEventListener('click', () => {
-    console.log('navigate to "Account Features" page');
+emailSubmitButton.addEventListener('click', (event) => {
+    emailInputField.value = '';
 });
 
 /* populate and script articles section */
