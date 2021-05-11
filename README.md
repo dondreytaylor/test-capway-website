@@ -1,3 +1,5 @@
+### If you would prefer to view the site without having to build it, here's a [preview](https://capway-clone.surge.sh/) I have hosted on *surge*.
+
 ## Usage
 Installation
 ```
@@ -17,6 +19,8 @@ npm run build
 or
 yarn build
 ```
+
+Visit [localhost:8080](localhost:8080) to view the site live
 
 ![CapWay](readme-assets/capway.png)
 
