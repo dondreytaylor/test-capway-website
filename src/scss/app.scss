@@ -682,8 +682,6 @@ $phunds-button-color: #f8d88b;
     justify-content: start;
     align-items: center;
 
-    @include media($mediaXS, $mediaMD) {
-    }
     @include media($mediaMD, $mediaMAX) {
       max-width: 325px;
     }
@@ -744,4 +742,70 @@ $phunds-button-color: #f8d88b;
     }
   }
 
+}
+
+// ################################
+// #### NUMBERS SECTION HEADER ####
+// ################################
+$numbers-bg-color: #fafafb;
+
+.numbers-section {
+  background-color: $numbers-bg-color;
+  padding: 5rem 0;
+  border-bottom: .05rem solid #ddd;
+  display: flex;
+  @include media($mediaXS, $mediaMD) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include media($mediaMD, $mediaMAX) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .numbers-text-container {
+    max-width: 640px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    @include media($mediaMD, $mediaMAX) {
+      max-width: 448px;
+      margin-right: 100px;
+      text-align: left;
+      justify-self: flex-start;
+    }
+
+    .numbers-text {
+      line-height: 1.8;
+      @include media($mediaXS, $mediaMD) {
+        font-size: .9rem;
+      }
+      @include media($mediaMD, $mediaMAX) {
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      line-height: 1.5;
+      @include media($mediaXS, $mediaMD) {
+        font-size: 1.5rem;
+      }
+      @include media($mediaMD, $mediaMAX) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .numbers-image-container {
+    object-fit: cover;
+    background-size: cover;
+    background-image: url('../img/numbers-graph.png');
+    height: 30rem;
+    width: 32rem;
+
+    @include media($mediaMD, $mediaMAX) {
+      height: 24rem;
+      width: 26rem;
+    }
+  }
 }
