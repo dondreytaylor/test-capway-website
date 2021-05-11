@@ -18,6 +18,11 @@ $header-text-color: #ffffffcc;
 
 html {
   font-family: $font-family;
+
+  // adjust font size and rem size for page size
+  // @include media($mediaXS, $mediaSM) { font-size: 20px; }
+  // @include media($mediaSM, $mediaMD) { font-size: 16px; }
+  // @include media($mediaMD, $mediaMAX) {
 }
 
 // ######################
@@ -659,7 +664,7 @@ $phunds-button-color: #f8d88b;
 
 .phunds-section {
   display: flex;
-  padding-top: 5rem;
+  padding: 5rem .5rem 0 .5rem;
   text-align: center;
   background-color:  $phunds-section-bg-color;
 
@@ -684,6 +689,7 @@ $phunds-button-color: #f8d88b;
 
     @include media($mediaMD, $mediaMAX) {
       max-width: 325px;
+      text-align: left;
     }
   }
 
@@ -702,6 +708,10 @@ $phunds-button-color: #f8d88b;
     color: $phunds-text-color;
     max-width: 40rem;
     line-height: 1.8;
+
+    @include media($mediaMD, $mediaMAX) {
+      text-align: left;
+    }
   }
 
   .flex-literacy {
@@ -751,7 +761,7 @@ $numbers-bg-color: #fafafb;
 
 .numbers-section {
   background-color: $numbers-bg-color;
-  padding: 5rem 0;
+  padding: 5rem 0 7rem;
   border-bottom: .05rem solid #ddd;
   display: flex;
   @include media($mediaXS, $mediaMD) {
@@ -800,12 +810,123 @@ $numbers-bg-color: #fafafb;
     object-fit: cover;
     background-size: cover;
     background-image: url('../img/numbers-graph.png');
-    height: 30rem;
-    width: 32rem;
-
+    height: 28rem;
+    width: 30rem;
+    max-width: 100%;
+    
+    @include media($mediaXS, $mediaSM) {
+      // font-size: 1.5rem;
+    }
     @include media($mediaMD, $mediaMAX) {
       height: 24rem;
       width: 26rem;
     }
+  }
+}
+
+// ###############################
+// #### FOOTER SECTION HEADER ####
+// ###############################
+
+$footer-bg-color: #1c1c1f;
+$header-text-color: #fff;
+$disclaimers-border-color:#47494a;
+$disclaimers-color: #929596;
+
+.footer-section {
+  
+  background-color: $footer-bg-color;
+  padding: 60px 40px;
+
+  .links-content-container {
+    display: flex;
+
+    @include media($mediaXS, $mediaSmMd) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media($mediaSmMd, $mediaMAX) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      color: $header-text-color;
+      max-width: 64rem;
+
+      @include media($mediaXS, $mediaSmMd) {
+        text-align: center;
+        justify-content: center;
+      }
+      @include media($mediaSmMd, $mediaMAX) {
+        text-align: left;
+      }
+
+      .link-column {
+        padding: 0 1rem 1rem;
+        margin: 0 0 1rem;
+      }
+
+      h2 {
+        font-size: .85rem;
+        margin: 0 0 1rem;
+      }
+
+      p {
+        font-size: .85rem;
+        margin: 0 0 .8rem;
+        opacity: .8;
+        cursor: pointer;
+      }
+    }
+
+    .logo-container {
+      margin-top: 1rem;
+      margin-right: 2rem;
+      .logo {
+        width: 144px;
+        height: 40px;
+        object-fit: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../assets/img/logo-footer.svg');
+        cursor: pointer;
+      }
+    }
+  }
+
+  .disclaimers-content-container {
+    max-width: 60rem;
+    border-top: .05rem solid $disclaimers-border-color;
+    margin: 3rem auto 0;
+    padding: 3rem 0 0;
+
+    p {
+      font-size: .75rem;
+      color: #929596;
+      margin: 0 0 1.2rem;
+      line-height: 1.5;
+
+      a {
+        color: $disclaimers-color;
+      }
+    }
+  }
+}
+
+.copyright-section {
+  background-image: linear-gradient(225.47deg,#82d49d,#4babd8);
+  
+  h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    display: block;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: .8rem 0;
+    color: $header-text-color;
+    width: 85%;
   }
 }
