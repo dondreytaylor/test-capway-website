@@ -1,3 +1,27 @@
+### If you would prefer to view the site without having to build it, here's a [preview](https://capway-clone.surge.sh/) I have hosted on *surge*.
+
+## Usage
+Installation
+```
+npm install
+or
+yarn
+```
+Start dev server for development
+```
+npm start
+or 
+yarn start-yarn
+```
+Build
+```
+npm run build
+or
+yarn build
+```
+
+Visit [localhost:8080](localhost:8080) to view the site live
+
 ![CapWay](readme-assets/capway.png)
 
 Recreate CapWay's landing page using SASS, JS, and HTML. All assets for the site will be provided.

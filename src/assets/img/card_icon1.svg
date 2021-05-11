@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="157px" height="115px" viewBox="0 0 157 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="1.0-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home/1.-Home---A" transform="translate(-322.000000, -1067.000000)">
+            <g id="Banking-with-CapWay" transform="translate(0.000000, 800.000000)">
+                <g id="Cards" transform="translate(248.000000, 221.928237)">
+                    <g id="Icon" transform="translate(76.000000, 48.000000)">
+                        <g id="Bank-Card-Back" transform="translate(0.665952, 0.411425)">
+                            <rect id="Rectangle-Copy-3" stroke="#47494A" stroke-width="4.5" fill="#C8E6F3" x="0" y="0" width="125.541654" height="74.3603874" rx="6"></rect>
+                            <rect id="Rectangle" fill="#47494A" x="0" y="16.9219087" width="125.541654" height="17.3333333"></rect>
+                        </g>
+                        <g id="Bank-Card-Front" transform="translate(26.766161, 29.304370)" stroke="#47494A">
+                            <rect id="Rectangle" stroke-width="4.5" fill="#C8E6F3" x="-4.97379915e-14" y="0" width="125.541654" height="80" rx="6"></rect>
+                            <rect id="Rectangle-Copy-2" stroke-width="2.25" fill="#C8E6F3" x="11.0297827" y="15.9097251" width="14.7526021" height="15.9134782" rx="1"></rect>
+                            <path d="M12.0297827,15.9097251 L20.1101272,15.9097251 L20.1101272,15.9097251 L20.1101272,23.8664642 L11.0297827,23.8664642 L11.0297827,16.9097251 C11.0297827,16.3574404 11.4774979,15.9097251 12.0297827,15.9097251 Z" id="Rectangle-Copy-2" stroke-width="2.25" fill="#C8E6F3"></path>
+                            <path d="M38.3951778,14.0514889 C42.8489017,19.3834599 43.1739468,27.0395328 39.1881819,32.7298096 L38.3951778,33.8619419 L38.3951778,33.8619419" id="Path-2" stroke-width="2.25" stroke-linecap="round"></path>
+                            <path d="M34.4297559,17.9845513 C37.0744623,21.1507777 37.2674803,25.6971002 34.9006569,29.0760953 L34.4297559,29.7483771 L34.4297559,29.7483771" id="Path-2" stroke-width="2.25" stroke-linecap="round"></path>
+                            <line x1="11.0297827" y1="49.5229925" x2="89.6964494" y2="49.5229925" id="Line" stroke-width="2.25" stroke-linecap="round"></line>
+                            <line x1="11.0297827" y1="57.1210973" x2="57.1448782" y2="57.1210973" id="Line" stroke-width="2.25" stroke-linecap="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
