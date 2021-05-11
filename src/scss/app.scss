@@ -93,8 +93,7 @@ $cards-button-color: #00ace2;
 $cards-button-font-color: #fff;
 
 .cards_container {
-  margin-top: 32px;
-  padding: 38px;
+  padding: 70px 0 38px 0;
   font-family: $font-family;
   background-color: $cards-bg-color;
   padding-bottom: 5rem;
@@ -226,23 +225,23 @@ $cards-button-font-color: #fff;
       }
     }
   }
-  .money-button-container {
-    text-align: center;
-  }
+}
+.money-button-container {
+  text-align: center;
+}
 
-  .money-button {
-    margin: 0 auto; 
-    font-size: .9rem;
-    color: $cards-button-font-color;
-    background-color: $cards-button-color;
-    border-radius: .3rem;
-    outline: none;
-    border: none;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1 ),0 2px 4px 0 rgba(0,0,0,.1);
-    padding: 20px;
-    width: 320px;
-    cursor: pointer;
-  }
+.money-button {
+  margin: 0 auto; 
+  font-size: .9rem;
+  color: $cards-button-font-color;
+  background-color: $cards-button-color;
+  border-radius: .3rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1 ),0 2px 4px 0 rgba(0,0,0,.1);
+  padding: 20px;
+  width: 320px;
+  cursor: pointer;
 }
 
 // ############################
@@ -369,4 +368,283 @@ $featured-header-color: #f4f4f8;
       background-image: url('../img/featured-forbes.png');
     }
   }
+}
+
+// ########################
+// #### ARTICLE HEADER ####
+// ########################
+
+$article-section-header-color: #1c1c1f;
+$article-subheader-color: #4a4a4a;
+$selected-article-subheader-color: #00ace2;
+$article-section-bg-color: #fafafb;
+$article-bg-color: #fff;
+$article-border-color: #eee;
+$article-date-color: #9b9b9b;
+$author-font-color: #4a4a4a;
+$moneymeanings-bg-color: rgb(159, 211, 235);
+
+.dynamic-article-section {
+  font-family: $font-family;
+  background-color:  $article-section-bg-color;
+  padding: 3.5rem 27px 4rem;
+  border-bottom: .05rem solid #ddd;
+  
+  @include media($mediaMD, $mediaMAX) {
+    padding: 3.5rem 64px 4rem;
+  }
+
+  // article section controls
+  .article-section-header {
+    color: $article-section-header-color;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    @include media($mediaMD, $mediaMAX) {
+      font-size: 2rem;
+    }
+  }
+  .article-section-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: .05rem solid #ddd;
+    max-width: 43rem;
+    margin: 0 auto 2rem;
+    // align-items: center;
+  }
+
+  .article-option {
+    padding: 1rem 1.5rem;
+    border-bottom: .2rem solid transparent;
+    transition: all .25s;
+    cursor: pointer;
+
+    &.selected {
+      color: #00ace2;
+      border-bottom-color: #00ace2;
+    }
+  }
+
+  // articles container
+  .content-holder {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    @include media($mediaXS, $mediaMD) {
+      flex-direction: column;
+    }
+    
+    @include media($mediaMD, $mediaMAX) {
+      flex-direction: row;
+    }
+  }
+
+  .content-holder {
+    &.video {
+      article.article-card-container.video-card {
+        display: flex;
+      }
+    }
+    &.shortarticle {
+      article.article-card-container.shortarticle-card {
+        display: flex;
+      }
+    }
+    &.infographics {
+      article.article-card-container.infographics-card {
+        display: flex;
+      }
+    }
+    &.knowmoneyfacts {
+      article.article-card-container.knowmoneyfacts-card {
+        display: flex;
+      }
+    }
+    &.moneymeanings {
+      article.article-card-container.moneymeanings-card {
+        display: flex;
+      }
+    }
+  }
+
+  // generic article card class, applies to all articles
+  .article-card-container {
+    width: 16rem;
+    height: 22rem;
+    background-color: $article-bg-color;
+    overflow: hidden;
+    border: .05rem solid $article-border-color;
+    border-radius: .5rem;
+    position: relative;
+
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media($mediaXS, $mediaMD) {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 0 16px;
+    }
+    
+    @include media($mediaMD, $mediaMAX) {
+      width: 16rem;
+      height: 22rem;
+      margin: 0 8px 16px;
+    }
+
+    .content-container {
+      padding: 10px 5px;
+
+      > div {
+        @include media($mediaXS, $mediaMD) {
+          padding: 0 16px;
+        }
+        
+        @include media($mediaMD, $mediaMAX) {
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .card-title-container {
+      margin-bottom: 6px;
+    }
+
+    a.card-title {
+      color: $header-text-color;
+      font-size: .95rem;
+      line-height: 1.5;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card-date {
+      font-size: .75rem;
+      color: $article-date-color;
+    }
+
+    .card-author-container {
+      background-color: $article-bg-color;
+      padding: .5rem .8rem;
+      border-radius: 0 0 .5rem .5rem;
+      min-height: 40px;
+      color: $author-font-color;
+      font-size: .8rem;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+
+      .card-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        max-width: 1.3rem;
+        max-height: 1.3rem;
+        border-radius: 1.1rem;
+        border: .05rem solid #ddd;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  // video card styles
+  .article-card-container.video-card {
+    .video-play-button {
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      width: 64px;
+      height: 64px;
+      background-image: url('../img/play-button.svg');
+      
+      position: absolute;
+      transform: translateX(-50%);
+      transform: translateY(-50%);
+      @include media($mediaXS, $mediaMD) {
+        left: 45%;
+        top: 40%;
+      }
+      @include media($mediaMD, $mediaMAX) {
+        left: 40%;
+        top: 40%;
+      }
+    }
+  }
+
+  // money facts card styles
+  article.article-card-container.knowmoneyfacts-card {
+    .content-container {
+      padding: 0 0 10px 0;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+
+      > div.card-title-container {
+        background-color: $article-bg-color;
+        padding: 8px 12px;
+        @include media($mediaXS, $mediaMD) {
+          padding-bottom: 24px;
+        }
+        
+        > a {
+          color: $article-section-header-color;
+          font-size: .8rem;
+          line-height: 1.3rem;
+        }
+      }
+
+      > div.card-date {
+        padding: 0px 15px;
+      }
+
+    }
+  }
+
+  // money meanings card styles
+  article.article-card-container.moneymeanings-card {
+    background: rgb(159, 211, 235);
+    background-image: url('../img/moneymeanings-bg2.png');
+    background-repeat: no-repeat;
+
+    @include media($mediaXS, $mediaMD) {
+      background-size: 200px;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      }
+      @include media($mediaMD, $mediaMAX) {
+        background-size: 65%;
+        background-position-x: 80px;
+        background-position-y: 120px;
+      }
+
+    > .moneymeanings-container {
+      color: $header-text-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 100%;
+      padding: 0 30px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .money-description {
+        font-size: .9rem;
+        line-height: 1.8;
+      }
+    }
+  }
+
 }
