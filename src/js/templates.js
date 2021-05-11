@@ -5,7 +5,7 @@
 import _ from 'lodash';
 import moment from 'moment';
 
-// Use custom template delimiters.
+// Use custom template delimiters
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 
 const videoTemplate = _.template(`

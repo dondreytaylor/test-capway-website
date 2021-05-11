@@ -12,10 +12,19 @@ import {
 const apiUrl = 'https://gateway.dev.cpwys.co/api/v1/content/fetch/learnmoney';
 let selectedArticleView = 'video';
 
-/* page interactions example */
+/* page interactions */
 const emailSubmitButton = document.querySelector('#email-input-button');
 const emailInputField = document.querySelector('#email-input');
-const moneySectionButton = document.querySelector('#money-submit-button');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
+const fullScreenNav = document.querySelector('#nav-cover');
+const fullScreenNavCloseButton = document.querySelector('#nav-close');
+hamburgerMenu.addEventListener('click', (event) => {
+    fullScreenNav.classList.remove('hidden');
+});
+
+fullScreenNavCloseButton.addEventListener('click', (event) => {
+    fullScreenNav.classList.add('hidden');
+});
 
 emailSubmitButton.addEventListener('click', (event) => {
     emailInputField.value = '';
@@ -46,15 +55,6 @@ function populateArticleSection() {
         .then((json) => {
             // populate articles sections
             articles = json;
-            console.log(articles);
-
-            /*
-               pick Videos, Articles, Facts & Hacks, Infographics out of (articles) obj
-               pass each into same or similar template, add a class specifying type
-               add class to "#article-content-container" (maybe ".display-infographics" for example?),
-               the css for which contains nested .video {display: none}, .info {display: none}, etc.,
-               only displaying that type that is selected
-            */
 
             sections.forEach((section) => {
                 const limit = (numberOfArticlesToDisplay < articles[section].length)
@@ -64,7 +64,6 @@ function populateArticleSection() {
                 for (let i = 0; i < limit; i++) {
                     const article = articles[section][i];
                     const element = sectionTemplates[section](article);
-                    console.log(`creating Article ${i}`, section, article);
                     articleCardContainer.innerHTML += element;
                 }
             });
@@ -87,8 +86,6 @@ articleSectionSelector.addEventListener('click', (event) => {
     }
 
     articleCardContainer.classList.toggle(selectedArticleView);
-
-    console.log(`selected view :: ${selectedArticleView}`);
 });
 
 document.addEventListener('DOMContentLoaded', populateArticleSection);
