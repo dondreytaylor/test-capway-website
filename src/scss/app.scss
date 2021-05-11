@@ -387,11 +387,11 @@ $moneymeanings-bg-color: rgb(159, 211, 235);
 .dynamic-article-section {
   font-family: $font-family;
   background-color:  $article-section-bg-color;
-  padding: 3.5rem 27px 4rem;
+  padding: 6rem 27px 4rem;
   border-bottom: .05rem solid #ddd;
   
   @include media($mediaMD, $mediaMAX) {
-    padding: 3.5rem 64px 4rem;
+    padding: 6rem 64px 4rem;
   }
 
   // article section controls
@@ -643,6 +643,103 @@ $moneymeanings-bg-color: rgb(159, 211, 235);
       .money-description {
         font-size: .9rem;
         line-height: 1.8;
+      }
+    }
+  }
+
+}
+
+// ###############################
+// #### PHUNDS SECTION HEADER ####
+// ###############################
+$phunds-section-bg-color: #a8e1bb;
+$phunds-header-color: #1c1c1f;
+$phunds-text-color: #333;
+$phunds-button-color: #f8d88b;
+
+.phunds-section {
+  display: flex;
+  padding-top: 5rem;
+  text-align: center;
+  background-color:  $phunds-section-bg-color;
+
+  @include media($mediaXS, $mediaMD) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  @include media($mediaMD, $mediaMAX) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phunds-subsection-container {
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto 2rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    @include media($mediaXS, $mediaMD) {
+    }
+    @include media($mediaMD, $mediaMAX) {
+      max-width: 325px;
+    }
+  }
+
+  h1.phunds-header {
+      font-size: 1.5rem;  
+      font-weight: 500;
+      color: $phunds-header-color;
+    @include media($mediaMD, $mediaMAX) {
+      font-size: 2rem;
+    }
+  }
+
+  .phunds-text {
+    font-size: .95rem;
+    text-align: center;
+    color: $phunds-text-color;
+    max-width: 40rem;
+    line-height: 1.8;
+  }
+
+  .flex-literacy {
+    @include media($mediaMD, $mediaMAX) {
+      order: 1;
+      margin-right: 0;
+    }
+  }
+
+  .flex-money-room {
+    @include media($mediaMD, $mediaMAX) {
+      order: 3;
+      margin-left: 0;
+    }
+  }
+
+  .phone-image-holder {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    background-size: cover;
+    background-image: url('../img/phunds-phone.png');
+
+    @include media($mediaMD, $mediaMAX) {
+      order: 2;
+      height: 30rem;
+      width: 30rem;
+    }
+  }
+
+  .money-button-container.money-button-container--phunds {
+    margin-top: 2rem;
+    > .money-button {
+      background-color: $phunds-button-color;
+      > span {
+        color: black;
       }
     }
   }
