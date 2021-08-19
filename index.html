@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Document</title>
+    <title>CAPWAY</title>
   </head>
 
   <body>
     <div class="page1">
       <!-- ******************************************HEADER PAGE**************************************** -->
-
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <img id="drawer" src="images/drawer.png" alt="Drawer"> -->
       <header>
-        <nav>
+        <nav class="main-header">
           <p>CAPWAY <sub>&copy</sub></p>
           <ul>
             <li><a href="javascript:void(0);">Money Account</a></li>
@@ -28,29 +31,50 @@
 
       <!-- ******************************************BODY PAGE****************************************** -->
 
-      <div>
+      <div class="main-content">
         <p>Not Your Typical Bank</p>
-        <div>
+        <div class="content">
           No overdraft or minimum balance fees. <sup>1</sup> Send and receive
           money. <sup>2</sup> Get paid early. <sup>3</sup> Achieve Money Goals.
-          <sup>4</sup> Learn money. <sup>5</sup>...and more.
+          <sup>4</sup> Learn money. <sup>5</sup>...and<a href="javascript:void(0);">more</a>.
         </div>
 
-        <div>
-          <input placeholder="Enter email address" />
-          <button>Sign Me Up</button>
+        <div class="textInputField">
+          <input id="inputField" placeholder="Enter email address" />
+          <button onclick="submitClearForm()">Sign Me Up</button>
         </div>
-        
+
         <div class="link-to-apps">
           <ul>
-            <li><a href="javascript:void(0);">Download for iOS</a></li>
-            <li><a href="javascript:void(0);">Download for Android</a></li>
+            <li><a href="javascript:void(0);">Download for iOS</a></li> &middot;
+            <li><a href="javascript:void(0);">Download for Android</a></li> &middot;
             <li>
               <a href="javascript:void(0);">Why You Should Choose CapWay</a>
             </li>
           </ul>
-          <!-- Download for iOS·Download for Android·Why You Should Choose CapWay -->
         </div>
+      </div>
+    </div>
+
+    <div id="learnMoney" >
+      <div class="learnMoney-nav">
+      <nav>
+         <h3>Get to Know Money Better</h3>
+        <ul>
+          <li><a href="javascript:void(0);">Articles</a></li>
+          <li><a href="javascript:void(0);">Videos</a></li>
+          <li><a href="javascript:void(0);">Money Facts</a></li>
+          <li><a href="javascript:void(0);">Infographics</a></li>
+          <li><a href="javascript:void(0);">Trendings</a></li>
+        </ul>
+      </div>
+
+      <div id="listofVid"></div>
+      <div id="nextpage"></div>
+
+      <div class="btn">
+        <button class="loadMore" onclick="displayMore()"> More Money Talk</button>
+        <!-- <p id="nextpage"></p> -->
       </div>
     </div>
     <!-- ******************************************FOOTER PAGE**************************************** -->
