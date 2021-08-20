@@ -18,10 +18,10 @@ async function fetchData() {
   );
 
   result = await data.json();
-  //   console.log(result);
+    console.log(result);
   let lists = "";
 
-  for (let x of result.video.slice(0, 3)) {
+  for (let x of result.shortarticle.slice(0, 3)) {
     let date = new Date(x._created_at).toLocaleString("en-us", {
       month: "long",
       year: "numeric",
@@ -36,7 +36,4 @@ async function fetchData() {
   displayOnload.innerHTML = lists;
 }
 
-async function displayMore() {
-  //   document.getElementById("nextpage").innerHTML =
-  //     "Go to another page to load more videos";
-}
+
