@@ -7,7 +7,8 @@ html {
 }
 
 body .page1,
-.copyright {
+.copyright,
+.apps {
   font: medium 100% Helvetica Neue;
   background: linear-gradient(
     45deg,
@@ -134,6 +135,64 @@ button {
   padding: 0px 0px 50px 0px;
 }
 
+/* *************************DOWANLOAD APP PAGE*************************/
+.apps {
+  display: flex;
+  justify-content: center;
+}
+
+.apps h2 {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-btn {
+  width: 45%;
+  margin: 40px 30px;
+  text-align: left;
+  border-radius: 5px;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.app-btn {
+  background-color: white;
+}
+
+.app-btn .iconify{
+  width: 25%;
+  text-align: center;
+  margin-right: 7px;
+  color: black;
+}
+
+.flex .big-txt {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+/**************************FEATURED IN PAGE***************************/
+.featured {
+  margin-top: -20px;
+  background-color: rgb(48, 45, 45);
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.featuredIn{
+padding: 20px;
+}
+
+.iconify{
+  font-size: 50px;
+}
 /* ************************MONEY MORE TALK PAGE************************/
 #learnMoney {
   text-align: center;
@@ -276,6 +335,11 @@ hr {
 .footer-content a {
   text-decoration: underline;
   color: #444;
+}
+
+.social-links .iconify{
+  color: #008ad3;
+  font-size: 25px;
 }
 
 .copyright {
