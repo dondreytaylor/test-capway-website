@@ -1,0 +1,406 @@
+html {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body .page1,
+.copyright,
+.apps {
+  font: medium 100% Helvetica Neue;
+  background: linear-gradient(
+    45deg,
+    rgb(81, 190, 233) 0%,
+    rgb(6, 247, 135) 100%
+  );
+}
+
+header {
+  padding: 15px;
+}
+
+.page2 {
+  display: flex;
+  padding: 5% 60% 10% 20%;
+  /* padding-right: 500px; */
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.main-header,
+.content {
+  font-size: 20px;
+  color: white;
+}
+
+.main-header p {
+  color: white;
+  font-size: 40px;
+}
+
+.page2 p {
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+sub {
+  font-size: small;
+}
+
+header ul {
+  list-style-type: none;
+  margin-right: 30px;
+  float: right;
+}
+
+header li,
+.learnMoney-nav li {
+  display: inline;
+  margin: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.textInputField {
+  display: flex;
+  padding-top: 10px;
+}
+
+input,
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(247, 203, 122);
+}
+
+.link-to-apps li {
+  display: inline;
+  font-size: x-small;
+  margin: 0px;
+}
+
+/* ************************MONEY ACCOUNTS PAGEE************************/
+.page3 {
+  background-color: rgba(250, 250, 250);
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container div {
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
+}
+
+.card1 {
+  background: rgba(220, 245, 253, 0.98);
+}
+
+.card2 {
+  background: rgba(251, 231, 202, 0.9);
+}
+
+.card3 {
+  background: rgba(197, 240, 202, 0.9);
+}
+
+.card-text {
+  color: black;
+  font-size: larger;
+  max-width: 250px;
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+}
+
+.page3 .btn {
+  padding: 0px 0px 50px 0px;
+}
+
+/* *************************DOWANLOAD APP PAGE*************************/
+.apps {
+  display: flex;
+  justify-content: center;
+}
+
+.apps h2 {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-btn {
+  width: 45%;
+  margin: 40px 30px;
+  text-align: left;
+  border-radius: 5px;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.app-btn {
+  background-color: white;
+}
+
+.app-btn .iconify {
+  width: 25%;
+  text-align: center;
+  margin-right: 7px;
+  color: black;
+}
+
+.flex .big-txt {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+/**************************FEATURED IN PAGE***************************/
+.featured {
+  margin-top: -20px;
+  background-color: rgb(48, 45, 45);
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.featuredIn {
+  padding: 20px;
+}
+
+.iconify {
+  font-size: 50px;
+}
+/* ************************MONEY MORE TALK PAGE************************/
+#learnMoney {
+  text-align: center;
+}
+
+#learnMoney .learnMoney-nav li {
+  display: inline;
+}
+
+.learnMoney-nav a,
+h1,
+#listofVid,
+p,
+.content a {
+  color: black;
+}
+
+.learnMoney-nav {
+  /* border-bottom: 1px solid silver; */
+}
+
+.learnMoney-nav a:hover {
+  color: #2dcbf3;
+  border-bottom: 3px solid #2dcbf3;
+  padding: 15px;
+}
+
+.learnMoney-nav a:active {
+  color: #2dcbf3;
+  border-bottom: 3px solid #2dcbf3;
+  padding: 15px;
+}
+
+#listofVid {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 30px;
+}
+
+.title,
+.date {
+  max-width: 332px;
+  position: relative;
+  bottom: 60px;
+  color: white;
+  text-align: left;
+}
+
+.loadMore {
+  width: 400px;
+  height: 40px;
+  background-color: rgb(0, 195, 255);
+  color: white;
+}
+
+#learnMoney .btn {
+  padding: 0px 0px 55px 0px;
+}
+
+/* *******************************PHUNDS PAGE************************ */
+.page4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font: medium 100% Helvetica Neue;
+  background: rgb(163, 219, 190);
+  padding: 5% 50% 10% 20%;
+  color: black;
+  font-size: 20px;
+}
+
+.page4 .btn {
+  /* width: 400px; */
+  padding: 10px 100px;
+}
+
+/* *******************************NUMBERS PAGE*************************/
+.page5 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font: medium 100% Helvetica Neue;
+  background: rgba(250, 250, 250);
+  padding: 5% 20% 5% 10%;
+  color: black;
+  font-size: 20px;
+}
+
+.page5 .content-3 {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page5 .card-container {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page5 .card-container div {
+  border-radius: 4px;
+}
+
+.card-container .card-a {
+  width: 220px;
+  height: 230px;
+  background: rgba(251, 231, 202, 0.9);
+  margin-top: 30px;
+  align-self: end;
+}
+
+.card-container .card-b {
+  width: 220px;
+  height: 150px;
+  background: rgba(220, 245, 253, 0.98);
+  align-self: start;
+}
+
+.card-container .card-c {
+  width: 220px;
+  height: 150px;
+  background: rgba(160, 73, 247, 0.4);
+  align-self: end;
+}
+
+.card-container .card-d {
+  width: 220px;
+  height: 230px;
+  background: rgba(197, 240, 202, 0.9);
+}
+
+.page5 .card-text {
+  color: black;
+  font-size: larger;
+  max-width: 250px;
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+}
+/* *******************************FOOTER PAGE************************* */
+.main-container {
+  display: block;
+  width: 100%;
+  background-color: black;
+  font-size: 10px;
+}
+
+.footer-container {
+  margin: 0px 150px;
+  text-decoration: none;
+}
+
+.footer-container li {
+  list-style-type: none;
+  place-self: center;
+}
+
+.footer {
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.main-footer h5 {
+  font-size: medium;
+}
+
+.main-footer .capway {
+  font-size: 25px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    45deg,
+    rgb(81, 190, 233) 0%,
+    rgb(6, 247, 135) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  border: 1px solid #444;
+  margin: 20px;
+}
+
+.footer-content {
+  color: #444;
+}
+
+.footer-content a {
+  text-decoration: underline;
+  color: #444;
+}
+
+.social-links .iconify {
+  color: #008ad3;
+  font-size: 25px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: small;
+}
