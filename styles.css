@@ -165,7 +165,7 @@ button {
   background-color: white;
 }
 
-.app-btn .iconify{
+.app-btn .iconify {
   width: 25%;
   text-align: center;
   margin-right: 7px;
@@ -186,11 +186,11 @@ button {
   padding-bottom: 40px;
 }
 
-.featuredIn{
-padding: 20px;
+.featuredIn {
+  padding: 20px;
 }
 
-.iconify{
+.iconify {
   font-size: 50px;
 }
 /* ************************MONEY MORE TALK PAGE************************/
@@ -257,15 +257,16 @@ p,
 
 /* *******************************PHUNDS PAGE************************ */
 .page4 {
-  font: medium 100% Helvetica Neue;
-  background: rgb(163, 219, 190);
   display: flex;
-  padding: 5% 50% 10% 20%;
   flex-wrap: wrap;
   align-content: flex-start;
+  font: medium 100% Helvetica Neue;
+  background: rgb(163, 219, 190);
+  padding: 5% 50% 10% 20%;
   color: black;
   font-size: 20px;
 }
+
 .page4 .btn {
   /* width: 400px; */
   padding: 10px 100px;
@@ -273,16 +274,68 @@ p,
 
 /* *******************************NUMBERS PAGE*************************/
 .page5 {
-  font: medium 100% Helvetica Neue;
-  background: rgba(250, 250, 250);
   display: flex;
-  padding: 5% 55% 10% 20%;
   flex-wrap: wrap;
   align-content: flex-start;
+  font: medium 100% Helvetica Neue;
+  background: rgba(250, 250, 250);
+  padding: 5% 20% 5% 10%;
   color: black;
   font-size: 20px;
 }
 
+.page5 .content-3 {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page5 .card-container {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page5 .card-container div {
+  border-radius: 4px;
+}
+
+.card-container .card-a {
+  width: 220px;
+  height: 230px;
+  background: rgba(251, 231, 202, 0.9);
+  margin-top: 30px;
+  align-self: end;
+}
+
+.card-container .card-b {
+  width: 220px;
+  height: 150px;
+  background: rgba(220, 245, 253, 0.98);
+  align-self: start;
+}
+
+.card-container .card-c {
+  width: 220px;
+  height: 150px;
+  background: rgba(160, 73, 247, 0.4);
+  align-self: end;
+}
+
+.card-container .card-d {
+  width: 220px;
+  height: 230px;
+  background: rgba(197, 240, 202, 0.9);
+}
+
+.page5 .card-text {
+  color: black;
+  font-size: larger;
+  max-width: 250px;
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+}
 /* *******************************FOOTER PAGE************************* */
 .main-container {
   display: block;
@@ -337,7 +390,7 @@ hr {
   color: #444;
 }
 
-.social-links .iconify{
+.social-links .iconify {
   color: #008ad3;
   font-size: 25px;
 }
