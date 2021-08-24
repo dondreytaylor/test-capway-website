@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+  font-size: 2.2rem;
+  font-weight: medium;
+}
+
+h2 {
+  color: #1c1c1f;
+  font-family: "Neue Helvetica", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: medium;
+  margin: 0 auto 1rem;
+}
+
+#main {
+  font-family: "Neue Helvetica", sans-serif;
+  line-height: 1.4;
+}
+#main #nav-div {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 64rem;
+  position: relative;
+  height: inherit;
+}
+#main #top-nav {
+  width: 100%;
+  height: 4.5rem;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  text-align: right;
+}
+#main #top-nav #capway-link {
+  background-image: url("https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg");
+  width: 10rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#main #top-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#main #top-nav ul #sign-up {
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 0.95rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 15.2px 8px;
+  width: 112px;
+}
+#main #top-nav li {
+  list-style: none;
+}
+#main #top-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom-color 0.25s;
+  display: inline-block;
+}
+#main #container-1 {
+  background-image: linear-gradient(to bottom left, #63cc71, #5cbda9, #56ace4);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+#main #cap-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+#main #p-header {
+  color: #ffffffcc;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+#main #header-email {
+  height: 3rem;
+  vertical-align: top;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 0 0 0 1rem;
+  line-height: 1;
+}
+#main #email-link {
+  vertical-align: top;
+  display: inline-block;
+  width: 32%;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  height: inherit;
+  box-sizing: border-box;
+  padding: 1rem 0 0;
+  left: -0.5rem;
+  position: relative;
+}
+#main .content-left {
+  width: 43%;
+}
+#main .content-2 {
+  width: inherit;
+  height: inherit;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/phone-card.png);
+}
+#main #cap-account {
+  background-color: #fafafb;
+  padding: 80px 0;
+  text-align: center;
+  margin: auto;
+  height: 478.375px;
+}
+#main #cap-account .account-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+#main #cap-account .account-container .account-inner {
+  text-align: center;
+  margin: 3rem auto 0;
+}
+#main #cap-account .account-container .account-inner .capcard1 {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 19rem;
+  min-height: 14rem;
+  margin: 0 0 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-debit-cards.png);
+}
+#main #cap-account .account-container .account-inner .capcard1 .card-inner1 {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard1 .card-element {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard1 .card-element .acct-icon1 {
+  width: 6rem;
+  height: 6rem;
+  margin: 3rem auto 1.5rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/debit-cards.svg);
+}
+#main #cap-account .account-container .account-inner .capcard1 .card-element .capspan-1 {
+  font-size: 1.1rem;
+  font-weight: medium;
+  line-height: 1.5;
+  color: #333;
+  font-family: "Neue Helvetica", sans-serif;
+}
+#main #cap-account .account-container .account-inner .capcard2 {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 19rem;
+  min-height: 14rem;
+  margin: 0 0 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-withdrawal.png);
+}
+#main #cap-account .account-container .account-inner .capcard2 .card-inner2 {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard2 .card-element {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard2 .card-element .acct-icon2 {
+  width: 6rem;
+  height: 6rem;
+  margin: 3rem auto 1.5rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/withdrawal.svg);
+}
+#main #cap-account .account-container .account-inner .capcard3 {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 19rem;
+  min-height: 14rem;
+  margin: 0 0 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-money-goals.png);
+}
+#main #cap-account .account-container .account-inner .capcard3 .card-inner3 {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard3 .card-element {
+  width: 85%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+#main #cap-account .account-container .account-inner .capcard3 .card-element .acct-icon3 {
+  width: 6rem;
+  height: 6rem;
+  margin: 3rem auto 1.5rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/money-goals.svg);
+}
+#main .benefits-btn {
+  max-width: 20rem;
+  display: block;
+  margin: 0 auto;
+}
+#main .benefits {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #00ace2;
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+#main .span-btn {
+  font-family: Helvetica Neue Medium;
+  font-size: 0.9rem;
+  padding: 1.2rem 0.5rem;
+}
+#main .container-2 {
+  background: linear-gradient(45deg #4babd8, #82d49d);
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+#main .container-2 .cap-apps {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+#main .container-2 .cap-apps #h2-apps {
+  color: #727272;
+  font-family: "Neue Helvetica", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+}
+#main .container-2 .cap-apps .apps-inner .app-1 {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 4rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/google-play.svg);
+}
+#main .container-2 .cap-apps .apps-inner .app-2 {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 4rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/app-store.svg);
+}
+#main .container-2 .card-img {
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 2.5%;
+  bottom: -3.5rem;
+  width: 90%;
+}
+#main .container-3 {
+  background-color: #1c1c1f;
+  text-align: center;
+  padding: 3.5rem 0 4rem;
+}
+#main .container-3 .cap-featured {
+  color: #f4f4f8;
+  margin: 0 auto 2rem;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 1.8rem;
+  display: block;
+}
+#main .container-3 .cap-featured .cap-brands .essence {
+  width: 7rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 1rem 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-essence.png);
+}
+#main .container-3 .cap-featured .cap-brands .cnn {
+  width: 7rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 1rem 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-cnn.png);
+}
+#main .container-3 .cap-featured .cap-brands .business-insider {
+  width: 7rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 1rem 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-business-insider.png);
+}
+#main .container-3 .cap-featured .cap-brands .inc {
+  width: 7rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 1rem 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-inc.png);
+}
+#main .container-3 .cap-featured .cap-brands .forbes {
+  width: 7rem;
+  height: 2rem;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 1rem 2rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-forbes.png);
+}
+
+/*# sourceMappingURL=styles.css.map */
