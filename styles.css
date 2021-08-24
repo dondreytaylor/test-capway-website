@@ -29,7 +29,7 @@ h2 {
   width: 95%;
   margin: 0 auto;
   max-width: 64rem;
-  position: relative;
+  position: absolute;
   height: inherit;
 }
 #main #top-nav {
@@ -48,10 +48,16 @@ h2 {
   height: 3rem;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50%;
+  color: transparent;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.6rem;
 }
 #main #top-nav ul {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -61,7 +67,6 @@ h2 {
   color: #4a4a4a;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   display: block;
-  padding: 0.95rem 0.5rem;
   box-sizing: border-box;
   border-radius: 0.3rem;
   text-decoration: none;
@@ -82,7 +87,8 @@ h2 {
   padding: 2.5rem 0 1.5rem;
   border-bottom: 0.2rem solid transparent;
   transition: border-bottom-color 0.25s;
-  display: inline-block;
+  display: inline-flex;
+  margin: 0 15px;
 }
 #main #container-1 {
   background-image: linear-gradient(to bottom left, #63cc71, #5cbda9, #56ace4);
@@ -97,6 +103,7 @@ h2 {
   width: 90%;
   margin: 0 auto;
   max-width: 64rem;
+  padding: 68px 0;
 }
 #main #p-header {
   color: #ffffffcc;
