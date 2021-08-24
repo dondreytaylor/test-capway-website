@@ -52,8 +52,9 @@ h2 {
 }
 #main #top-nav ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 #main #top-nav ul #sign-up {
   background-color: #f8d88b;
