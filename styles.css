@@ -533,6 +533,7 @@ h2 {
   color: #333;
   font-size: 0.95rem;
   margin: 0 0 2rem;
+  text-align: left;
 }
 #main #phunds #phunds-holder .phunds-left .phunds-btn {
   display: block;
@@ -744,6 +745,7 @@ h2 {
   color: #929596;
   margin: 0 0 1.2rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -584,6 +584,7 @@ a {
                     color: #333;
                     font-size: .95rem;
                     margin: 0 0 2rem;
+                    text-align: left;
                 }
                 .phunds-btn {
                    @include phundsbtn()
@@ -777,6 +778,7 @@ a {
         color: #929596;
         margin: 0 0 1.2rem;
         line-height: 1.5;
+        text-align: left;
     }
 
     }
