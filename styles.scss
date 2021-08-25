@@ -421,6 +421,8 @@ a {
 }
 
 .container-3 {
+    text-align: center;
+    padding: 3.5rem 0 4rem;
     background-color:#1c1c1f;
     text-align: center;
     padding: 3.5rem 0 4rem;
@@ -433,10 +435,12 @@ a {
         display: block;
 
         .cap-brands {
+            text-align: center;
+            padding: 3.5rem 0 4rem;
 
             .essence {
                 @include brand;
-                background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-essence.png);
+                background-image: url(assets/feature-essence.png);
             }
             .cnn {
                 @include brand;
@@ -473,7 +477,7 @@ a {
             max-width: 43rem;
             margin: 0 auto 2rem;
             text-align: center;
-            display: inline-block;
+            display: flex;
 
             .option {
                 padding: 1rem 1.5rem;

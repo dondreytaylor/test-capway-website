@@ -385,6 +385,8 @@ h2 {
   width: 90%;
 }
 #main .container-3 {
+  text-align: center;
+  padding: 3.5rem 0 4rem;
   background-color: #1c1c1f;
   text-align: center;
   padding: 3.5rem 0 4rem;
@@ -396,6 +398,10 @@ h2 {
   font-size: 1.8rem;
   display: block;
 }
+#main .container-3 .cap-featured .cap-brands {
+  text-align: center;
+  padding: 3.5rem 0 4rem;
+}
 #main .container-3 .cap-featured .cap-brands .essence {
   width: 7rem;
   height: 2rem;
@@ -404,7 +410,7 @@ h2 {
   background-repeat: no-repeat;
   display: inline-block;
   margin: 1rem 2rem;
-  background-image: url(https://capway.com/assets/module-site/pages/page-landing/feature-essence.png);
+  background-image: url(assets/feature-essence.png);
 }
 #main .container-3 .cap-featured .cap-brands .cnn {
   width: 7rem;
@@ -461,7 +467,7 @@ h2 {
   max-width: 43rem;
   margin: 0 auto 2rem;
   text-align: center;
-  display: inline-block;
+  display: flex;
 }
 #main #know-money .money-holder .know-links .option {
   padding: 1rem 1.5rem;
