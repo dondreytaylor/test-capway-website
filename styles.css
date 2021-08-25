@@ -17,6 +17,11 @@ h2 {
   font-family: "Neue Helvetica", sans-serif;
   line-height: 1.4;
 }
+#main .holder {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
 #main #nav-div {
   width: 95%;
   margin: 0 auto;
@@ -500,6 +505,245 @@ h2 {
   vertical-align: top;
   position: relative;
   color: #4a4a4a;
+}
+#main #phunds {
+  background-color: #a8e1bb;
+  padding: 5rem 0 0;
+}
+#main #phunds #phunds-holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+#main #phunds #phunds-holder .phunds-left {
+  width: 40%;
+}
+#main #phunds #phunds-holder .phunds-left .phunds-h2 {
+  color: #1c1c1f;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+#main #phunds #phunds-holder .phunds-left .phunds-p {
+  line-height: 1.8;
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0 0 2rem;
+}
+#main #phunds #phunds-holder .phunds-left .phunds-btn {
+  display: block;
+  margin: 0 auto 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+#main #phunds .phunds-mid {
+  width: 100%;
+  height: 32rem;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/partnership.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#main #phunds .phunds-right {
+  width: 27%;
+}
+#main #phunds .phunds-right .phunds-h2 {
+  color: #1c1c1f;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+#main #phunds .phunds-right .phunds-p {
+  line-height: 1.8;
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0 0 2rem;
+}
+#main #phunds .phunds-right .phunds-btn {
+  display: block;
+  margin: 0 auto 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#cap-numbers {
+  background-color: #fafafb;
+  padding: 5rem 0;
+  border-bottom: 0.05rem solid #ddd;
+}
+#cap-numbers #numbers-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+#cap-numbers #numbers-holder .numbers-h3 {
+  color: #1c1c1f;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+#cap-numbers #numbers-holder .numbers-left {
+  width: 35%;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+#cap-numbers #numbers-holder .numbers-right {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards1 {
+  width: 48%;
+  padding: 3rem 0 0;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards1 .img-1 {
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-1.png);
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards1 .img-2 {
+  width: 100%;
+  height: 200px;
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards2 {
+  width: 48%;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards2 .img-3 {
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-3.png);
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cap-numbers #numbers-holder .numbers-right .number-cards2 .img-4 {
+  background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-4.png);
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#cap-footer {
+  background-color: #1c1c1f;
+}
+#cap-footer .footer-holder {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 90%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#cap-footer .footer-holder .logo-social {
+  width: 16%;
+  margin: 0 0 1rem;
+}
+#cap-footer .footer-holder .logo-social .footer-logo {
+  width: 10rem;
+  height: 3rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/logo.svg);
+  margin: 0 0 1rem;
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social .facey {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/footer-facebook.svg);
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social .insta {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/footer-instagram.svg);
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social .twitter {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/footer-twitter.svg);
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social .youtube {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/footer-youtube.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#cap-footer .footer-holder .logo-social .footer-logo .footer-social .linkedin {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://capway.com/assets/module-core/footers/footer-default/footer-linkedin.svg);
+}
+#cap-footer .footer-lower {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 90%;
+  border-top: 0.05rem solid #47494a;
+  padding: 3rem 0;
+}
+#cap-footer .footer-lower #footer-disclosures {
+  font-size: 0.75rem;
+  color: #929596;
+  margin: 0 0 1.2rem;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */
