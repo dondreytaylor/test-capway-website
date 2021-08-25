@@ -26,16 +26,25 @@
             </nav>
         </div>
         
-        <div id="container-1">
+        <!-- section -->
+        <div id="container-1"> 
+            <!-- div.holder -->
             <div id="cap-main">
+                <!-- left -->
                 <div class="content-left">
-                    <h1>
-                        Creating Financial Access & Opportunities</h1>
+                    <h1>Creating Financial Access & Opportunities</h1>
                     <p id="p-header">
                         No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.
                     </p>
-                    <input type="email" name="" id="header-email">
-                    <a id="email-link" href="javascript:void(0);"></a>
+                    <div class="email-div">
+                    <input type="email" name="email" onfocus="" id="header-email">
+                    <button id="email-link" href="javascript:void(0);">Sign Me Up</button>
+                    </div>
+                    <div class="sublinks">
+                        <a id="sub-signup" href="javascript:void(0);">Download for iOS·</a>
+                        <a id="sub-signup" href="javascript:void(0);">Download for Android·</a>
+                        <a id="sub-signup" href="javascript:void(0);">Why You Should Choose CapWay</a>
+                        </div>
                 </div>
                 <div class="content-2"></div>
             </div>
@@ -87,7 +96,7 @@
                     <h2 id="h2-apps">Download CapWay and Start Your Money Account.
                     </h2>
                     <div class="app-1">
-
+            
                     </div>
                     <div class="app-2">
 
@@ -114,49 +123,83 @@
         </div>
 
         <div id="know-money">
-            <div id="cap-main">
-                <div class="">
-                    <h1>
-                        Creating Financial
-                        Access & Opportunities
-                    </h1>
-                    <p id="p-header">
-                        No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.
-                    </p>
-                    <input type="email" name="" id="header-email">
-                    <a id="email-link" href="javascript:void(0);"></a>
-                </div>
+            <div id="money-holder">
+                    <h2>
+                        Get to Know Money Better
+                    </h2>
+                        <div class="know-links">
+                            <div class="option"><a href=""></a>Articles</div>
+                            <div class="option"><a href=""></a>Videos</div>
+                            <div class="option"><a href=""></a>Facts & Hacks</div>
+                            <div class="option"><a href=""></a>Infographics</div>
+                            <div class="option"><a href=""></a>Money Meanings</div>
+                        </div>
+                    <div class="results-container">
+                        <div class="learn-card">
+                            <a href="" class="card-link">
+                                <div class="short-article">
+                                    <div class="cap-data">
+
+                                    </div>       
+                                </div>
+                            </a>
+                        </div>
+                        <div class="learn-card">
+                            <a href="" class="card-link">
+                                <div class="short-article">
+                                    <div class="cap-data">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="learn-card">
+                            <a href="" class="card-link">
+                                <div class="short-article">
+                                    <div class="cap-data">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="learn-card">
+                            <a href="" class="card-link">
+                                <div class="short-article">
+                                    <div class="cap-data">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
             </div>
+            
         </div>
 
         <div id="phunds">
-            <div id="cap-main">
+            <div id="phunds-holder">
                 <div class="">
                     <h1>
-                        Creating Financial
-                        Access & Opportunities
+                        
                     </h1>
                     <p id="p-header">
-                        No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.
+                     
                     </p>
-                    <input type="email" name="" id="header-email">
-                    <a id="email-link" href="javascript:void(0);"></a>
+                
                 </div>
             </div>
         </div>
 
         <div id="cap-numbers">
-            <div id="cap-main">
+            <div id="numbers-holder">
                 <div class="">
                     <h1>
-                        Creating Financial
-                        Access & Opportunities
+                        
                     </h1>
                     <p id="p-header">
-                        No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.
+                        
                     </p>
-                    <input type="email" name="" id="header-email">
-                    <a id="email-link" href="javascript:void(0);"></a>
+                    
                 </div>
             </div>
         </div>
@@ -164,5 +207,10 @@
     <footer id="cap-footer">
 
     </footer>
+    <script>
+        function ClearEmail() {
+        document.getElementById("textfield1").value = "clear";
+    }
+    </script>
 </body>
 </html>

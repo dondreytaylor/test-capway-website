@@ -71,14 +71,6 @@
     margin: 1rem 2rem;
 }
 
-h1 {
-    color: #fff;
-    margin: 0 0 1rem;
-    line-height: 1.3;
-    font-size: 2.2rem;
-    font-weight: medium;
-}
-
 h2 {
     color:#1c1c1f;
     font-family:'Neue Helvetica', sans-serif ;
@@ -177,32 +169,79 @@ a {
 
 
 #container-1 {
-    background-image: linear-gradient(to bottom left, #63cc71, #5cbda9, #56ace4);
-    padding: 5rem 0;
+    background-image: linear-gradient(to bottom left, #49d05b, #5cbda9, #429eda);
+    background-color: #ffffff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0 5rem;
+    z-index: 1;
     position: relative;
     overflow: hidden;
+
+    #cap-main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 64rem;
+        padding: 68px 0;
+        
+        .content-left {
+            width: 43%;
+
+            h1 {
+                color: #fff;
+                margin: 0 0 1rem;
+                line-height: 1.3;
+                font-size: 2.5rem;
+                font-weight: medium
+            }
+
+            #p-header {
+                color: #ffffffcc;
+                font-size: 1.2rem;
+                margin: 0 0 1rem;
+            }
+        }
+    }
 }
 
-#cap-main {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.email-div {
     width: 90%;
-    margin: 0 auto;
-    max-width: 64rem;
-    padding: 68px 0;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    height: 3rem;
+    margin: 0 0 2rem;
 }
 
-#p-header {
-    color: #ffffffcc;
-    font-size: 1.2rem;
-    margin: 0 0 1rem;
+.sublinks {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+#sub-signup {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: .8rem;
 }
 
 #header-email {
     height: 3rem;
     vertical-align: top;
     width: 70%;
+    border: none;
+    outline: none;
     box-sizing: border-box;
     padding: 0 0 0 1rem;
     line-height: 1;
@@ -222,10 +261,9 @@ a {
     padding: 1rem 0 0;
     left: -.5rem;
     position: relative;
-}
-
-.content-left {
-    width: 43%;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .content-2 {
@@ -304,14 +342,13 @@ a {
             // end account-inner
         }
         // end account-container
+        .benefits-btn {
+            max-width: 20rem;
+            display: block;
+            margin: 0 auto;
+        }
     }
     
-}
-
-.benefits-btn {
-    max-width: 20rem;
-    display: block;
-    margin: 0 auto;
 }
 
 .benefits {
@@ -422,7 +459,61 @@ a {
 }
 
 #know-money {
+    background-color: #fafafb;
+    padding: 5rem 0;
+    border-bottom: .05rem solid #ddd;
 
+    .money-holder {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 64rem;
+
+        .know-links {
+            border-bottom: .05rem solid #ddd;
+            max-width: 43rem;
+            margin: 0 auto 2rem;
+            text-align: center;
+            display: inline-block;
+
+            .option {
+                padding: 1rem 1.5rem;
+                border-bottom: .2rem solid transparent;
+                text-align: center;
+                cursor: pointer;
+                color: #4a4a4a;
+                display: inline-block;
+            }
+        }
+            .results-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 0 1rem;
+
+                .learn-card {
+                    display: block;
+                    max-width: 23%;
+                    margin: 0 0 1rem;
+                    
+                .card-link {
+                    height: 22rem;
+                    background-color: #fff;
+                    overflow: hidden;
+                    border: .05rem solid #eee;
+                    border-radius: .5rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    vertical-align: top;
+                    position: relative;
+                    color: #4a4a4a;
+                }
+
+
+
+                }
+            }
+    }
 }
 
 #phunds {
