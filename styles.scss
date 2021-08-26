@@ -606,9 +606,10 @@ a {
             }
             .phunds-p {
                 line-height: 1.8;
-                    color: #333;
-                    font-size: .95rem;
-                    margin: 0 0 2rem;
+                color: #333;
+                font-size: .95rem;
+                margin: 0 0 2rem;
+                text-align: left;
             }
             .phunds-btn {
                 @include phundsbtn;
@@ -640,6 +641,7 @@ a {
             width: 35%;
             margin: 0 auto;
             padding: 3rem 0 0;
+            text-align: left;
         }
 
         .numbers-right {
@@ -647,6 +649,7 @@ a {
             display: flex;
             justify-content: space-evenly;
             flex-direction: row;
+            
             .number-cards1{
                 width: 48%;
                 padding: 3rem 0 0;

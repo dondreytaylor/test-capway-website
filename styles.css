@@ -576,6 +576,7 @@ h2 {
   color: #333;
   font-size: 0.95rem;
   margin: 0 0 2rem;
+  text-align: left;
 }
 #main #phunds .phunds-right .phunds-btn {
   display: block;
@@ -618,6 +619,7 @@ h2 {
   width: 35%;
   margin: 0 auto;
   padding: 3rem 0 0;
+  text-align: left;
 }
 #cap-numbers #numbers-holder .numbers-right {
   width: 40%;
