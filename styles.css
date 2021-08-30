@@ -115,6 +115,17 @@ a {
   opacity: 0.8;
 }
 
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Neue Helvetica", sans-serif;
+  font-size: 0.95rem;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom-color 0.25s;
+  display: inline-block;
+}
+
 .nav-options {
   display: inline-block;
   margin: 0 0.8rem;
