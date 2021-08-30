@@ -218,6 +218,7 @@ h1 {
   outline: none;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .content-right {
@@ -594,7 +595,7 @@ h1 {
 
 #phunds {
   background-color: #a8e1bb;
-  padding: 5rem 0 0;
+  padding: 1rem 0 0;
 }
 
 #phunds-holder {
@@ -607,7 +608,7 @@ h1 {
 }
 
 .phunds-left {
-  width: 40%;
+  width: 27%;
 }
 
 .phunds-h2 {
