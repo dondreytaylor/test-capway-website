@@ -147,22 +147,21 @@ h2 {
 }
 
 #nav-div {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 64rem;
     position: absolute;
-    height: inherit;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    z-index: 5;
+    height: 4.5rem;
 }
 
 #top-nav {
-    width: 100%;
-    // height: 4.5rem;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    position: absolute;
-    overflow: hidden;
-    text-align: right;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 64rem;
+    position: relative;
+    height: inherit;
 }
 
 #capway-link {
@@ -190,8 +189,12 @@ h2 {
 }
 
 #link-div {
-    width: 10rem;
-    height: 3rem;
+    color: transparent;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -.5rem;
     background-image: url(/assets/module-site/headers/header-site-transparent/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -233,20 +236,14 @@ a {
     display: block;
     color: #fff;
     text-decoration: none;
-    font-size: .85rem;
+    font-size: .95rem;
     margin: 0 0 .8rem;
     opacity: .8;
 }
 
-.nav-links {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 2.5rem 0 1.5rem;
-    border-bottom: .2rem solid transparent;
-    transition: border-bottom-color .25s;
-    display: inline-flex;
-    margin: 0 15px;
-
+.nav-options {
+    display: inline-block;
+    margin: 0 .8rem;
 }
 
 
@@ -370,11 +367,11 @@ h1 {
     height: 478.375px;
 }
 
-    .account-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 64rem;
-    }
+.account-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 64rem;
+}
 
 .account-inner {
     text-align: center;
@@ -469,7 +466,7 @@ h1 {
 }
 
 .container-2 {
-    background: linear-gradient(45deg#4babd8,#82d49d);
+    background-image: linear-gradient(to bottom left, #4babd8, #82d49d);
     padding: 3rem 0;
     position: relative;
     overflow: hidden;
@@ -479,19 +476,20 @@ h1 {
     overflow: auto;
 }
 
-    .cap-apps {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 64rem;
+.cap-apps {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 64rem;
+}
 
-        #h2-apps {
-            color: #727272;
-            font-family: 'Neue Helvetica', sans-serif;
-            text-align: center;
-            font-size: 1.8rem;
-            margin: 0 auto 1rem;
-            line-height: 1.5;
-        }
+#h2-apps {
+    color: #ffffff;
+    font-family: 'Neue Helvetica', sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 auto 1rem;
+    line-height: 1.5;
+}
 
 .apps-inner {
     .app-1 {
@@ -504,19 +502,13 @@ h1 {
 .app-2 {
     @include capapps;
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/app-store.svg);
-    }
 }
-
-
 
 .card-img {
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
-    background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: absolute;
     right: 2.5%;
     bottom: -3.5rem;
-    width: 90%;
 }
 
 
