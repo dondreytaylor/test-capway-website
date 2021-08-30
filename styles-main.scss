@@ -349,14 +349,23 @@ h1 {
     cursor: pointer;
 }
 
-.content-2 {
+.content-right {
+    width: 54%;
+
+}
+
+.right-holder {
+    width: 36rem;
+    height: 36rem;
+}
+
+.right-card {
     width: inherit;
     height: inherit;
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/phone-card.png);
-
 }
 
 .cap-account {
@@ -532,7 +541,7 @@ h1 {
 
 .cap-brands {
     text-align: center;
-    padding: 3.5rem 0 4rem;
+    margin: 0 auto;
 }
 
 
