@@ -74,17 +74,15 @@ h2 {
   left: 0;
   top: 50%;
   margin-top: -0.5rem;
-  background-image: url(/assets/module-site/headers/header-site-transparent/logo.svg);
+}
+
+.nav-logo {
+  width: 10rem;
+  height: 3rem;
+  background-image: url(https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
-}
-
-ul {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 #sign-up {
@@ -152,7 +150,7 @@ h1 {
   color: #fff;
   margin: 0 0 1rem;
   line-height: 1.3;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: medium;
 }
 
@@ -212,7 +210,6 @@ h1 {
   font-size: 0.9rem;
   height: inherit;
   box-sizing: border-box;
-  padding: 1rem 0 0;
   left: -0.5rem;
   position: relative;
   outline: none;
