@@ -666,7 +666,6 @@ h1 {
   max-width: 43rem;
   margin: 0 auto 2rem;
   text-align: center;
-  display: flex;
 }
 
 .option {
@@ -924,10 +923,20 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 320px) {
+  .footer-holder {
+    justify-content: center;
+  }
+}
 
 .logo-social {
   width: 16%;
   margin: 0 0 1rem;
+}
+@media (max-width: 320px) {
+  .logo-social {
+    width: 15rem;
+  }
 }
 
 .footer-logo {
@@ -938,6 +947,11 @@ h1 {
   background-size: contain;
   background-image: url(https://capway.com/assets/module-core/footers/footer-default/logo.svg);
   margin: 0 0 1rem;
+}
+@media (max-width: 320px) {
+  .footer-logo {
+    margin: 0 auto 1rem;
+  }
 }
 
 .footer-social {
@@ -1000,6 +1014,12 @@ h1 {
   flex-wrap: wrap;
   text-align: left;
 }
+@media (max-width: 320px) {
+  .footer-links {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .footer-inc .strong-footer {
   display: block;
@@ -1015,6 +1035,12 @@ h1 {
   font-size: 0.85rem;
   margin: 0 0 0.8rem;
   opacity: 0.8;
+}
+@media (max-width: 320px) {
+  .footer-inc {
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 .footer-money .strong-footer {
@@ -1032,6 +1058,12 @@ h1 {
   margin: 0 0 0.8rem;
   opacity: 0.8;
 }
+@media (max-width: 320px) {
+  .footer-money {
+    padding: 1rem;
+    text-align: center;
+  }
+}
 
 .footer-learn .strong-footer {
   display: block;
@@ -1047,6 +1079,12 @@ h1 {
   font-size: 0.85rem;
   margin: 0 0 0.8rem;
   opacity: 0.8;
+}
+@media (max-width: 320px) {
+  .footer-learn {
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 .footer-work .strong-footer {
@@ -1064,6 +1102,12 @@ h1 {
   margin: 0 0 0.8rem;
   opacity: 0.8;
 }
+@media (max-width: 320px) {
+  .footer-work {
+    padding: 1rem;
+    text-align: center;
+  }
+}
 
 .footer-support .strong-footer {
   display: block;
@@ -1080,6 +1124,12 @@ h1 {
   margin: 0 0 0.8rem;
   opacity: 0.8;
 }
+@media (max-width: 320px) {
+  .footer-support {
+    padding: 1rem;
+    text-align: center;
+  }
+}
 
 .footer-download .strong-footer {
   display: block;
@@ -1095,6 +1145,12 @@ h1 {
   font-size: 0.85rem;
   margin: 0 0 0.8rem;
   opacity: 0.8;
+}
+@media (max-width: 320px) {
+  .footer-download {
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 .footer-lower {

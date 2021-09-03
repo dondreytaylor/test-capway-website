@@ -678,7 +678,7 @@ h1 {
     max-width: 43rem;
     margin: 0 auto 2rem;
     text-align: center;
-    display: flex;
+    // display: flex;
 }
 
 .option {
@@ -885,11 +885,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media ('<=phone') {
+        justify-content: center;
+    }
 }
 
 .logo-social {
     width: 16%;
     margin: 0 0 1rem;
+    @include media ('<=phone') {
+        width: 15rem;
+    }
 }
 
 .footer-logo {
@@ -900,6 +906,9 @@ h1 {
     background-size: contain;
     background-image: url(https://capway.com/assets/module-core/footers/footer-default/logo.svg);
     margin: 0 0 1rem;
+    @include media ('<=phone') {
+        margin: 0 auto 1rem;
+    }
 }
 
 .footer-social {
@@ -941,6 +950,10 @@ h1 {
     width: 75%;
     flex-wrap: wrap;
     text-align: left;
+    @include media ('<=phone') {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .footer-inc {
@@ -949,6 +962,10 @@ h1 {
     }
     .sub-section {
         @include subsections;
+    }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
     }
 }
 
@@ -960,6 +977,10 @@ h1 {
     .sub-section {
         @include subsections;
     }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 .footer-learn {
@@ -968,6 +989,10 @@ h1 {
     }
     .sub-section {
         @include subsections;
+    }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
     }
 }
 
@@ -978,6 +1003,10 @@ h1 {
     .sub-section {
         @include subsections;
     }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 .footer-support {
@@ -987,6 +1016,10 @@ h1 {
     .sub-section {
         @include subsections;
     }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
+    }
 }
             
 .footer-download {
@@ -995,6 +1028,10 @@ h1 {
     }
     .sub-section {
         @include subsections;
+    }
+    @include media ('<=phone') {
+        padding: 1rem;
+        text-align: center;
     }
 }
         
