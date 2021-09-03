@@ -1001,15 +1001,14 @@ h1 {
   text-align: left;
 }
 
-.strong-footer {
+.footer-inc .strong-footer {
   display: block;
   color: #fff;
   font-family: "Neue Helvetica", sans-serif;
   font-size: 0.85rem;
   margin: 0 0 1rem;
 }
-
-.sub-section {
+.footer-inc .sub-section {
   display: block;
   color: #fff;
   text-decoration: none;

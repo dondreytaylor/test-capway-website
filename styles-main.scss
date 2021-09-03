@@ -943,13 +943,14 @@ h1 {
     text-align: left;
 }
 
-.footer-inc {}
+.footer-inc {
     .strong-footer {
         @include strongfooter;
     }
     .sub-section {
         @include subsections;
     }
+}
 
 
 .footer-money {
