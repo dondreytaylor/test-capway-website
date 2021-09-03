@@ -1,8 +1,10 @@
+@import "./node_modules/include-media/dist/include-media";
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Neue Helvetica', sans-serif;
+    
 }
 
 
@@ -132,13 +134,21 @@ h2 {
     font-size: 32px;
     font-weight: medium;
     margin: 0 auto 1rem;
+    @include media ('<=phone') {
+        font-size: 1.5rem;
+    }
+
 }
 
 
 #main {
     font-family: 'Neue Helvetica', sans-serif;
     line-height: 1.4;
+    @include media ('<=phone') {
+        position: relative;
+    }
 }
+
 
 .holder {
     width: 90%;
@@ -146,7 +156,8 @@ h2 {
     max-width: 64rem;
 }
 
-#nav-div {
+
+.nav-div {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,12 +167,24 @@ h2 {
     height: 4.5rem;
 }
 
-#top-nav {
+.holder-1 {
     width: 95%;
     margin: 0 auto;
     max-width: 64rem;
     position: relative;
     height: inherit;
+}
+
+.header-nav {
+    @include media ('<=phone') {
+    background-color: #4eb3cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    }
 }
 
 #capway-link {
@@ -204,6 +227,9 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
+    @include media ('<=phone') {
+        width: 10rem;
+    }
 }
 
 #sign-up {
@@ -266,21 +292,32 @@ a {
     padding: 10rem 0 5rem;
     z-index: 1;
     position: relative;
-    overflow: hidden;
+    
+    @include media ('<=phone') {
+        padding: 8rem 0 5rem;
+    }
+
 }
 
-#cap-main {
+.holder-2 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
-    padding: 68px 0;
+    @include media ('<=phone') {
+        flex-direction: column;
+    }
 }
 
 .content-left {
     width: 43%;
+    @include media ('<=phone') {
+        width: 100%;
+        max-width: 38rem;
+        margin: 0 auto 4rem;
+    }
 }
 
 h1 {
@@ -288,13 +325,25 @@ h1 {
     margin: 0 0 1rem;
     line-height: 1.3;
     font-size: 2.2rem;
-    font-weight: medium
+    font-weight: medium;
+    @include media ('<=phone') {
+        font-size: 2.4rem;
+    }
+    
 }
 
 #p-header {
     color: #ffffffcc;
     font-size: 1.2rem;
     margin: 0 0 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 2rem;
+    max-width: 25rem;
+    color: hsla(0,0%,100%,.8);
+    @include media ('<=phone') {
+        font-size: 1.1rem;
+    }
 }
         
 
@@ -324,6 +373,13 @@ h1 {
     text-decoration: none;
     padding: 0 10px;
     font-size: .8rem;
+}
+
+.link-span {
+    color: #fff;
+    // display: inline-block;
+    margin: 0 .5rem;
+    font-size: large;
 }
 
 #header-email {
@@ -359,12 +415,22 @@ h1 {
 
 .content-right {
     width: 54%;
+    @include media ('<=phone') {
+        width: 100%;
+        margin: 0 auto;
+    }
 
 }
 
 .right-holder {
     width: 36rem;
     height: 36rem;
+    margin: 0 auto;
+    position: relative;
+    @include media ('<=phone') {
+        width: 19rem;
+        height: 19rem;
+    }
 }
 
 .right-card {
@@ -376,15 +442,15 @@ h1 {
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/phone-card.png);
 }
 
-.cap-account {
+.container-2 {
     background-color: #fafafb;
-    padding: 80px 0;
-    text-align: center;
-    margin: auto;
-    height: 478.375px;
+    padding: 5rem 0;
+    // text-align: center;
+    // margin: auto;
+    // height: 478.375px;
 }
 
-.account-container {
+.holder-3 {
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
@@ -401,7 +467,11 @@ h1 {
             .card-inner1 {
                 @include cardinner;
             }
+    @include media ('<=phone') {
+        background-color: #c8e6f3;
+        background-image: none;
     }
+}
 
 
 .card-element {
@@ -423,6 +493,10 @@ h1 {
     .card-inner2 {
         @include cardinner;
     }
+    @include media ('<=phone') {
+        background-color: #fbe9bc;
+        background-image: none;
+        }
 }
 
 
@@ -441,6 +515,10 @@ h1 {
     .card-inner3 {
         @include cardinner;
     }
+    @include media ('<=phone') {
+        background-color: #a8e1bb;
+        background-image: none;
+        }
 }
 
 
@@ -482,8 +560,8 @@ h1 {
     padding: 1.2rem .5rem;
 }
 
-.container-2 {
-    background-image: linear-gradient(to bottom left, #4babd8, #82d49d);
+.container-3 {
+    background-image: linear-gradient(to bottom left, #82d49d, #4babd8);
     padding: 3rem 0;
     position: relative;
     overflow: hidden;
@@ -497,6 +575,7 @@ h1 {
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
+    text-align: center;
 }
 
 #h2-apps {
@@ -521,15 +600,29 @@ h1 {
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/app-store.svg);
 }
 
-.card-img {
-    background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
+.card-div {
     position: absolute;
     right: 2.5%;
     bottom: -3.5rem;
 }
 
+.card-img {
+    background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
+    // position: absolute;
+    width: 90%;
+    // right: 2.5%;
+    // bottom: -3.5rem;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // height: 253px;
+    // width: 285px;
 
-.container-3 {
+
+}
+
+
+.container-4 {
     text-align: center;
     padding: 3.5rem 0 4rem;
     background-color:#1c1c1f;
@@ -639,6 +732,9 @@ h1 {
 #phunds {
     background-color: #a8e1bb;
     padding: 1rem 0 0;
+    @include media ('<=phone') {
+        padding: 5rem 0 0;
+    }
 }
 
 #phunds-holder {
@@ -648,14 +744,26 @@ h1 {
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
+    @include media ('<=phone') {
+        flex-direction: column;
+    }
 }
 
 .phunds-left {
     width: 27%;
+    @include media ('<=phone') {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto 2rem;
+    }
 }
 
 .phunds-h2 {
-    @include phunds-h2()
+    @include phunds-h2();
+    @include media ('<=phone') {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .phunds-p {
@@ -664,6 +772,11 @@ h1 {
     font-size: .95rem;
     margin: 0 0 2rem;
     text-align: left;
+    @include media ('<=phone') {
+        font-size: .95rem;
+        text-align: center;
+        max-width: 40rem;
+    }
 }
 
 .phunds-btn {
@@ -677,21 +790,20 @@ h1 {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    @include media ('<=phone') {
+        display: none;
+    }
 }
 
 .phunds-right {
     width: 27%;
-    .phunds-h2 {
-        @include phunds-h2;
+    @include phunds-h2;
+    @include media ('<=phone') {
+        width: 100%;
+        max-width: 40rem;
+        text-align: center;
+        margin: 0 auto 2rem;
     }
-}
-
-.phunds-p {
-    line-height: 1.8;
-    color: #333;
-    font-size: .95rem;
-    margin: 0 0 2rem;
-    text-align: left;
 }
 
 .phunds-btn {
@@ -767,7 +879,6 @@ h1 {
     background-repeat: no-repeat;
 }
 
-
 .img-4 {
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/card-4.png);
     width: 100%;
@@ -775,12 +886,10 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
 }
-                
 
 #cap-footer {
     background-color: #1c1c1f;
 }
-
 
 .footer-holder {
     max-width: 64rem;

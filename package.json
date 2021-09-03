@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/JesseHines-dev",
   "dependencies": {
+    "include-media": "^1.4.10",
     "jquery": "^3.6.0"
   }
 }
