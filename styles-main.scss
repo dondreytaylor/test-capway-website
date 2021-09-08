@@ -133,10 +133,7 @@ h2 {
     font-size: 32px;
     font-weight: medium;
     margin: 0 auto 1rem;
-    @include media ('<=phone') {
-        font-size: 1.5rem;
-    }
-    @include media ('>phone', '<=26.563rem') {
+    @include media ('<=64em') {
         font-size: 1.5rem;
     }
 
@@ -184,7 +181,7 @@ h2 {
 }
 
 .header-nav {
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
     background-color: #4eb3cc;
     position: fixed;
     top: 0;
@@ -236,7 +233,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
-    @include media ('<=phone') {
+    @include media ('<=60em') {
         width: 10rem;
     }
 }
@@ -284,9 +281,12 @@ a {
     display: inline-block;
 }
 
+
 .nav-options {
     display: inline-block;
     margin: 0 .8rem;
+    border-bottom: .2rem solid transparent;
+    transition: border-bottom-color .25s;
 }
 
 
@@ -514,6 +514,9 @@ h1 {
 
 .capspan-1 {
     @include capspan;
+    @include media ('<=60em') {
+        font-size: 1rem;
+    }
 }
 
 .capcard2 {
@@ -618,6 +621,9 @@ h1 {
     font-size: 1.8rem;
     margin: 0 auto 1rem;
     line-height: 1.5;
+    @include media ('<=64em') {
+        font-size: 1.5rem;
+    }
 }
 
 .apps-inner {
@@ -642,6 +648,9 @@ h1 {
 .card-img {
     background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
     width: 90%;
+    @include media ('<=68.75em') {
+        display: none;
+    }
 }
 
 
@@ -736,6 +745,13 @@ h1 {
     display: block;
     max-width: 23%;
     margin: 0 0 1rem;
+    @include media ('<=64em') {
+        max-width: 49%;
+    }
+    @include media ('<=60em') {
+        max-width:100%;
+        margin:0 auto
+    }
 }
 
 .card-link {
@@ -754,7 +770,7 @@ h1 {
 .section-6 {
     background-color: #a8e1bb;
     padding: 1rem 0 0;
-    @include media ('<=phone') {
+    @include media ('<=68.7em') {
         padding: 5rem 0 0;
     }
 }
@@ -766,14 +782,14 @@ h1 {
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         flex-direction: column;
     }
 }
 
 .phunds-left {
     width: 27%;
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         width: 100%;
         max-width: 40rem;
         margin: 0 auto 2rem;
@@ -782,7 +798,7 @@ h1 {
 
 .phunds-h2 {
     @include phunds-h2();
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -794,7 +810,7 @@ h1 {
     font-size: .95rem;
     margin: 0 0 2rem;
     text-align: left;
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         font-size: .95rem;
         text-align: center;
         max-width: 40rem;
@@ -807,7 +823,7 @@ h1 {
 
 .phunds-mid {
     width: 46%;
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         display: none;
     }
 }
@@ -824,7 +840,7 @@ h1 {
 .phunds-right {
     width: 27%;
     @include phunds-h2;
-    @include media ('<=phone') {
+    @include media ('<=68.75em') {
         width: 100%;
         max-width: 40rem;
         text-align: center;
@@ -849,7 +865,7 @@ h1 {
     width: 90%;
     margin: 0 auto;
     max-width: 64rem;
-    @include media ('<=phone') {
+    @include media ('<=64em') {
         flex-direction: column;
     }
 }
@@ -865,12 +881,9 @@ h1 {
 }
 
 .numbers-p {
-    line-height: 1.8;
-    @include media ('<=phone') {
-        @include media ('<=phone') {
+        @include media ('<=64em') {
             font-size: .9rem;
         }
-    }
 }
 
 .numbers-left {
@@ -878,7 +891,7 @@ h1 {
     margin: 0 auto;
     padding: 3rem 0 0;
     text-align: left;
-    @include media ('<=phone') {
+    @include media ('<=64em') {
         width: 100%;
         max-width: 40rem;
         text-align: center;
@@ -892,7 +905,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    @include media ('<=phone') {
+    @include media ('<=54em') {
         width: 100%;
         max-width: 35rem;
         margin: 0 auto;
@@ -952,7 +965,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include media ('<=phone') {
+    @include media ('<=55em') {
         justify-content: center;
     }
 }
@@ -960,7 +973,7 @@ h1 {
 .logo-social {
     width: 16%;
     margin: 0 0 1rem;
-    @include media ('<=phone') {
+    @include media ('<=55em') {
         width: 15rem;
     }
 }
@@ -973,7 +986,7 @@ h1 {
     background-size: contain;
     background-image: url(https://capway.com/assets/module-core/footers/footer-default/logo.svg);
     margin: 0 0 1rem;
-    @include media ('<=phone') {
+    @include media ('<=55em') {
         margin: 0 auto 1rem;
     }
 }
@@ -1016,18 +1029,21 @@ h1 {
     justify-content: space-between;
     width: 75%;
     flex-wrap: wrap;
-    text-align: left;
-    @include media ('<=phone') {
+    @include media ('<=55em') {
         width: 100%;
         justify-content: center;
     }
-    @include media ('<=55rem') {
-        padding:1rem;
-        text-align:center
+}
+
+.footer-section {
+    margin: 0 0 1rem;
+    @include media ('<=55em') {
+        padding: 1rem;
+        text-align: center;
     }
 }
 
-.footer-inc {
+.footer-company {
     .strong-footer {
         @include strongfooter;
     }

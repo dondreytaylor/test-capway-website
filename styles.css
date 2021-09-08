@@ -13,12 +13,7 @@ h2 {
   font-weight: medium;
   margin: 0 auto 1rem;
 }
-@media (max-width: 320px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 321px) and (max-width: 26.563rem) {
+@media (max-width: 64em) {
   h2 {
     font-size: 1.5rem;
   }
@@ -68,7 +63,7 @@ h2 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .header-nav {
     background-color: #4eb3cc;
     position: fixed;
@@ -121,7 +116,7 @@ h2 {
   background-size: contain;
   background-position: 50%;
 }
-@media (max-width: 320px) {
+@media (max-width: 60em) {
   .nav-logo {
     width: 10rem;
   }
@@ -171,6 +166,8 @@ a {
 .nav-options {
   display: inline-block;
   margin: 0 0.8rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom-color 0.25s;
 }
 
 .container-1 {
@@ -439,6 +436,11 @@ h1 {
   color: #333;
   font-family: "Neue Helvetica", sans-serif;
 }
+@media (max-width: 60em) {
+  .capspan-1 {
+    font-size: 1rem;
+  }
+}
 
 .capcard2 {
   display: inline-block;
@@ -580,6 +582,11 @@ h1 {
   margin: 0 auto 1rem;
   line-height: 1.5;
 }
+@media (max-width: 64em) {
+  #h2-apps {
+    font-size: 1.5rem;
+  }
+}
 
 .apps-inner .app-1 {
   text-decoration: none;
@@ -618,6 +625,11 @@ h1 {
 .card-img {
   background-image: url(https://capway.com/assets/module-site/pages/page-landing/flipped-card.svg);
   width: 90%;
+}
+@media (max-width: 68.75em) {
+  .card-img {
+    display: none;
+  }
 }
 
 .section-4 {
@@ -737,6 +749,17 @@ h1 {
   max-width: 23%;
   margin: 0 0 1rem;
 }
+@media (max-width: 64em) {
+  .learn-card {
+    max-width: 49%;
+  }
+}
+@media (max-width: 60em) {
+  .learn-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 
 .card-link {
   height: 22rem;
@@ -754,7 +777,7 @@ h1 {
   background-color: #a8e1bb;
   padding: 1rem 0 0;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.7em) {
   .section-6 {
     padding: 5rem 0 0;
   }
@@ -768,7 +791,7 @@ h1 {
   margin: 0 auto;
   max-width: 64rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   #phunds-holder {
     flex-direction: column;
   }
@@ -777,7 +800,7 @@ h1 {
 .phunds-left {
   width: 27%;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .phunds-left {
     width: 100%;
     max-width: 40rem;
@@ -792,7 +815,7 @@ h1 {
   line-height: 1.5;
   margin: 0 0 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .phunds-h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -806,7 +829,7 @@ h1 {
   margin: 0 0 2rem;
   text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .phunds-p {
     font-size: 0.95rem;
     text-align: center;
@@ -836,7 +859,7 @@ h1 {
 .phunds-mid {
   width: 46%;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .phunds-mid {
     display: none;
   }
@@ -859,7 +882,7 @@ h1 {
   line-height: 1.5;
   margin: 0 0 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 68.75em) {
   .phunds-right {
     width: 100%;
     max-width: 40rem;
@@ -901,7 +924,7 @@ h1 {
   margin: 0 auto;
   max-width: 64rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 64em) {
   .numbers-holder {
     flex-direction: column;
   }
@@ -919,10 +942,7 @@ h1 {
   }
 }
 
-.numbers-p {
-  line-height: 1.8;
-}
-@media (max-width: 320px) and (max-width: 320px) {
+@media (max-width: 64em) {
   .numbers-p {
     font-size: 0.9rem;
   }
@@ -934,7 +954,7 @@ h1 {
   padding: 3rem 0 0;
   text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 64em) {
   .numbers-left {
     width: 100%;
     max-width: 40rem;
@@ -950,7 +970,7 @@ h1 {
   justify-content: space-evenly;
   flex-direction: row;
 }
-@media (max-width: 320px) {
+@media (max-width: 54em) {
   .numbers-right {
     width: 100%;
     max-width: 35rem;
@@ -1012,7 +1032,7 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 320px) {
+@media (max-width: 55em) {
   .footer-holder {
     justify-content: center;
   }
@@ -1022,7 +1042,7 @@ h1 {
   width: 16%;
   margin: 0 0 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 55em) {
   .logo-social {
     width: 15rem;
   }
@@ -1037,7 +1057,7 @@ h1 {
   background-image: url(https://capway.com/assets/module-core/footers/footer-default/logo.svg);
   margin: 0 0 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 55em) {
   .footer-logo {
     margin: 0 auto 1rem;
   }
@@ -1101,29 +1121,32 @@ h1 {
   justify-content: space-between;
   width: 75%;
   flex-wrap: wrap;
-  text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 55em) {
   .footer-links {
     width: 100%;
     justify-content: center;
   }
 }
-@media (max-width: 55rem) {
-  .footer-links {
+
+.footer-section {
+  margin: 0 0 1rem;
+}
+@media (max-width: 55em) {
+  .footer-section {
     padding: 1rem;
     text-align: center;
   }
 }
 
-.footer-inc .strong-footer {
+.footer-company .strong-footer {
   display: block;
   color: #fff;
   font-family: "Neue Helvetica", sans-serif;
   font-size: 0.85rem;
   margin: 0 0 1rem;
 }
-.footer-inc .sub-section {
+.footer-company .sub-section {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -1132,7 +1155,7 @@ h1 {
   opacity: 0.8;
 }
 @media (max-width: 320px) {
-  .footer-inc {
+  .footer-company {
     padding: 1rem;
     text-align: center;
   }
