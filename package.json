@@ -1,0 +1,18 @@
+{
+  "name": "test-capway-website",
+  "version": "1.0.0",
+  "description": "jh-capway-test",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles.scss:./styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JesseHines-dev/test-capway-website"
+  },
+  "homepage": "https://github.com/JesseHines-dev",
+  "dependencies": {
+    "include-media": "^1.4.10",
+    "jquery": "^3.6.0"
+  }
+}
