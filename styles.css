@@ -57,11 +57,6 @@ h2 {
   position: relative;
   height: inherit;
 }
-@media (max-width: 64em) {
-  .holder-1 {
-    padding: 8rem 0 5rem;
-  }
-}
 
 @media (max-width: 68.75em) {
   .header-nav {
