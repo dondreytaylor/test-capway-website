@@ -1,0 +1,137 @@
+@use './variables' as *;
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+
+  h2 {
+    color: #1c1c1f;
+    font-family: $font-secondary;
+    font-weight: inherit;
+    font-size: 2rem;
+    padding: 5rem 0 2rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+      font-weight: inherit;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 3rem 2rem;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 7px;
+      width: 300px;
+      height: 300px;
+
+      @media (max-width: 950px) {
+        width: 80vw;
+        box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+
+        div {
+          margin-top: -1rem;
+        }
+
+        p {
+          margin-top: -0.5rem;
+        }
+      }
+
+      div {
+        margin-bottom: 2rem;
+      }
+
+      &:nth-of-type(1) {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-debit-cards.png')
+          center center no-repeat;
+        background-size: cover;
+
+        @media (max-width: 950px) {
+          background: #c8e6f3;
+        }
+
+        div {
+          background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/debit-cards.svg')
+            center center no-repeat;
+          background-size: contain;
+          width: 7rem;
+          height: 6rem;
+        }
+      }
+
+      &:nth-of-type(2) {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-withdrawal.png')
+          center center no-repeat;
+        background-size: cover;
+
+        @media (max-width: 950px) {
+          background: #fbe9bc;
+          margin: 2rem 0;
+        }
+
+        div {
+          background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/withdrawal.svg')
+            center center no-repeat;
+          background-size: contain;
+          width: 6rem;
+          height: 6rem;
+          margin-top: 1rem;
+
+          @media (max-width: 950px) {
+            margin-top: -0.5rem;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-money-goals.png')
+          center center no-repeat;
+        background-size: cover;
+
+        @media (max-width: 950px) {
+          background: #a8e1bb;
+        }
+
+        div {
+          background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/money-goals.svg')
+            center center no-repeat;
+          background-size: contain;
+          width: 7rem;
+          height: 6rem;
+        }
+      }
+
+      p {
+        color: #333;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 80%;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  button {
+    background-color: $btn-bg-secondary;
+    color: $btn-text-secondary;
+    border: none;
+    border-radius: $btn-border-radius;
+    font-family: $font-secondary;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1.2rem 4.8rem;
+    margin: 0.2rem 0 5rem;
+  }
+}

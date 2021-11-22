@@ -1,0 +1,214 @@
+@use './variables' as *;
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4.7rem 0 4rem;
+
+  @media (max-width: 1065px) {
+    padding: 2rem 0 6.5rem;
+  }
+
+  @media (max-width: 1015px) {
+    flex-direction: column;
+    padding: 2rem 0.5rem 0;
+  }
+
+  @media (max-width: 575px) {
+    height: 900px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #1c1c1f;
+    width: 60vw;
+    max-width: 450px;
+    margin-left: -8rem;
+    margin-top: 1rem;
+
+    @media (max-width: 1260px) {
+      margin-top: 4rem;
+      max-width: 360px;
+    }
+
+    @media (max-width: 1065px) {
+      margin-top: 6rem;
+      max-width: 320px;
+    }
+
+    @media (max-width: 1015px) {
+      width: 90vw;
+      max-width: 620px;
+      text-align: center;
+      margin: 3rem auto 1rem;
+    }
+
+    h2 {
+      width: 100%;
+      font-weight: inherit;
+      font-family: $font-main;
+      font-size: 2.2rem;
+      text-align: left;
+      margin-bottom: 1.6rem;
+
+      @media (max-width: 1015px) {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+
+      &:nth-of-type(1) {
+        margin-bottom: 1.1rem;
+      }
+
+      @media (max-width: 1015px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &__visual {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 450px;
+    margin-left: 3rem;
+
+    @media (max-width: 1065px) {
+      margin-top: -1rem;
+    }
+
+    @media (max-width: 1015px) {
+      width: 400px;
+      height: 650px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 575px) {
+      width: 450px;
+      height: 550px;
+      padding-left: 0.5rem;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 220px;
+
+      &__1 {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-1.png')
+          center center no-repeat;
+        background-size: contain;
+        width: 220px;
+        height: 230px;
+        margin-top: 3.6rem;
+
+        @media (max-width: 1065px) {
+          width: 180px;
+          height: 190px;
+        }
+
+        @media (max-width: 1015px) {
+          width: 270px;
+          height: 280px;
+          margin-top: 5rem;
+        }
+
+        @media (max-width: 575px) {
+          width: 220px;
+          height: 230px;
+        }
+      }
+
+      &__2 {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-2.png')
+          center center no-repeat;
+        background-size: contain;
+        width: 220px;
+        height: 170px;
+        margin-top: -1rem;
+
+        @media (max-width: 1065px) {
+          width: 180px;
+          height: 190px;
+          margin-top: -2.5rem;
+        }
+
+        @media (max-width: 1015px) {
+          width: 270px;
+          height: 290px;
+          margin-top: -3.5rem;
+        }
+
+        @media (max-width: 575px) {
+          width: 220px;
+          height: 230px;
+          margin-top: -2.8rem;
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      width: 230px;
+
+      &__1 {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-3.png')
+          center center no-repeat;
+        background-size: contain;
+        width: 230px;
+        height: 175px;
+
+        @media (max-width: 1065px) {
+          width: 180px;
+          height: 190px;
+        }
+
+        @media (max-width: 1015px) {
+          width: 270px;
+          height: 270px;
+        }
+
+        @media (max-width: 575px) {
+          width: 220px;
+          height: 230px;
+        }
+      }
+
+      &__2 {
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-4.png')
+          center center no-repeat;
+        background-size: contain;
+        width: 230px;
+        height: 230px;
+
+        @media (max-width: 1065px) {
+          width: 180px;
+          height: 190px;
+          margin-top: -1.9rem;
+        }
+
+        @media (max-width: 1015px) {
+          width: 270px;
+          height: 280px;
+        }
+
+        @media (max-width: 575px) {
+          width: 220px;
+          height: 230px;
+        }
+      }
+    }
+  }
+}

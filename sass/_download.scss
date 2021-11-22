@@ -1,0 +1,116 @@
+@use './variables' as *;
+
+.download {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      45deg,
+      rgba(0, 204, 112, 0.8823529412),
+      rgba(0, 173, 226, 0.8352941176)
+    )
+    center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 3.5rem 0 4rem;
+
+  &__card-image {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/flipped-card.png')
+      center center no-repeat;
+    background-size: contain;
+    width: 310px;
+    height: 310px;
+    margin-right: 3rem;
+
+    @media (min-width: 1700px) {
+      left: 10%;
+    }
+
+    @media (max-width: 1500px) {
+      left: 3%;
+    }
+
+    @media (max-width: 1350px) {
+      left: 0%;
+    }
+
+    @media (max-width: 1280px) {
+      width: 290px;
+      height: 290px;
+      left: -1%;
+    }
+
+    @media (max-width: 1230px) {
+      left: -2%;
+    }
+
+    @media (max-width: 1180px) {
+      left: -3.5%;
+    }
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-family: $font-secondary;
+      font-size: 1.8rem;
+      font-weight: inherit;
+      color: #fff;
+      margin: 0 0 2.1rem;
+      text-align: center;
+      line-height: 1.4;
+
+      @media (max-width: 1020px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 590px) {
+        margin: 0 1.5rem 2.1rem;
+      }
+    }
+
+    &__links {
+      div {
+        display: inline-block;
+        width: 200px;
+        height: 64px;
+        cursor: pointer;
+
+        @media (max-width: 536px) {
+          display: block;
+        }
+      }
+    }
+
+    &__google-play {
+      background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/google-play.svg')
+        center center no-repeat;
+      background-size: contain;
+      margin-right: 1.8rem;
+
+      @media (max-width: 536px) {
+        margin: 0.3rem 1.8rem 1.8rem 0;
+      }
+    }
+
+    &__itunes {
+      background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/app-store.svg')
+        center center no-repeat;
+      background-size: contain;
+    }
+  }
+}

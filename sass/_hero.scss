@@ -1,0 +1,375 @@
+@use './variables' as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      230deg,
+      $gradient-stop-1 20%,
+      $gradient-stop-2 80%
+    )
+    center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+
+    @media (max-width: 1285px) {
+      width: 90%;
+    }
+
+    @media (max-width: 1080px) {
+      width: 95%;
+    }
+
+    &__logo {
+      width: 10rem;
+      height: 3rem;
+      background: url('https://web.dev.cpwys.co./assets/module-site/headers/header-site-transparent/logo.svg')
+        center center no-repeat;
+      background-size: contain;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      cursor: pointer;
+    }
+
+    &__dropdown {
+      &__icon {
+        display: flex;
+        justify-self: flex-start;
+
+        background: url('https://capway.com/assets/module-site/pages/page-landing/menu-icon-light.svg')
+          center center no-repeat;
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        margin-top: -0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &__content {
+        position: absolute;
+        display: none;
+      }
+
+      @media (min-width: 1100px) {
+        display: none;
+      }
+    }
+
+    &__navbar {
+      @media (max-width: 1099px) {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          position: relative;
+          padding: 0 1.3rem;
+          font-size: 0.98rem;
+
+          &:nth-of-type(-n + 5):hover {
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 1.6rem;
+          }
+
+          &:nth-of-type(2)::after {
+            content: '';
+            width: 0.7rem;
+            height: 0.7rem;
+            background: url('https://web.dev.cpwys.co./assets/module-site/headers/header-site-transparent/chevron-down-white.svg')
+              center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0.4rem;
+            right: 0.3rem;
+          }
+        }
+      }
+    }
+
+    &__btn {
+      background-color: $btn-bg-primary;
+      color: $btn-text-primary;
+      padding: 1rem 2.2rem;
+      border-radius: $btn-border-radius;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 500;
+      align-self: center;
+    }
+  }
+
+  &__action {
+    display: flex;
+    width: 100%;
+    max-width: 1380px;
+    margin: 3.2rem 0 4rem;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 680px) {
+      margin-left: 0;
+    }
+
+    &__text {
+      margin: 0.5rem 0 0 5vw;
+
+      @media (min-width: 1281px) {
+      }
+
+      @media (max-width: 1280px) {
+        margin-left: 5vw;
+      }
+
+      @media (max-width: 1080px) {
+        margin-left: 21vw;
+      }
+
+      @media (max-width: 1024px) {
+        margin-left: 18vw;
+        margin-top: -1rem;
+      }
+
+      @media (max-width: 900px) {
+        margin-left: 12vw;
+      }
+
+      @media (max-width: 680px) {
+        margin-left: 5vw;
+      }
+
+      h1 {
+        font-weight: inherit;
+        font-size: 2.3rem;
+
+        @media (min-width: 1280px) {
+          font-size: 2.6rem;
+        }
+
+        @media (min-width: 1421px) {
+          font-size: 3.5rem;
+        }
+
+        @media (max-width: 1420px) {
+          font-family: $font-secondary;
+        }
+
+        @media (max-width: 1080px) {
+          font-size: 3.1rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: 510px) {
+          font-family: $font-secondary;
+        }
+      }
+
+      h2 {
+        font-weight: inherit;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-top: 1.2rem;
+        opacity: 0.8;
+        width: 500px;
+
+        @media (min-width: 1281px) {
+          font-size: 1.5rem;
+        }
+
+        @media (min-width: 1420px) {
+          width: 500px;
+        }
+
+        @media (max-width: 1280px) {
+          width: 400px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      sup {
+        font-size: 0.7em;
+      }
+
+      &__email {
+        margin: 2.5rem 0;
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 22vw;
+          padding: 1rem 0 1rem 0.8rem;
+          outline: none;
+          border: none;
+          border-top-left-radius: $btn-border-radius;
+          border-bottom-left-radius: $btn-border-radius;
+
+          &::placeholder {
+            opacity: 0.4;
+          }
+
+          @media (min-width: 1400px) {
+            width: 335px;
+          }
+
+          @media (max-width: 1399px) {
+            width: 23vw;
+          }
+
+          @media (max-width: 1080px) {
+            width: 34vw;
+          }
+
+          @media (max-width: 1024px) {
+            width: 36vw;
+          }
+
+          @media (max-width: 965px) {
+            width: 39vw;
+          }
+
+          @media (max-width: 900px) {
+            width: 47vw;
+          }
+
+          @media (max-width: 510px) {
+            width: 54vw;
+          }
+        }
+
+        button {
+          background: $btn-bg-primary;
+          color: $btn-text-primary;
+          border: 1px solid $btn-bg-primary;
+          border-top-right-radius: $btn-border-radius;
+          border-bottom-right-radius: $btn-border-radius;
+          padding: 0.9275rem 1.5rem;
+          margin-left: -0.4rem;
+          font-size: 0.9rem;
+          vertical-align: middle;
+
+          @media (min-width: 1400px) {
+            padding: 0.9275rem 2.3rem;
+          }
+
+          @media (max-width: 1080px) {
+            padding: 0.915rem 3rem;
+          }
+
+          @media (max-width: 1024px) {
+            margin-left: -0.6rem;
+            padding: 0.91rem 3rem;
+          }
+
+          @media (max-width: 800px) {
+            padding: 0.905rem 6.5%;
+          }
+        }
+      }
+
+      &__downloads {
+        font-size: 0.8rem;
+        max-width: 460px;
+
+        @media (min-width: 1420px) {
+          max-width: unset;
+        }
+
+        @media (max-width: 1080px) {
+          max-width: unset;
+        }
+
+        @media (max-width: 510px) {
+          max-width: 440px;
+        }
+
+        a {
+          opacity: 0.8;
+        }
+
+        span {
+          margin: 0 0.5rem 0 0.5rem;
+          font-size: 0.6rem;
+        }
+      }
+
+      &__bullet {
+        margin: 0 0.7rem;
+      }
+    }
+
+    &__visual {
+      width: 640px;
+      height: 650px;
+      padding-left: 3rem;
+
+      @media (min-width: 1420px) {
+        padding-left: 3.8rem;
+      }
+
+      @media (max-width: 1280px) {
+        width: 550px;
+        height: 560px;
+        padding: 0.2rem;
+        padding-right: 5%;
+      }
+
+      @media (max-width: 1080px) {
+        margin: 3rem 0 1.5rem 15rem;
+      }
+
+      @media (max-width: 900px) {
+        margin-left: 13vw;
+      }
+
+      @media (max-width: 680px) {
+        margin-left: 7vw;
+      }
+
+      @media (max-width: 625px) {
+        margin-top: 4rem;
+        margin-left: 21vw;
+        width: 350px;
+        height: 360px;
+      }
+
+      @media (max-width: 510px) {
+        margin-top: 3rem;
+        margin-left: 13vw;
+      }
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/phone-card.png')
+          center center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
