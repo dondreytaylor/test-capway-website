@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script defer src="index.js"></script>
     <title>CapWay Landing Page</title>
 </head>
 
@@ -157,25 +158,14 @@
         <h2>Get to Know Money Better</h2>
 
         <div class="learn-more__categories">
-            <span>Articles</span>
-            <span>Videos</span>
-            <span>Facts & Hacks</span>
-            <span>Infographics</span>
-            <span>Money Meanings</span>
+            <span data-type="shortarticle" class="category">Articles</span>
+            <span data-type="video" class="category">Videos</span>
+            <span data-type="knowmoneyfacts" class="category">Facts & Hacks</span>
+            <span data-type="infographics" class="category">Infographics</span>
+            <span data-type="trending" class="category">Money Meanings</span>
         </div>
 
-        <div class="learn-more__grid">
-            <div class="learn-more__grid__item">
-            </div>
-
-            <div class="learn-more__grid__item">
-            </div>
-
-            <div class="learn-more__grid__item">
-            </div>
-
-            <div class="learn-more__grid__item">
-            </div>
+        <div id="grid-container" class="learn-more__grid">
         </div>
 
         <button>Learn More About Money</button>
@@ -192,7 +182,6 @@
             <a></a>
         </div>
     </section>
-
 
     <section class="stats">
         <div class="stats__text">
@@ -296,7 +285,8 @@
 
             <p>1. For Money Account holders with a negative balance, the CapWay debit card will
                 go into freeze until funds are deposited to bring account back to current.
-                <a>See terms and conditions</a></p>
+                <a>See terms and conditions</a>
+            </p>
 
             <p>2. Sending or receiving money from other CapWay account holders will be instant.
                 Transfers from other accounts could take up to 48 hours, depending on the
