@@ -1,0 +1,167 @@
+@use './variables' as *;
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151519;
+  height: 510px;
+
+  @media (max-width: 1280px) {
+    height: 530px;
+  }
+
+  @media (max-width: 1100px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+      'phunds'
+      'money-room'
+      'visual';
+    grid-gap: 0px;
+    height: auto;
+    padding-top: 5.5rem;
+
+    div {
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    display: flex;
+
+    @media (max-width: 1100px) {
+      font-size: 1.5rem;
+    }
+
+    &__container {
+      width: 80%;
+      height: 100%;
+
+      @media (max-width: 1100px) {
+        text-align: center;
+        width: 80%;
+      }
+
+      @media (max-width: 600px) {
+        width: 90%;
+      }
+
+      h2 {
+        font-weight: inherit;
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+
+        @media (max-width: 1100px) {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      button {
+        background-color: $btn-bg-primary;
+        color: $btn-text-primary;
+        border-radius: $btn-border-radius;
+        border: none;
+        padding: 1.2rem 0;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 100%;
+
+        @media (max-width: 1100px) {
+          width: 320px;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  &__phunds {
+    justify-content: flex-end;
+    width: 30%;
+    max-width: 360px;
+    height: 70%;
+
+    @media (min-width: 1500px) {
+      margin-left: 2.5rem;
+    }
+
+    @media (max-width: 1280px) {
+      height: 83%;
+
+      h2 {
+        width: 290px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      grid-area: phunds;
+      width: unset;
+      height: unset;
+      max-width: 800px;
+
+      h2 {
+        width: unset;
+      }
+    }
+  }
+
+  &__visual {
+    background: url('https://web.dev.cpwys.co./assets/module-site/pages/page-landing/partnership.png')
+      center bottom no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 100%;
+
+    @media (max-width: 1280px) {
+      width: 38%;
+    }
+
+    @media (max-width: 1100px) {
+      grid-area: visual;
+      width: 55%;
+      height: 500px;
+      padding-top: 0.7rem;
+    }
+
+    @media (max-width: 960px) {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  &__money-room {
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 30%;
+    max-width: 360px;
+    height: 70%;
+    margin-top: 0;
+
+    @media (min-width: 1500px) {
+      margin-right: 2.5rem;
+    }
+
+    @media (max-width: 1280px) {
+      height: 75%;
+    }
+
+    @media (max-width: 1100px) {
+      grid-area: money-room;
+      width: unset;
+      height: unset;
+      max-width: 800px;
+      padding-top: 1rem;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script defer src="index.js"></script>
+    <title>CapWay Landing Page</title>
+</head>
+
+<body>
+    <section class="hero">
+        <header class="hero__header">
+            <div class="hero__header__logo"></div>
+
+            <div class="hero__header__dropdown">
+                <a>
+                    <div class="hero__header__dropdown__icon"></div>
+                </a>
+                <div class="hero__header__dropdown__content">
+                    <a>Benefits</a>
+                    <a>Learn Money</a>
+                    <a>Partner</a>
+                    <a>Why CapWay + More</a>
+                    <a>Sign In</a>
+                    <a>Sign Up</a>
+                </div>
+            </div>
+
+            <nav class="hero__header__navbar">
+                <ul>
+                    <li>
+                        <a class="link link--light">Benefits</a>
+                    </li>
+                    <li>
+                        <a class="link link--light">Learn Money</a>
+                    </li>
+                    <li>
+                        <a class="link link--light">Partner</a>
+                    </li>
+                    <li>
+                        <a class="link link--light">Why CapWay + More</a>
+                    </li>
+                    <li>
+                        <a class="link link--light">Sign In</a>
+                    </li>
+                    <li>
+                        <a class="hero__header__btn">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero__action">
+            <div class="hero__action__text">
+                <h1>Creating Financial <br /> Access & Opportunities</h1>
+
+                <h2>No overdraft or minimum balance fees.<sup>1</sup> Send
+                    and receive money.<sup>2</sup> Get paid early.<sup>3</sup> Achieve
+                    Money Goals.<sup>4</sup> Learn money.<sup>5</sup>...and
+                    <a class="link--dark">more</a>.
+                </h2>
+
+                <div class="hero__action__text__email">
+                    <input id="email-input" type="text" name="email-input" placeholder="Enter email address" />
+                    <button type="submit" onclick="handleSubmit()">Sign Me Up</button>
+                </div>
+
+                <div class="hero__action__text__downloads">
+                    <a class="link--light">Download for iOS</a><span>&#8226</span>
+                    <a class="link--light">Download for Android</a><span>&#8226</span>
+                    <a class="link--light">Why You Should Choose CapWay</a>
+                </div>
+            </div>
+
+            <div class="hero__action__visual">
+                <div class="hero__action__visual__image"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Money Account with CapWay</h2>
+
+        <div class="benefits__container">
+            <div class="benefits__container__item">
+                <div class="benefits_container__icon"></div>
+                <p>Debit card to access the cashless economy.</p>
+            </div>
+
+            <div class="benefits__container__item">
+                <div class="benefits__container__icon"></div>
+                <p>Withdraw money at ATMs,
+                    plus multiple options to deposit funds.</p>
+            </div>
+
+            <div class="benefits__container__item">
+                <div class="benefits__container__icon"></div>
+                <p>Create and save money towards your Money Goals.</p>
+            </div>
+        </div>
+
+        <button>See All Account Benefits</button>
+    </section>
+
+    <section class="download">
+        <div class="download__card-image"></div>
+
+        <div class="download__options">
+            <h2>Download CapWay and Start Your Money Account.</h2>
+
+            <div class="download__options__links">
+                <a>
+                    <div class="download__options__google-play"></div>
+                </a>
+
+                <a>
+                    <div class="download__options__itunes"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content__phunds content__text">
+            <div class="content__text__container">
+                <h2>Phunds: Financial Education Programs</h2>
+                <p>Available to individuals, businesses, and organizations
+                    - including community organizations, schools,
+                    workforce, and municipalities. Increase your knowledge of
+                    money by learning from the 20+ financial
+                    topics covered in the different Phunds' programs.</p>
+                <button>Find Out More</button>
+            </div>
+        </div>
+
+        <div class="content__visual"></div>
+
+        <div class="content__money-room content__text">
+            <div class="content__text__container">
+                <h2>The Money Room</h2>
+                <p>The master class of money. Engage and
+                    learn money from the financial teachings
+                    through our collaborations with brands
+                    and influencers.</p>
+                <button>Download App</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="learn-more">
+        <h2>Get to Know Money Better</h2>
+
+        <div class="learn-more__categories">
+            <span data-type="shortarticle" class="category">Articles</span>
+            <span data-type="video" class="category">Videos</span>
+            <span data-type="knowmoneyfacts" class="category">Facts & Hacks</span>
+            <span data-type="infographics" class="category">Infographics</span>
+            <span data-type="trending" class="category">Money Meanings</span>
+        </div>
+
+        <div id="grid-container" class="learn-more__grid">
+        </div>
+
+        <button>Learn More About Money</button>
+    </section>
+
+    <section class="featured">
+        <h2>As Featured In</h2>
+
+        <div class="featured__container">
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats__text">
+            <h2>Numbers Don't Lie</h2>
+            <div>
+                <p>CapWay was created to provide fair financial access and opportunities
+                    to everyone, especially those misunderstood, overlooked, and underserved
+                    by the traditional banking system.</p>
+
+                <p>
+                    Cashless, contactless, banking deserts - the way we bank and handle our finances
+                    is changing. Whether you are looking for your first debit card and Money Account
+                    or looking for a financial option with a mission to guide and assist you in your
+                    economic growth, CapWay is here.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats__visual">
+            <div class="stats__visual__left">
+                <div class="stats__visual__left__1"></div>
+                <div class="stats__visual__left__2"></div>
+            </div>
+
+            <div class="stats__visual__right">
+                <div class="stats__visual__right__1"></div>
+                <div class="stats__visual__right__2"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__visuals">
+                <div class="logo"></div>
+
+                <div class="socials">
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div>
+                    <h2>Company</h2>
+                    <a>About</a>
+                    <a>Events</a>
+                    <a>Shop</a>
+                    <a>Press & Media</a>
+                    <a>Sign Up</a>
+                </div>
+
+                <div>
+                    <h2>Money Account</h2>
+                    <a>Open Account</a>
+                    <a>Benefits</a>
+                    <a>Why CapWay</a>
+                    <a>Deposit Money</a>
+                    <a>Find ATM</a>
+                </div>
+
+                <div>
+                    <h2>Learn Money</h2>
+                    <a>Learn Money</a>
+                    <a>Phunds</a>
+                    <a>Money Room</a>
+                    <a>Request Content</a>
+                </div>
+
+                <div>
+                    <h2>Work with CapWay</h2>
+                    <a>Partner</a>
+                    <a>Contributions</a>
+                    <a>Ambassador</a>
+                    <a>Career</a>
+                </div>
+
+                <div>
+                    <h2>Support</h2>
+                    <a>Legal</a>
+                    <a>FAQ</a>
+                    <a>Contact Us</a>
+                </div>
+
+                <div>
+                    <h2>Download</h2>
+                    <a>for iOS</a>
+                    <a>for Android</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__container">
+            <p>The CapWay, Inc Debit Visa Card is issued by Metropolitan Commercial Bank
+                (Member FDIC) pursuant to a license from Visa U.S.A. Inc. “Metropolitan
+                Commercial Bank” and “Metropolitan” are registered trademarks of Metropolitan
+                Commercial Bank ©2014.</p>
+
+            <p>1. For Money Account holders with a negative balance, the CapWay debit card will
+                go into freeze until funds are deposited to bring account back to current.
+                <a>See terms and conditions</a>
+            </p>
+
+            <p>2. Sending or receiving money from other CapWay account holders will be instant.
+                Transfers from other accounts could take up to 48 hours, depending on the
+                financial institution.</p>
+
+            <p>3. Early access to funds requires direct deposit. Early payment is not guaranteed
+                and is dependent on the timing of payer's submission of deposits. We generally post
+                such deposits on the day they are received which may be up to 2 days earlier than
+                the payer's scheduled payment date.</p>
+
+            <p>4. Money Goals allows account holders to save money towards financial goals created
+                within the CapWay platform. Funds can be transferred from your Money Account or
+                saved through the rounding up of your transactions from purchases.</p>
+
+            <p>5. CapWay offers financial content through Learn Money free of charge, but may
+                include advertisements through affiliates. Phunds, CapWay's literacy program
+                and session, is paid content or co-branded content.</p>
+        </div>
+
+        <div class="footer__copyright footer__container">
+            <div>
+                &copy; 2019-2021 CapWay Inc. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

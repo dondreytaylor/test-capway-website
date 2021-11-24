@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+@use './hero';
+@use './benefits';
+@use './download';
+@use './content';
+@use './learn-more';
+@use './featured';
+@use './stats';
+@use './footer';
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $font-main;
+  font-weight: normal;
+  color: #fff;
+  font-size: 16px;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link {
+  &--dark {
+    color: #181616;
+  }
+
+  &--light {
+    color: #fff;
+  }
+}
+
+button {
+  cursor: pointer;
+}
