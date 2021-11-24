@@ -185,6 +185,10 @@
         @media (max-width: 510px) {
           font-family: $font-secondary;
         }
+
+        @media (max-width: 440px) {
+          font-size: 2.4rem;
+        }
       }
 
       h2 {
@@ -289,6 +293,10 @@
           @media (max-width: 800px) {
             padding: 0.905rem 6.5%;
           }
+
+          @media (max-width: 440px) {
+            padding: 0.905rem 5%;
+          }
         }
       }
 
@@ -306,6 +314,10 @@
 
         @media (max-width: 510px) {
           max-width: 440px;
+        }
+
+        @media (max-width: 440px) {
+          max-width: 410px;
         }
 
         a {
@@ -362,6 +374,12 @@
         margin-top: 3rem;
         margin-left: 13vw;
       }
+
+      @media (max-width: 440px) {
+        margin-left: 9vw;
+      }
+
+      
 
       &__image {
         width: 100%;

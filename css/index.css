@@ -176,6 +176,11 @@
     font-family: "HelveticaNeue-Light";
   }
 }
+@media (max-width: 440px) {
+  .hero__action__text h1 {
+    font-size: 2.4rem;
+  }
+}
 .hero__action__text h2 {
   font-weight: inherit;
   font-size: 1.2rem;
@@ -290,6 +295,11 @@
     padding: 0.905rem 6.5%;
   }
 }
+@media (max-width: 440px) {
+  .hero__action__text__email button {
+    padding: 0.905rem 5%;
+  }
+}
 .hero__action__text__downloads {
   font-size: 0.8rem;
   max-width: 460px;
@@ -307,6 +317,11 @@
 @media (max-width: 510px) {
   .hero__action__text__downloads {
     max-width: 440px;
+  }
+}
+@media (max-width: 440px) {
+  .hero__action__text__downloads {
+    max-width: 410px;
   }
 }
 .hero__action__text__downloads a {
@@ -364,6 +379,11 @@
   .hero__action__visual {
     margin-top: 3rem;
     margin-left: 13vw;
+  }
+}
+@media (max-width: 440px) {
+  .hero__action__visual {
+    margin-left: 9vw;
   }
 }
 .hero__action__visual__image {
@@ -826,6 +846,7 @@
 .learn-more__grid .grid__item {
   width: 100%;
   height: 346px;
+  cursor: pointer;
   border-top-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
@@ -1087,6 +1108,11 @@
     padding-left: 0.5rem;
   }
 }
+@media (max-width: 440px) {
+  .stats__visual {
+    margin-left: -1rem;
+  }
+}
 .stats__visual__left {
   display: flex;
   flex-direction: column;
@@ -1119,6 +1145,12 @@
     height: 230px;
   }
 }
+@media (max-width: 440px) {
+  .stats__visual__left__1 {
+    width: 200px;
+    height: 220px;
+  }
+}
 .stats__visual__left__2 {
   background: url("https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-2.png") center center no-repeat;
   background-size: contain;
@@ -1145,6 +1177,12 @@
     width: 220px;
     height: 230px;
     margin-top: -2.8rem;
+  }
+}
+@media (max-width: 440px) {
+  .stats__visual__left__2 {
+    width: 200px;
+    height: 220px;
   }
 }
 .stats__visual__right {
@@ -1176,6 +1214,12 @@
     height: 230px;
   }
 }
+@media (max-width: 440px) {
+  .stats__visual__right__1 {
+    width: 200px;
+    height: 220px;
+  }
+}
 .stats__visual__right__2 {
   background: url("https://web.dev.cpwys.co./assets/module-site/pages/page-landing/card-4.png") center center no-repeat;
   background-size: contain;
@@ -1199,6 +1243,12 @@
   .stats__visual__right__2 {
     width: 220px;
     height: 230px;
+  }
+}
+@media (max-width: 440px) {
+  .stats__visual__right__2 {
+    width: 200px;
+    height: 220px;
   }
 }
 
