@@ -14,6 +14,7 @@ $mq_xs: 0px;
 @import "_text";
 @import "_header";
 @import "_footer";
+@import "_benefits";
 
 @font-face {
   font-family: Helvetica Neue;
@@ -27,4 +28,9 @@ $mq_xs: 0px;
 .flex_row {
   display: flex;
   flex-direction: row;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }

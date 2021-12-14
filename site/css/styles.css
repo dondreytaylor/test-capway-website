@@ -92,6 +92,8 @@ input {
   box-shadow: 0 2px 4px #0000001a;
   white-space: nowrap;
   height: 3rem;
+  display: flex;
+  width: 90%;
 }
 .input_group input {
   height: inherit;
@@ -115,6 +117,10 @@ input {
     font-size: 2.2rem;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
   p {
     font-size: 1.1rem;
   }
@@ -122,6 +128,10 @@ input {
 @media (min-width: 375px) {
   h1 {
     font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   p {
@@ -133,6 +143,10 @@ input {
     font-size: 2.2rem;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
   p {
     font-size: 1.2rem;
   }
@@ -140,6 +154,10 @@ input {
 @media (min-width: 1080px) {
   h1 {
     font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   p {
@@ -151,6 +169,10 @@ input {
     font-size: 2.6rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
   p {
     font-size: 1.5rem;
   }
@@ -158,6 +180,10 @@ input {
 @media (min-width: 1425px) {
   h1 {
     font-size: 3.7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   p {
@@ -198,6 +224,50 @@ footer > div {
   font-size: smaller;
 }
 
+.section_benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.section_benefits > h2 {
+  margin-bottom: 3rem;
+}
+
+.benefit_feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 19rem;
+  height: 19rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.benefit_card_content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.debit_card {
+  background-image: url("../assets/card-debit-cards.png");
+}
+
+.withdrawal {
+  background-image: url("../assets/card-withdrawal.png");
+}
+
+.goals {
+  background-image: url("../assets/card-money-goals.png");
+}
+
 @font-face {
   font-family: Helvetica Neue;
   src: url(../assets/HelveticaNeue-Regular.ttf) format("truetype");
@@ -209,6 +279,11 @@ footer > div {
 .flex_row {
   display: flex;
   flex-direction: row;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

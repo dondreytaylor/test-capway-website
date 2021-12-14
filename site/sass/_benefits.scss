@@ -1,0 +1,43 @@
+.section_benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  > h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.benefit_feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 19rem;
+  height: 19rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.benefit_card_content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.debit_card {
+  background-image: url("../assets/card-debit-cards.png");
+}
+
+.withdrawal {
+  background-image: url("../assets/card-withdrawal.png");
+}
+
+.goals {
+  background-image: url("../assets/card-money-goals.png");
+}

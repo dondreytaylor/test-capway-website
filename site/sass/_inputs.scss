@@ -9,6 +9,8 @@ input {
   box-shadow: 0 2px 4px #0000001a;
   white-space: nowrap;
   height: 3rem;
+  display: flex;
+  width: 90%;
   input {
     height: inherit;
     width: 100%;
