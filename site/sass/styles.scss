@@ -1,0 +1,30 @@
+/*Media query min widths*/
+$mq_xxl: 1425px;
+$mq_xl: 1280px;
+$mq_lg: 1080px;
+$mq_md: 768px;
+$mq_sm: 375px;
+$mq_xs: 0px;
+
+@import "_colors";
+@import "_button";
+@import "_logos";
+@import "_hero";
+@import "_inputs";
+@import "_text";
+@import "_header";
+@import "_footer";
+
+@font-face {
+  font-family: Helvetica Neue;
+  src: url(../assets/HelveticaNeue-Regular.ttf) format("truetype");
+}
+
+* {
+  font-family: Helvetica Neue;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}

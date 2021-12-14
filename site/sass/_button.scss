@@ -1,0 +1,19 @@
+button {
+  box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.95rem 0.5rem;
+  text-align: center;
+}
+
+.btn_primary {
+  background-color: $btn_primary;
+  color: $btn_primary_text;
+}
+
+.btn_secondary {
+  background-color: $btn_secondary;
+  color: $btn_secondary_text;
+}

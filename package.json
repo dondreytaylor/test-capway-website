@@ -1,0 +1,24 @@
+{
+  "name": "test-capway-website",
+  "version": "1.0.0",
+  "description": "![CapWay](readme-assets/capway.png)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass site/sass/styles.scss site/styles/styles.css",
+    "sasswatch":"sass --watch site/sass:site/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobwban/test-capway-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobwban/test-capway-website/issues"
+  },
+  "homepage": "https://github.com/jacobwban/test-capway-website#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

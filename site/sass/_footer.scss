@@ -1,0 +1,12 @@
+footer {
+  background-image: $bg_gradient;
+  height: 42px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  > div {
+    width: 80%;
+    font-size: smaller;
+  }
+}

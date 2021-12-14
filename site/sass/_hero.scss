@@ -1,0 +1,49 @@
+.section_hero {
+  display: flex;
+  flex-direction: column;
+  background-image: $bg_gradient;
+  color: #fff;
+}
+
+.section_hero_content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.sign_up {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.hero_image {
+  display: flex;
+  flex: 1.25;
+  height: 648px;
+  width: 632px;
+  background-image: url(https://web.dev.cpwys.co/assets/module-site/pages/page-landing/phone-card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: $mq_lg) {
+  .section_hero_content {
+    flex-direction: column;
+  }
+  .hero_image {
+    min-height: 576px;
+    min-width: 576px;
+    margin: 0 auto;
+  }
+}

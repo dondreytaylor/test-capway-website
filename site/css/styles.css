@@ -1,0 +1,214 @@
+/*Media query min widths*/
+button {
+  box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.95rem 0.5rem;
+  text-align: center;
+}
+
+.btn_primary {
+  background-color: #f8d88b;
+  color: #4a4a4a;
+}
+
+.btn_secondary {
+  background-color: #00ace2;
+  color: #fff;
+}
+
+.logo_white {
+  height: 30px;
+  width: 176px;
+  background-image: url(https://web.dev.cpwys.co/assets/module-site/headers/header-site-transparent/logo.svg);
+}
+
+.logo_color {
+  height: 30px;
+  width: 173px;
+  background-image: url(https://web.dev.cpwys.co/assets/module-core/footers/footer-default/logo.svg);
+}
+
+.section_hero {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(230deg, #00cc71 20%, #00ace2 80%);
+  color: #fff;
+}
+
+.section_hero_content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.sign_up {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sign_up h1 {
+  margin-bottom: 10px;
+}
+.sign_up p {
+  margin-bottom: 10px;
+}
+
+.hero_image {
+  display: flex;
+  flex: 1.25;
+  height: 648px;
+  width: 632px;
+  background-image: url(https://web.dev.cpwys.co/assets/module-site/pages/page-landing/phone-card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 1080px) {
+  .section_hero_content {
+    flex-direction: column;
+  }
+
+  .hero_image {
+    min-height: 576px;
+    min-width: 576px;
+    margin: 0 auto;
+  }
+}
+input {
+  background-color: #fff;
+  padding-left: 1rem;
+  line-height: 1;
+}
+
+.input_group {
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 4px #0000001a;
+  white-space: nowrap;
+  height: 3rem;
+}
+.input_group input {
+  height: inherit;
+  width: 100%;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.input_group button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  box-shadow: none;
+  position: relative;
+  left: -4px;
+  height: inherit;
+}
+
+@media (min-width: 0px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 375px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1425px) {
+  h1 {
+    font-size: 3.7rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 4.5rem;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.header_menu nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer {
+  background-image: linear-gradient(230deg, #00cc71 20%, #00ace2 80%);
+  height: 42px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  width: 80%;
+  font-size: smaller;
+}
+
+@font-face {
+  font-family: Helvetica Neue;
+  src: url(../assets/HelveticaNeue-Regular.ttf) format("truetype");
+}
+* {
+  font-family: Helvetica Neue;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=styles.css.map */

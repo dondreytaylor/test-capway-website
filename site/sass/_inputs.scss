@@ -1,0 +1,28 @@
+input {
+  background-color: #fff;
+  padding-left: 1rem;
+  line-height: 1;
+}
+
+.input_group {
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 4px #0000001a;
+  white-space: nowrap;
+  height: 3rem;
+  input {
+    height: inherit;
+    width: 100%;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $btn_primary;
+    color: $btn_primary_text;
+    box-shadow: none;
+    position: relative;
+    left: -4px;
+    height: inherit;
+  }
+}
