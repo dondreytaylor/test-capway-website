@@ -19,16 +19,21 @@ button {
   color: #fff;
 }
 
+.btn_wide {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .logo_white {
   height: 30px;
   width: 176px;
-  background-image: url(https://web.dev.cpwys.co/assets/module-site/headers/header-site-transparent/logo.svg);
+  background-image: url(../assets/logo_white.svg);
 }
 
 .logo_color {
   height: 30px;
   width: 173px;
-  background-image: url(https://web.dev.cpwys.co/assets/module-core/footers/footer-default/logo.svg);
+  background-image: url(../assets/logo_color.svg);
 }
 
 .section_hero {
@@ -46,6 +51,14 @@ button {
   margin-top: 90px;
 }
 
+.hero_download_links {
+  margin-top: 2rem;
+}
+.hero_download_links > a {
+  font-size: 0.8rem;
+  color: #fff !important;
+}
+
 .sign_up {
   display: flex;
   flex: 1;
@@ -53,10 +66,14 @@ button {
   align-items: flex-start;
 }
 .sign_up h1 {
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 .sign_up p {
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+}
+.sign_up p a {
+  color: #181616cc;
+  font-size: revert;
 }
 
 .hero_image {
@@ -64,7 +81,7 @@ button {
   flex: 1.25;
   height: 648px;
   width: 632px;
-  background-image: url(https://web.dev.cpwys.co/assets/module-site/pages/page-landing/phone-card.png);
+  background-image: url(../assets/phone-card.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -85,6 +102,7 @@ input {
   background-color: #fff;
   padding-left: 1rem;
   line-height: 1;
+  color: #000;
 }
 
 .input_group {
@@ -110,6 +128,10 @@ input {
   position: relative;
   left: -4px;
   height: inherit;
+}
+
+strong {
+  font-weight: bold;
 }
 
 @media (min-width: 0px) {
@@ -210,6 +232,9 @@ header {
   flex-direction: row;
   align-items: center;
 }
+.header_menu nav > div {
+  margin: 0 20px 0 20px;
+}
 
 footer {
   background-image: linear-gradient(230deg, #00cc71 20%, #00ace2 80%);
@@ -242,7 +267,6 @@ footer > div {
   border-radius: 0.5rem;
   width: 19rem;
   height: 19rem;
-  margin-right: 2rem;
   padding: 1rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -254,18 +278,339 @@ footer > div {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 85%;
+}
+
+.card_icon {
+  width: 96px;
+  height: 96px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 1rem;
 }
 
 .debit_card {
   background-image: url("../assets/card-debit-cards.png");
 }
+.debit_card .card_icon {
+  background-image: url("../assets/debit-cards.svg");
+}
 
 .withdrawal {
   background-image: url("../assets/card-withdrawal.png");
 }
+.withdrawal .card_icon {
+  background-image: url("../assets/withdrawal.svg");
+}
 
 .goals {
   background-image: url("../assets/card-money-goals.png");
+}
+.goals .card_icon {
+  background-image: url("../assets/money-goals.svg");
+}
+
+.benefit_button_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.section_app_stores {
+  background-image: linear-gradient(45deg, rgba(0, 204, 112, 0.8823529412), rgba(0, 173, 226, 0.8352941176));
+  color: #fff;
+  align-items: center;
+  height: 18rem;
+}
+
+.card_flipped {
+  display: flex;
+  height: 18rem;
+  width: 20rem;
+  background-image: url("../assets/flipped-card.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.app_stores_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app_stores_content > h2 {
+  margin-bottom: 2rem;
+}
+.app_stores_content > h2:before {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: 87.5rem;
+  background-image: url("../assets//flipped-card.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20rem;
+  height: 18rem;
+}
+
+.play_store {
+  width: 13rem;
+  height: 4rem;
+  background-image: url("../assets/google-play.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1rem;
+}
+
+.apple_store {
+  width: 13rem;
+  height: 4rem;
+  background-image: url("../assets/app-store.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section_edu {
+  background-color: #151519;
+  color: #fff;
+}
+.section_edu > div {
+  flex: 1;
+  align-items: center;
+  align-self: center;
+}
+
+.edu_text {
+  text-align: center;
+}
+.edu_text > h2 {
+  margin-bottom: 2rem;
+}
+.edu_text > span {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.edu_phone_image {
+  height: 32rem;
+  width: 100%;
+  flex: 2 !important;
+  background-image: url(../assets/partnership.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section_know_money {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.tab_container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.05rem solid #dddddd;
+}
+
+.tab {
+  padding: 1.5rem;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+}
+.tab:hover {
+  color: #00ace2;
+  border-bottom: 0.2rem solid #00ace2;
+}
+
+.section_featured {
+  background-color: #a9e2bc;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.section_featured > h2 {
+  margin-bottom: 2rem;
+}
+
+.featured_link {
+  height: 2.86rem;
+  width: 10rem;
+  margin: 16px 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.essence {
+  background-image: url(../assets/feature-essence.svg);
+}
+
+.cnn {
+  background-image: url(../assets/feature-cnn.svg);
+}
+
+.bi {
+  background-image: url(../assets/feature-business-insider.svg);
+}
+
+.inc {
+  background-image: url(../assets/feature-inc.svg);
+}
+
+.forbes {
+  background-image: url(../assets/feature-forbes.svg);
+}
+
+.section_bottom_menu {
+  flex-direction: column;
+  align-items: center;
+  background-color: #151519;
+  color: #fff;
+  padding: 2rem;
+}
+
+.bottom_menu_content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2rem;
+}
+
+.bottom_menu_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.link-col > * {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+.link-col > a {
+  opacity: 0.8;
+}
+
+.social_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.social_links > a {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fb {
+  background-image: url(../assets/footer-facebook.svg);
+}
+
+.ig {
+  background-image: url(../assets/footer-instagram.svg);
+}
+
+.twitter {
+  background-image: url(../assets/footer-twitter.svg);
+}
+
+.yt {
+  background-image: url(../assets/footer-youtube.svg);
+}
+
+.linkedin {
+  background-image: url(../assets/footer-linkedin.svg);
+}
+
+.legal_stuff {
+  padding: 2rem;
+  width: 80%;
+}
+.legal_stuff > p {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  color: #929596;
+}
+
+.section_numbers {
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.section_numbers > aside {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  width: 45%;
+}
+.section_numbers > aside > h2 {
+  margin-bottom: 1rem;
+}
+.section_numbers > aside > p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .section_numbers {
+    flex-direction: column;
+  }
+}
+.numbers_images {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+}
+.numbers_images :first-child {
+  margin-top: 2rem;
+}
+
+.image_col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.image_col > div {
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card_1 {
+  height: 225px;
+  background-image: url(../assets/card-1.png);
+}
+
+.card_2 {
+  height: 169px;
+  background-image: url(../assets/card-2.png);
+}
+
+.card_3 {
+  height: 169px;
+  background-image: url(../assets/card-3.png);
+}
+
+.card_4 {
+  height: 225px;
+  background-image: url(../assets/card-4.png);
 }
 
 @font-face {
@@ -281,9 +626,23 @@ footer > div {
   flex-direction: row;
 }
 
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   display: flex;
   justify-content: center;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+a {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -15,6 +15,12 @@ $mq_xs: 0px;
 @import "_header";
 @import "_footer";
 @import "_benefits";
+@import "_app_stores";
+@import "_edu";
+@import "_know_money";
+@import "_featured";
+@import "_bottom_menu";
+@import "_numbers";
 
 @font-face {
   font-family: Helvetica Neue;
@@ -30,7 +36,21 @@ $mq_xs: 0px;
   flex-direction: row;
 }
 
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   display: flex;
   justify-content: center;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+a {
+  cursor: pointer;
 }

@@ -12,6 +12,13 @@
   margin: 0 auto;
   margin-top: 90px;
 }
+.hero_download_links {
+  margin-top: 2rem;
+  > a {
+    font-size: 0.8rem;
+    color: #fff !important;
+  }
+}
 
 .sign_up {
   display: flex;
@@ -19,10 +26,14 @@
   flex-direction: column;
   align-items: flex-start;
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
   }
   p {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
+    a {
+      color: $link_dark;
+      font-size: revert;
+    }
   }
 }
 
@@ -31,7 +42,7 @@
   flex: 1.25;
   height: 648px;
   width: 632px;
-  background-image: url(https://web.dev.cpwys.co/assets/module-site/pages/page-landing/phone-card.png);
+  background-image: url(../assets/phone-card.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

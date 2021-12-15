@@ -1,0 +1,56 @@
+.section_app_stores {
+  background-image: $bg_gradient_rev;
+  color: #fff;
+  align-items: center;
+  height: 18rem;
+}
+
+.card_flipped {
+  display: flex;
+  height: 18rem;
+  width: 20rem;
+  background-image: url("../assets/flipped-card.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.app_stores_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > h2 {
+    margin-bottom: 2rem;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -3rem;
+      top: 87.5rem;
+      background-image: url("../assets//flipped-card.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20rem;
+      height: 18rem;
+    }
+  }
+}
+
+.play_store {
+  width: 13rem;
+  height: 4rem;
+  background-image: url("../assets/google-play.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1rem;
+}
+
+.apple_store {
+  width: 13rem;
+  height: 4rem;
+  background-image: url("../assets/app-store.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

@@ -1,0 +1,22 @@
+.section_know_money {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.tab_container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.05rem solid #dddddd;
+}
+
+.tab {
+  padding: 1.5rem;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+  &:hover {
+    color: $btn_secondary;
+    border-bottom: 0.2rem solid $btn_secondary;
+  }
+}

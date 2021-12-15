@@ -16,7 +16,6 @@
   border-radius: 0.5rem;
   width: 19rem;
   height: 19rem;
-  margin-right: 2rem;
   padding: 1rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -28,16 +27,42 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 85%;
+}
+
+.card_icon {
+  width: 96px;
+  height: 96px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 1rem;
 }
 
 .debit_card {
   background-image: url("../assets/card-debit-cards.png");
+  .card_icon {
+    background-image: url("../assets/debit-cards.svg");
+  }
 }
 
 .withdrawal {
   background-image: url("../assets/card-withdrawal.png");
+  .card_icon {
+    background-image: url("../assets/withdrawal.svg");
+  }
 }
 
 .goals {
   background-image: url("../assets/card-money-goals.png");
+  .card_icon {
+    background-image: url("../assets/money-goals.svg");
+  }
+}
+.benefit_button_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }

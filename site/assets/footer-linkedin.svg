@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>002-linkedin</title>
+    <g id="2.2-dashboard/send-money" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard/send-money-&amp;-pay/send-money/D---1.1-Capway-Recent-Transfer" transform="translate(-373.000000, -1700.000000)" fill="#9ED2EA" fill-rule="nonzero">
+            <g id="footer-with-text" transform="translate(0.000000, 1591.000000)">
+                <g id="Group-9" transform="translate(247.000000, 51.000000)">
+                    <g id="002-linkedin" transform="translate(126.000000, 58.000000)">
+                        <path d="M17.9955,18 L17.9955,17.99925 L18,17.99925 L18,11.39775 C18,8.16825 17.30475,5.6805 13.52925,5.6805 C11.71425,5.6805 10.49625,6.6765 9.999,7.62075 L9.9465,7.62075 L9.9465,5.982 L6.36675,5.982 L6.36675,17.99925 L10.09425,17.99925 L10.09425,12.04875 C10.09425,10.482 10.39125,8.967 12.3315,8.967 C14.24325,8.967 14.27175,10.755 14.27175,12.14925 L14.27175,18 L17.9955,18 Z" id="Path"></path>
+                        <polygon id="Path" points="0.297 5.98275 4.029 5.98275 4.029 18 0.297 18"></polygon>
+                        <path d="M2.1615,0 C0.96825,0 0,0.96825 0,2.1615 C0,3.35475 0.96825,4.34325 2.1615,4.34325 C3.35475,4.34325 4.323,3.35475 4.323,2.1615 C4.32225,0.96825 3.354,0 2.1615,0 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

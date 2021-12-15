@@ -1,0 +1,39 @@
+.section_featured {
+  background-color: $bg_green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  > h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.featured_link {
+  height: 2.86rem;
+  width: 10rem;
+  margin: 16px 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.essence {
+  background-image: url(../assets/feature-essence.svg);
+}
+
+.cnn {
+  background-image: url(../assets/feature-cnn.svg);
+}
+
+.bi {
+  background-image: url(../assets/feature-business-insider.svg);
+}
+
+.inc {
+  background-image: url(../assets/feature-inc.svg);
+}
+
+.forbes {
+  background-image: url(../assets/feature-forbes.svg);
+}

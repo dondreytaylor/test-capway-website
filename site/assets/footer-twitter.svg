@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>twitter</title>
+    <g id="2.2-dashboard/send-money" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="dashboard/send-money-&amp;-pay/send-money/D---1.1-Capway-Recent-Transfer" transform="translate(-304.000000, -1701.000000)" stroke="#9ED2EA" stroke-width="1.5999999">
+            <g id="footer-with-text" transform="translate(0.000000, 1591.000000)">
+                <g id="Group-9" transform="translate(247.000000, 51.000000)">
+                    <g id="twitter" transform="translate(58.000000, 60.000000)">
+                        <path d="M18,0.789473684 C17.2164968,1.32274532 16.3489974,1.73061256 15.4309091,1.99736842 C14.4215669,0.877529838 12.79503,0.484827088 11.3580667,1.01404218 C9.92110333,1.54325728 8.97938204,2.88181648 9,4.36578947 L9,5.15526316 C6.07963486,5.22833084 3.31529344,3.88576619 1.63636364,1.57894737 C1.63636364,1.57894737 -1.63636364,8.68421053 5.72727273,11.8421053 C4.04224982,12.9457629 2.03494656,13.4991548 1.11022302e-15,13.4210526 C7.36363636,17.3684211 16.3636364,13.4210526 16.3636364,4.34210526 C16.3628829,4.12220024 16.3409707,3.90283768 16.2981818,3.68684211 C17.1332208,2.89223138 17.7224951,1.88898378 18,0.789473684 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

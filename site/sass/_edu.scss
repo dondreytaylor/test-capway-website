@@ -1,0 +1,30 @@
+.section_edu {
+  background-color: $bg_dark;
+  color: #fff;
+  > div {
+    flex: 1;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+.edu_text {
+  text-align: center;
+  > h2 {
+    margin-bottom: 2rem;
+  }
+  > span {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.edu_phone_image {
+  height: 32rem;
+  width: 100%;
+  flex: 2 !important;
+  background-image: url(../assets/partnership.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
