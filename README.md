@@ -1,8 +1,15 @@
+# Notes
+
+- To run this locally `npm install` and then `npm run serve`. The site will be served at `localhost:8080`.
+
+---
+
 ![CapWay](readme-assets/capway.png)
 
 Recreate CapWay's landing page using SASS, JS, and HTML. All assets for the site will be provided.
 
 ## Requirements
+
 - HTML should not be the same as the live site nor https://web.dev.cpwys.co. Please use different tags (or at least identifiers when possible) and markup structure. Outside of similar SASS for certain elements, the page structure should be different.
 - Should be responsive down to at least 375px width
 - Use Helvetica Neue for all fonts. Use the weights regular, medium, or bold in accordance with the designs provided.
@@ -13,10 +20,10 @@ Recreate CapWay's landing page using SASS, JS, and HTML. All assets for the site
 - In the Get to Know Money Better section, make it so that clicking on each of the tabs changes the media below. Using xhr (or any wrapper around xhr like jQuery), make an API call to https://gateway.dev.cpwys.co/api/v1/content/fetch/learnmoney to pull the corresponding media for each tab. Only use the first 4 of each category. Use the `thumbnail_url` property to set the image of each card.
 
 ## How to submit
+
 - Fork this repository on GitHub
 - Occassionally commit changes using GIT while developing
 - When you are ready to submit, open a pull request with this respository
-
 
 ## Previews
 
