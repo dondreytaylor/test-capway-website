@@ -3,6 +3,16 @@ input {
   padding-left: 1rem;
   line-height: 1;
   color: #000;
+  border-radius: 0.1rem;
+}
+
+select {
+  background-color: #fff;
+  padding: 1rem;
+  line-height: 1;
+  color: #000;
+  border-radius: 0.1rem;
+  font-size: 1.1rem;
 }
 
 .input_group {

@@ -1,0 +1,51 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: $bg_dark;
+  color: #fff;
+
+  input,
+  select {
+    border: 0.15rem solid #ebebeb;
+  }
+}
+
+.mobile_number {
+  display: flex;
+  flex-direction: row;
+  > * {
+    margin-right: 0.5rem;
+  }
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  > span {
+    width: 85%;
+  }
+}
+
+.close_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 2rem;
+  background-image: url(../assets/menu-close-icon-light.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.banner_logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0.5rem;
+  background-image: url(../assets/capway-mobile-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 2rem;
+}

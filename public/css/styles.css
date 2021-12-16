@@ -103,6 +103,16 @@ input {
   padding-left: 1rem;
   line-height: 1;
   color: #000;
+  border-radius: 0.1rem;
+}
+
+select {
+  background-color: #fff;
+  padding: 1rem;
+  line-height: 1;
+  color: #000;
+  border-radius: 0.1rem;
+  font-size: 1.1rem;
 }
 
 .input_group {
@@ -348,7 +358,7 @@ footer > div {
   content: "";
   position: absolute;
   left: -3rem;
-  top: 87.5rem;
+  top: 94rem;
   background-image: url("../assets//flipped-card.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -412,6 +422,7 @@ footer > div {
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  background-color: #fafafb;
 }
 
 .tab_container {
@@ -422,12 +433,28 @@ footer > div {
 
 .tab {
   padding: 1.5rem;
-  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
   cursor: pointer;
 }
 .tab:hover {
   color: #00ace2;
   border-bottom: 0.2rem solid #00ace2;
+}
+
+.active_tab {
+  color: #00ace2;
+  border-bottom: 0.2rem solid #00ace2;
+}
+
+.card_container {
+  min-height: 370px;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section_featured {
@@ -611,6 +638,57 @@ footer > div {
 .card_4 {
   height: 225px;
   background-image: url(../assets/card-4.png);
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #151519;
+  color: #fff;
+}
+.banner input,
+.banner select {
+  border: 0.15rem solid #ebebeb;
+}
+
+.mobile_number {
+  display: flex;
+  flex-direction: row;
+}
+.mobile_number > * {
+  margin-right: 0.5rem;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+}
+.banner_text > span {
+  width: 85%;
+}
+
+.close_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 2rem;
+  background-image: url(../assets/menu-close-icon-light.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.banner_logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0.5rem;
+  background-image: url(../assets/capway-mobile-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 2rem;
 }
 
 @font-face {

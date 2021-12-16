@@ -12,6 +12,24 @@
     </title>
   </head>
   <body>
+    <div class="banner">
+      <div class="close_icon"></div>
+      <div class="banner_logo"></div>
+      <div class="banner_text">
+        <strong>We take money to a different level with our app</strong>
+        <span>
+          Enter your mobile phone number to receive a direct link to download
+          the CapWay app. Text and data rates may apply.
+        </span>
+      </div>
+      <div class="mobile_number">
+        <select>
+          <option>US +1</option>
+        </select>
+        <input type="text" id="mobile_number" placeholder="Mobile Number" />
+        <button class="btn_primary">SEND</button>
+      </div>
+    </div>
     <section class="section_hero">
       <header>
         <div class="header_content">
@@ -52,8 +70,8 @@
             <button id="btn_signup">Sign Me Up</button>
           </div>
           <div class="hero_download_links">
-            <a href="javascript:void(0);">Download for iOS</a>·
-            <a href="javascript:void(0);">Download for Android</a>·
+            <a href="javascript:void(0);">Download for iOS</a> ·
+            <a href="javascript:void(0);">Download for Android</a> ·
             <a href="javascript:void(0);">Why You Should Choose CapWay</a>
           </div>
         </div>
@@ -126,13 +144,21 @@
     <section class="section_know_money">
       <h2>Get to Know Money Better</h2>
       <div class="tab_container">
-        <div class="tab">Articles</div>
-        <div class="tab">Videos</div>
-        <div class="tab">Facts & Hacks</div>
-        <div class="tab">Infographics</div>
-        <div class="tab">Money Meanings</div>
+        <div class="tab" id="articles_tab">Articles</div>
+        <div class="tab" id="videos_tab">Videos</div>
+        <div class="tab" id="facts_tab">Facts & Hacks</div>
+        <div class="tab" id="info_tab">Infographics</div>
+        <div class="tab" id="money_tab">Money Meanings</div>
       </div>
-      <div>squares</div>
+      <div class="card_container">
+        <!--
+        <div class="card">
+          <div class="card_content"></div>
+          <div class="card_author">
+            <div class="card_author_avatar"></div>
+          </div>
+        </div>-->
+      </div>
       <div>
         <button class="btn_secondary btn_wide">Learn More About Money</button>
       </div>
@@ -272,6 +298,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/signUp.js"></script>
-    <script src="js/learnMoney.js"></script>
+    <script src="js/learnMoney.js" type="module"></script>
   </body>
 </html>

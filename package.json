@@ -4,8 +4,9 @@
   "description": "![CapWay](readme-assets/capway.png)",
   "main": "index.js",
   "scripts": {
-    "sass": "sass site/sass/styles.scss site/styles/styles.css",
-    "sasswatch":"sass --watch site/sass:site/css",
+    "sass": "sass public/sass/styles.scss public/styles/styles.css",
+    "sasswatch": "sass --watch public/sass:public/css",
+    "serve":"http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/jacobwban/test-capway-website#readme",
   "dependencies": {
+    "http-server": "^14.0.0",
     "sass": "^1.45.0"
   }
 }

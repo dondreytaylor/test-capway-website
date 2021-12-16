@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  background-color: $bg_grey;
 }
 
 .tab_container {
@@ -13,10 +14,26 @@
 
 .tab {
   padding: 1.5rem;
-  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
   cursor: pointer;
   &:hover {
     color: $btn_secondary;
     border-bottom: 0.2rem solid $btn_secondary;
   }
+}
+
+.active_tab {
+  color: $btn_secondary;
+  border-bottom: 0.2rem solid $btn_secondary;
+}
+
+.card_container {
+  min-height: 370px;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
