@@ -4,151 +4,143 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div id="top-box">
-        <header >
-          <div className="logo" > <img src="	https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg" alt=""/></div>
-          <div className="icon">  <img src="	https://capway.com/assets/module-site/pages/page-landing/menu-icon-light.svg" alt='' style={{ width: "1.5rem"}}/> </div>
-        </header>
-        <div className='boxes'>
-
-          <h1>Creating Financial Access & Opportunities</h1>
-          <p>No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more. </p><br/>
-          <div id='input'> 
-            <input type='text' placeholder='Enter email address'></input>
-            <span > Sign Me Up</span> </div>
-          <div  className='downloads'>
-            <span> Download for IOS </span><span>*</span>
-            <span> Download for Andriod </span><span>*</span>
-            <span> Why You Should Choose CapWay </span>
+      <div id="wrap1">
+        <header>
+          <div id='left-head'>
+            <div className="logo"> </div>
           </div>
-          <div className="top-pic-box"> 
-            <div id='pic'>
-
+          <div id="right-head">
+            <div id="list"> 
+              <a href='#'>  Money Account </a>
+              <a href='#'>  Phunds </a>
+              <a href='#'>  Learn Money </a>
+              <a href='#'>  More </a>
+              <a href='#'>  Dondry Taylor </a>
             </div>
           </div>
+        </header>
+        <div id="top">
+          <div id='top-left'>
+            <div id='phone'></div>
+          </div>
+          <div id='top-right'>
+            <div className="contain">  
+              <h1> NOT JUST A BANK</h1>
+              <p>No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.</p>
+              <div id='input'> 
+                <input type='text' placeholder='Enter email address'></input>
+                <span > Sign Me Up</span> 
+              </div>
+              <div  className='downloads'>
+                <span> Download for IOS </span><span>*</span>
+                <span> Download for Andriod </span><span>*</span>
+                <span> Why You Should Choose CapWay </span>
+              </div>
+            </div> 
+          </div> 
         </div>
       </div>
-      
-      <div id='wrap-2'>
-        <div className='boxes'> 
-          <h2>Money Account with CapWay</h2>
-          <div id='card-list'> 
-            <div id='card1'> 
-              <div className='item1'>
-                <img src='https://capway.com/assets/module-site/pages/page-landing/debit-cards.svg' alt=''/>
+      <div id="wrap2">
+          <div className='inner'>
+            <h2> Money Account with CapWay</h2>
+            <div className='box-list'>
+              <div className='box' id='box1'>
+                <div className='pic' id='pic1' ></div>
                 <p>Debit card to access the cashless economy.</p>
               </div>
-            </div>
-            <div id='card2'> 
-              <div className='item3'>
-                <img src='https://capway.com/assets/module-site/pages/page-landing/withdrawal.svg' alt='' />
+              <div className='box' id='box2'>
+                <div className='pic' id='pic2' ></div>
                 <p>Withdraw money at ATMs, plus multiple options to deposit funds.</p>
               </div>
-            </div>
-            <div id='card3'> 
-              <div className='item3'>
-                <img src='https://capway.com/assets/module-site/pages/page-landing/money-goals.svg'  alt=''/>
+              <div className='box' id='box3'>
+                <div className='pic' id='pic3' ></div>
                 <p>Create and save money towards your Money Goals.</p>
               </div>
             </div>
+            <button> See All Acount Features</button>
           </div>
-          <button> See All Acount Benefits</button>
-        </div>
-      </div>
 
+      </div>
       <div id='wrap3'>
-        <div className='boxes'>
+        <div className='inner'>
           <h2>Download CapWay and Start Your Money Account. </h2>
           <div >
-            <img  className ="download" src='https://capway.com/assets/module-site/pages/page-landing/google-play.svg' alt=''/>
-            <img  className ="download" src='https://capway.com/assets/module-site/pages/page-landing/app-store.svg' alt=''/>
+           <div className ="download" id='first'></div>
+           <div className ="download" id='second'></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div id='wrap4'>
+        <div className='inner'>
+          <p>As Featured In </p>
+          <div id='list4' >
+            <div className="icon" id='essence'> </div>
+            <div className="icon" id='cnn'> </div>
+            <div className="icon" id='bi'> </div>
+            <div className="icon" id='inc'> </div>
+            <div className="icon" id='forbes'> </div>
+
           </div>
         </div>
       </div>
-
-      <div id='wrap4'>
-        <div className='boxes'>
-          <div>
-            <h2> Phunds: Financial Education Programs </h2>
+      <div id='wrap5'>
+        <div className='inner' >
+          <div id='phunds' >
+            <h2> Phunds: Financial Education Programs</h2>
             <p> Available to individuals, businesses, and organizations - including community organizations, schools, workforce, and municipalities. Increase your knowledge of money by learning from the 20+ financial topics covered in the different Phunds' programs.</p>
             <div className='btn'> <button> Find Out More </button></div>
           </div>
-        </div>
-        <div className='boxes'>
-          <div>
+          <div id='pic4'  >
+            <div className='img4'> </div>
+          </div>
+          <div id='money' >
             <h2> The Money Room</h2>
             <p> The master class of money. Engage and learn money from the financial teachings through our collaborations with brands and influencers.</p>
             <div className='btn'>   <button> Download App </button>  </div>
           </div>
         </div>
-        <div id='pic4'  >
-          <div className='img4'> </div>
-        </div>
       </div>
-
-      <div id="wrap5">
-        <div className='boxes'>
-          <h2> Get to Know Money Better </h2>
-          <div id='5th-link-wrapper'>
-            <div className='5th-links'> Articles</div>
-            <div className='5th-links'> Videos</div>
-            <div className='5th-links'> Facts & Hacks</div>
-            <div className='5th-links'> Infographics</div>
-            <div className='5th-links'> Money Meanings</div>
-          </div>
-          <div className='btn'><button> Learn More About Money </button> </div>
-        </div>
-      </div>
-
-      <div id='wrap6'>
-        <div className='boxes1'>
-          <h3>As Featured In</h3>
-          <div id='6th-list'>
-            <div className='icon'><img src='https://capway.com/assets/module-site/pages/page-landing/feature-essence.svg' alt=''/></div>
-            <div className='icon'><img src='https://capway.com/assets/module-site/pages/page-landing/feature-cnn.svg' alt=''/></div>
-            <div className='icon'><img src='https://capway.com/assets/module-site/pages/page-landing/feature-business-insider.svg' alt=''/></div>
-            <div className='icon'><img src='https://capway.com/assets/module-site/pages/page-landing/feature-inc.svg' alt=''/></div>
-            <div className='icon'><img id='forbes' src='https://capway.com/assets/module-site/pages/page-landing/feature-forbes.svg' alt=''/></div>
-          </div>
-        </div>
-      </div>
-
       <div id="wrap7">
-        <div className='boxes'>
+        <div className='inner'>
           <div id='top7'>
-            <h3>Numbers Don't Lie</h3>
-            <p> CapWay was created to provide fair financial access and opportunities to everyone, especially those misunderstood, overlooked, and underserved by the traditional banking system.</p>
-            <p>Cashless, contactless, banking deserts - the way we bank and handle our finances is changing. Whether you are looking for your first debit card and Money Account or looking for a financial option with a mission to guide and assist you in your economic growth, CapWay is here. </p>
+            <div className='wrapper'>
+
+              <h3>Numbers Don't Lie</h3>
+              <p> CapWay was created to provide fair financial access and opportunities to everyone, especially those misunderstood, overlooked, and underserved by the traditional banking system.</p>
+              <p>Cashless, contactless, banking deserts - the way we bank and handle our finances is changing. Whether you are looking for your first debit card and Money Account or looking for a financial option with a mission to guide and assist you in your economic growth, CapWay is here. </p>
+            </div>
           </div>
-          <div  id='bottom7'>
-            <div  >
-              <img className="card" src='https://capway.com/assets/module-site/pages/page-landing/card-1.png' alt=''/>
-              <img className="card" src='https://capway.com/assets/module-site/pages/page-landing/card-2.png' alt=''/>
+          <div id="bottom7">
+            <div>
+              <div className="card" id="one"></div>
+              <div className="card" id="two"></div>
             </div>
             <div>
-            <img className="card" src='https://capway.com/assets/module-site/pages/page-landing/card-3.png' alt=''/>
-              <img  className="card" src='https://capway.com/assets/module-site/pages/page-landing/card-4.png' alt=''/>
+              <div className="card" id="three"></div>
+              <div className="card" id="four"></div>
             </div>
           </div>
+
         </div>
       </div>
-
       <footer>
-        <div id='foot1'>
-          <div id='brand'>
-           <div id='logo'> <img src='https://capway.com/assets/module-core/footers/footer-default/logo.svg' alt=''/> 
-           </div>
+        <div id='foot1' >
+          <div id='brand' >
+            <div className='logo'>
+              <div className='pic'> </div> 
+            </div>
             <div id='socials'>
-              <div className='social-icon'>  <img src='https://capway.com/assets/module-core/footers/footer-default/footer-facebook.svg' alt='' />  </div>
-              <div className='social-icon'>  <img src='https://capway.com/assets/module-core/footers/footer-default/footer-instagram.svg' alt='' />  </div>
-              <div className='social-icon'>  <img src='https://capway.com/assets/module-core/footers/footer-default/footer-twitter.svg' alt='' />  </div>
-              <div className='social-icon'>  <img src='https://capway.com/assets/module-core/footers/footer-default/footer-youtube.svg' alt='' />  </div>
-              <div className='social-icon'>  <img src='https://capway.com/assets/module-core/footers/footer-default/footer-linkedin.svg' alt='' />  </div>
+              <div className='icons' id='fb'></div>
+              <div className='icons' id='ig'></div>
+              <div className='icons' id='tw'></div>
+              <div className='icons' id='yt'></div>
+              <div className='icons' id='ln'></div>
             </div>
           </div>
           <div id="site-map">
             <div className="foot-section">
-              <strong>Company </strong><br/>
+              <strong>Company </strong><br/><br/>
 
               <p>About </p>
               <p>Events </p>
@@ -157,14 +149,14 @@ function App() {
               <p>Sign Up </p>
             </div>
             <div className="foot-section">
-              <strong>Money Account </strong><br/>
+              <strong>Money Account </strong><br/><br/>
 
               <p>Open Account </p>
               <p>Benefits </p>
               <p>Why CapWay </p>
             </div>
             <div className="foot-section">
-              <strong>Learn Money </strong><br/>
+              <strong>Learn Money </strong><br/><br/>
 
               <p>Learn Money </p>
               <p>Phunds </p>
@@ -172,7 +164,7 @@ function App() {
               <p> Request Content</p>
             </div>
             <div className="foot-section">
-              <strong>WORK WITH CAPWAY</strong><br/>
+              <strong>WORK WITH CAPWAY</strong><br/><br/>
 
               <p> Partner </p>
               <p> Contributors</p>
@@ -180,20 +172,20 @@ function App() {
               <p> Career </p>
             </div>
             <div className="foot-section">
-              <strong> SUPPORT </strong><br/>
+              <strong> SUPPORT </strong><br/><br/>
 
               <p> Legal </p>
               <p> FAQ </p>
               <p> Contact Us</p>
             </div>
             <div className="foot-section">
-              <strong>DOWNLOAD </strong><br/>
+              <strong>DOWNLOAD </strong><br/><br/>
 
               <p>for IOS</p>
               <p> for Android </p>
             </div>
           </div>
-        </div ><hr/>
+        </div>
         <div id="foot2" >
           <div className="foot-box"> 
             <p> The CapWay, Inc Debit Visa Card is issued by Metropolitan Commercial Bank (Member FDIC) pursuant to a license from Visa U.S.A. Inc. “Metropolitan Commercial Bank” and “Metropolitan” are registered trademarks of Metropolitan Commercial Bank ©2014. </p>
@@ -208,8 +200,7 @@ function App() {
       <div  id="foot3" > 
           <p>© 2019-2022 CapWay Inc. All Rights Reserved. </p>
       </div>
-      
-     
+
     </div>
   );
 }

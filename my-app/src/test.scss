@@ -1,0 +1,379 @@
+@mixin box {
+    
+}
+$wtext:  #fffc;
+body{
+    font-family: Helvetica Neue;
+    margin: 0;
+}
+#top-box{
+    background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
+    padding: 20px;
+    padding-top: 30px;
+    color: $wtext;
+    header{
+       display: flex;
+       width: 100%;
+       display: flex;
+       .icon{
+          margin-left: auto;
+       } 
+    }
+    .boxes{
+       
+        #input{
+            width: 90%;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px #0000001a;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            height: 3rem;
+            margin: 0 0 2rem;
+            max-width: 550px;
+            input{
+                vertical-align: top;
+                width: 70%;
+                border: none;
+                height: inherit;
+                box-sizing: border-box;
+                padding: 0 0 0 1rem;
+                line-height: 1;
+            }
+            span{
+                vertical-align: top;
+            display: inline-block;
+            width: 32%;
+            background-color: #f8d88b;
+            color: #4a4a4a;
+            text-align: center;
+            text-decoration: none;
+            font-size: .9rem;
+            height: inherit;
+            box-sizing: border-box;
+            padding: 1rem 0 0;
+            left: -0.5rem;
+            position: relative;
+            }
+        }
+        .downloads{
+            display: block;
+        }
+        .top-pic-box{
+          height: 21rem;
+          width: 21rem;
+          padding-top: 70px;
+          #pic{
+            background-image: url('https://capway.com/assets/module-site/pages/page-landing/phone-card.png');
+            width: inherit;
+            height: inherit;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+    }
+}
+#wrap-2{
+    background-color: #fafafb;
+    padding: 5rem 0;
+    .boxes{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 64rem;
+        #card-list{
+            text-align: center;
+            margin: 3rem auto 0;
+            #card1{
+                background-color: #c8e6f3;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+                border-radius: 12px;
+                .item1{
+                    width: 70%;
+                    margin-top: 5px;
+                }
+            }
+            #card2{
+                background-color: #fbe9bc;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+                border-radius: 12px;
+                .item2{
+                    width: 70%;
+                    margin-top: 5px;
+                }
+            }
+            #card3{
+                background-color: #a8e1bb;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+                border-radius: 12px;
+                .item3{
+                    width: 70%;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+        button{
+            box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+            background-color: #00ace2;
+            display: block;
+            width: 100%;
+            padding: 0.95rem 0.5rem;
+            box-sizing: border-box;
+            border-radius: 0.3rem;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            max-width: 20rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}
+#wrap3{
+    background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .boxes{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 64rem;
+        h2{
+            color: #fff;
+            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1rem;
+            line-height: 1.5;
+            position: relative;
+        }
+        .download{
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 13rem;
+            height: 4rem;
+            box-sizing: border-box;
+            border-radius: 0.3rem;
+        }
+        
+    }
+}
+#wrap4{
+    background-color: #151519;
+    color: $wtext;
+    padding: 30px;
+    padding-bottom: 0;
+    .boxes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        h2{
+            font-size: 1.5rem;  
+        }
+        p{
+            line-height: 1.8;
+        color: #d6d6d6;
+        font-family: "Helvetica Neue";
+        font-size: .95rem;
+        margin: 0 0 2rem;
+        }
+        .btn{
+           display: flex;
+           justify-content: center;
+            button{
+                box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;  
+                display: block;
+                width: 100%;
+                padding: 0.95rem 0.5rem;
+                box-sizing: border-box;
+                border-radius: 0.3rem;
+                text-decoration: none;
+                text-align: center;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                background-color: #f8d88b;
+                color: #4a4a4a;
+                max-width: 20rem;
+            }
+        }
+
+    }
+    #pic4{
+        width: 100%;
+        .img{
+            background-image: url('https://capway.com/assets/module-site/pages/page-landing/partnership.png');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+}
+#wrap6{
+    background-color: #a9e2bc;
+    .boxes1{
+        text-align: center;
+        padding: 3.5rem 0 4rem;
+        h3{
+            color: #3b3e3f;
+            margin: 0 auto 2.5rem;
+            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+            font-size: 2.4rem;
+            display: block;
+        }
+        .icon{
+            width: 10rem;
+            height: 2.86rem;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 1rem 2.5rem;
+            filter: brightness(.85);
+            #forbes{
+                width: 10rem;
+                height: 2.86rem;
+            }
+        }
+    }
+
+
+
+       
+    
+
+
+    
+}
+#wrap7{
+    background-color: #fafafb;
+    padding: 5rem 0;
+    border-bottom: 0.05rem solid #DDDDDD;
+    .boxes{
+     
+        #top7{
+            width: 100%;
+            max-width: 40rem;
+            text-align: center;
+            margin: 0 auto 2rem;
+            padding: 0;
+        }
+        #bottom7{
+            display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+        }
+        .card{
+            width: 100%;
+        }
+    }
+    
+}
+footer{
+    background-color: #1c1c1f;
+    
+    color: $wtext;
+    padding: 20px;
+ 
+    #foot1{
+        max-width: 64rem;
+        margin: 0 auto;
+        width: 90%;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+
+        #brand{
+            background-color: grey;
+            width: 300px;
+            margin-left: auto;
+                margin-right: auto;
+
+            #logo{
+                width: 9rem;
+                height: 2.5rem;
+                margin-left: auto;
+                margin-right: auto;
+            
+            }
+            #socials{
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-around;
+                background-color: grey;
+                
+ 
+            }
+
+        }
+        #site-map{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .foot-section{
+                text-align: center;
+                
+                padding: 1rem;
+                
+  
+                p{
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: .85rem;
+                    margin: 0 0 0.8rem;
+                    opacity: .8;
+                }
+            }
+        }
+       
+    }
+    #foot2{
+        margin: 0 auto;
+        width: 90%;
+        border-top: 0.05rem solid #47494a;
+        padding: 3rem 0;
+        .foot-box{
+            font-size: .75rem;
+            color: #929596;
+            margin: 0 0 1.2rem;
+            line-height: 1.5;
+        }
+    }
+}
+#foot3{
+    background-image: linear-gradient(225.47deg,#82D49D,#4BABD8);
+    font-family: Helvetica Neue;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-bottom: 5px;
+    color: $wtext;
+    font-size: smaller;
+    
+}

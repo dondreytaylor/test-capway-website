@@ -1,128 +1,191 @@
-@mixin box {
-    
-}
-$wtext:  #fffc;
-body{
-    font-family: Helvetica Neue;
-    margin: 0;
-}
-#top-box{
-    background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
-    padding: 20px;
-    padding-top: 30px;
-    color: $wtext;
-    header{
-       display: flex;
-       width: 100%;
-       display: flex;
-       .icon{
-          margin-left: auto;
-       } 
-    }
-    .boxes{
-       
-        #input{
-            width: 90%;
-            white-space: nowrap;
-            box-shadow: 0 2px 4px #0000001a;
-            border-radius: 0.3rem;
-            overflow: hidden;
-            height: 3rem;
-            margin: 0 0 2rem;
-            max-width: 550px;
-            input{
-                vertical-align: top;
-                width: 70%;
-                border: none;
-                height: inherit;
-                box-sizing: border-box;
-                padding: 0 0 0 1rem;
-                line-height: 1;
-            }
-            span{
-                vertical-align: top;
-            display: inline-block;
-            width: 32%;
-            background-color: #f8d88b;
-            color: #4a4a4a;
-            text-align: center;
-            text-decoration: none;
-            font-size: .9rem;
-            height: inherit;
-            box-sizing: border-box;
-            padding: 1rem 0 0;
-            left: -0.5rem;
-            position: relative;
-            }
-        }
-        .downloads{
-            display: block;
-        }
-        .top-pic-box{
-          height: 21rem;
-          width: 21rem;
-          padding-top: 70px;
-          #pic{
-            background-image: url('https://capway.com/assets/module-site/pages/page-landing/phone-card.png');
-            width: inherit;
-            height: inherit;
+@mixin backdrop {
+
             background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
-          }
+            
+    
+}
+body{
+    font-family: Helvetica Neue;
+}
+$wtext:  #fffc;
+#wrap1{
+    background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
+    height: 500px;
+    padding: 10px;
+    color: $wtext;
+    
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        #left-head{
+           height: 60px;
+           min-width: 40%;
+            z-index: 2;
+           .logo{
+            background-image: url("https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg");
+            @include backdrop();
+            background-size: 190px;
+            height: 50px;
+            background-position: left;
+           }
+        }
+        #right-head{
+           
+            height: 60px;
+            width: 60%;
+            display: flex;
+            align-items: center;
+
+            #list{
+                display: flex;
+                margin-left: auto;
+                margin-right: 10px;
+                a{
+                    font-size: smaller;
+                    color: white;
+                    padding: 4px
+                }
+            }
+            
         }
     }
-}
-#wrap-2{
-    background-color: #fafafb;
-    padding: 5rem 0;
-    .boxes{
-        width: 90%;
-        margin: 0 auto;
-        max-width: 64rem;
-        #card-list{
+    #top{
+        display: flex;
+        width: 100vw;
+        height: 400px;
+        
+        #top-left{
+           width: 350px;
+           padding-left: 30px;
+           #phone{
+               background-image: url('https://capway.com/assets/module-site/pages/page-landing/phone-card.png');
+               @include backdrop();
+               height: 450px;
+               width: 500px;
+            
+               
+           }  
+        }
+        #top-right{
+            width: 100%;
+          
             text-align: center;
-            margin: 3rem auto 0;
-            #card1{
-                background-color: #c8e6f3;
-                height: 300px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 35px;
-                border-radius: 12px;
-                .item1{
-                    width: 70%;
-                    margin-top: 5px;
-                }
-            }
-            #card2{
-                background-color: #fbe9bc;
-                height: 300px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 35px;
-                border-radius: 12px;
-                .item2{
-                    width: 70%;
-                    margin-top: 5px;
-                }
-            }
-            #card3{
-                background-color: #a8e1bb;
-                height: 300px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 35px;
-                border-radius: 12px;
-                .item3{
-                    width: 70%;
-                    margin-top: 5px;
-                }
-            }
+            display: flex;
+            justify-content: center;
+            .contain{
 
+            
+            max-width: 800px;
+            
+
+                #input{
+                    width: 90%;
+                    white-space: nowrap;
+                    box-shadow: 0 2px 4px #0000001a;
+                    border-radius: 0.3rem;
+                    overflow: hidden;
+                    height: 3rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 550px;
+                    min-width: 200px;
+                    
+                    input{
+                        vertical-align: top;
+                        width: 70%;
+                        border: none;
+                        height: inherit;
+                        box-sizing: border-box;
+                        padding: 0 0 0 1rem;
+                        line-height: 1;
+                    }
+                    span{
+                        vertical-align: top;
+                    display: inline-block;
+                    width: 32%;
+                    background-color: #f8d88b;
+                    color: #4a4a4a;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: .9rem;
+                    height: inherit;
+                    box-sizing: border-box;
+                    padding: 1rem 0 0;
+                    left: -0.5rem;
+                    position: relative;
+                    }
+                }
+                .downloads{
+                    display: block;
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+
+
+}
+#wrap2{
+    background-color: #fafafb;
+    padding: 10px;
+    .inner{
+
+        h2{
+           text-align: center;
+        }
+        .box-list{
+            min-height: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .box{
+                width: 200px;
+                height: 200px;
+                margin: 15px;
+                border-radius: 9px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 7px;
+                text-align: center;
+              
+                .pic{
+                    height: 60px;
+                    @include backdrop()
+                }
+            }
+            #box1{
+                background-color: #c8e6f3;
+               
+                margin-top: 50px;
+                #pic1{
+                    background-image: url('https://capway.com/assets/module-site/pages/page-landing/debit-cards.svg');
+                    
+                }
+            }
+            #box2{
+                background-color: #fbe9bc;
+                
+                margin-top: -40px;
+                #pic2{
+                    background-image: url('https://capway.com/assets/module-site/pages/page-landing/withdrawal.svg');
+                    
+                }
+            }
+            #box3{
+                background-color: #a8e1bb;
+                
+                margin-top: 50px;
+                #pic3{
+                    background-image: url('https://capway.com/assets/module-site/pages/page-landing/money-goals.svg');
+                    
+                }
+            }
         }
         button{
             box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
@@ -139,23 +202,22 @@ body{
             outline: none;
             cursor: pointer;
             position: relative;
-            max-width: 20rem;
+            max-width: 15rem;
             margin-left: auto;
             margin-right: auto;
+            margin-top: -30px;
         }
-
+        button:hover{
+            transform: scale(1.2);
+        }
     }
 }
 #wrap3{
     background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
-    padding: 3rem 0;
-    position: relative;
-    overflow: hidden;
     text-align: center;
-    .boxes{
-        width: 90%;
-        margin: 0 auto;
-        max-width: 64rem;
+    padding: 10px;
+    .inner{
+
         h2{
             color: #fff;
             font-family: "Helvetica Neue Light",Helvetica,sans-serif;
@@ -177,171 +239,250 @@ body{
             box-sizing: border-box;
             border-radius: 0.3rem;
         }
-        
+        #first{
+            background-image: url('https://capway.com/assets/module-site/pages/page-landing/google-play.svg');
+        }
+        #second{
+            background-image: url('https://capway.com/assets/module-site/pages/page-landing/app-store.svg');
+        }
     }
 }
 #wrap4{
+    background-color: #a9e2bc;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    .inner{
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        p{
+            font-size: 2.5rem;
+        }
+
+        #list4{
+            display: flex;
+            justify-content: space-between;
+
+            .icon{
+                @include backdrop();
+                height: 50px;
+                width:100px;
+                padding: 4px;
+                margin: 4px;
+            }
+            #essence{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-essence.svg');
+            }
+            #cnn{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-cnn.svg');
+
+            }
+            #bi{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-business-insider.svg');
+
+            }
+            #inc{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-inc.svg');
+
+            }
+            #forbes{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-forbes.svg');
+
+            }
+            
+        }
+    }
+
+}
+#wrap5{
     background-color: #151519;
     color: $wtext;
-    padding: 30px;
-    padding-bottom: 0;
-    .boxes{
-        display: flex;
-        justify-content: space-around;
+    .inner{
+       
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "ph p4 money" ;
         align-items: center;
         text-align: center;
+        
         h2{
-            font-size: 1.5rem;  
+            font-size: 2rem;  
         }
         p{
             line-height: 1.8;
-        color: #d6d6d6;
-        font-family: "Helvetica Neue";
-        font-size: .95rem;
-        margin: 0 0 2rem;
+            color: #d6d6d6;
+            font-family: "Helvetica Neue";
+            font-size: .95rem;
+            margin: 0 0 2rem;
         }
         .btn{
-           display: flex;
-           justify-content: center;
-            button{
-                box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;  
-                display: block;
-                width: 100%;
-                padding: 0.95rem 0.5rem;
-                box-sizing: border-box;
-                border-radius: 0.3rem;
-                text-decoration: none;
-                text-align: center;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                position: relative;
-                background-color: #f8d88b;
-                color: #4a4a4a;
-                max-width: 20rem;
-            }
+            display: flex;
+            justify-content: center;
+             button{
+                 box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;  
+                 display: block;
+                 width: 100%;
+                 padding: 0.95rem 0.5rem;
+                 box-sizing: border-box;
+                 border-radius: 0.3rem;
+                 text-decoration: none;
+                 text-align: center;
+                 border: none;
+                 outline: none;
+                 cursor: pointer;
+                 position: relative;
+                 background-color: #f8d88b;
+                 color: #4a4a4a;
+                 max-width: 20rem;
+             }
         }
+        #phunds{
+            grid-area: ph;
+        }
+        #money{
+            grid-area: money;
+        }
+        #pic4{
+            grid-area: p4;
 
-    }
-    #pic4{
-        width: 100%;
-        .img{
-            background-image: url('https://capway.com/assets/module-site/pages/page-landing/partnership.png');
-            background-position: center bottom;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-    }
-
-}
-#wrap6{
-    background-color: #a9e2bc;
-    .boxes1{
-        text-align: center;
-        padding: 3.5rem 0 4rem;
-        h3{
-            color: #3b3e3f;
-            margin: 0 auto 2.5rem;
-            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
-            font-size: 2.4rem;
-            display: block;
-        }
-        .icon{
-            width: 10rem;
-            height: 2.86rem;
-            background-position: center center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: inline-block;
-            margin: 1rem 2.5rem;
-            filter: brightness(.85);
-            #forbes{
-                width: 10rem;
-                height: 2.86rem;
+            .img4{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/partnership.png');
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 400px;
+                height: 600px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }
-
-
-
-       
-    
-
-
-    
 }
 #wrap7{
     background-color: #fafafb;
-    padding: 5rem 0;
-    border-bottom: 0.05rem solid #DDDDDD;
-    .boxes{
-     
+    padding: 10px;
+    .inner{
+        display: flex;
         #top7{
-            width: 100%;
-            max-width: 40rem;
-            text-align: center;
-            margin: 0 auto 2rem;
-            padding: 0;
+            width:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .wrapper{
+                max-width: 500px;
+                h3{
+                    color: #1c1c1f;
+                    font-size: 2.2rem;
+                    line-height: 1.5;
+                    margin: 0 0 1rem;
+                    font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+                    font-weight: normal;
+                }
+                p{
+                    font-size: 1rem;
+                    font-family: "Helvetica Neue";
+                    margin: 0 0 1rem;
+                    line-height: 1.8;
+                    color: #1c1c1f;
+                }
+            }   
         }
         #bottom7{
+            width:50%;
             display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+            justify-content: center;
+            .card{
+               
+                @include backdrop()
+            }
+            #one{
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/card-1.png');
+                width: 260px;
+                height: 267px;
+            }
+            #two{
+                width: 260px;
+                height: 267px;
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/card-2.png');
+            }
+            #three{
+                width: 260px;
+                height: 267px;
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/card-3.png');
+            }
+            #four{
+                width: 260px;
+                height: 267px;
+                background-image: url('https://capway.com/assets/module-site/pages/page-landing/card-4.png');
+            }
+
         }
-        .card{
-            width: 100%;
-        }
+
     }
-    
 }
 footer{
     background-color: #1c1c1f;
-    
-    color: $wtext;
-    padding: 20px;
- 
+    padding: 30px;
+    color: white;
     #foot1{
-        max-width: 64rem;
-        margin: 0 auto;
-        width: 90%;
-        padding: 3rem 0;
         display: flex;
-        flex-direction: column;
-
+        justify-content: space-around;
         #brand{
-            background-color: grey;
-            width: 300px;
-            margin-left: auto;
-                margin-right: auto;
-
-            #logo{
-                width: 9rem;
-                height: 2.5rem;
-                margin-left: auto;
-                margin-right: auto;
+            width: 12rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
             
+        
+            .logo{
+                
+                .pic{
+                    @include backdrop();
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/logo.svg');
+                    width: 12rem;
+                    height: 2.5rem;
+                }
             }
             #socials{
-                margin-left: auto;
-                margin-right: auto;
                 display: flex;
-                justify-content: space-around;
-                background-color: grey;
-                
- 
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 13px;
+                .icons{
+                    @include backdrop();
+                    width:25px;
+                    height: 25px;
+                 
+                }
+                #fb{
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-facebook.svg');
+                }
+                #ig{
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-instagram.svg');
+                }
+                #tw{
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-twitter.svg');
+                }
+                #yt{
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-youtube.svg');
+                }
+                #ln{
+                    background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-linkedin.svg');
+                }
             }
-
         }
         #site-map{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             .foot-section{
-                text-align: center;
-                
+                text-align: left;        
                 padding: 1rem;
                 
-  
                 p{
                     display: block;
                     color: #fff;
@@ -352,7 +493,10 @@ footer{
                 }
             }
         }
-       
+        
+
+
+
     }
     #foot2{
         margin: 0 auto;
@@ -373,7 +517,12 @@ footer{
     padding-top: 5px;
     padding-left: 7px;
     padding-bottom: 5px;
-    color: $wtext;
     font-size: smaller;
+    color: $wtext;
+    p{
+        margin-left: 75px;
+    }
     
 }
+
+
