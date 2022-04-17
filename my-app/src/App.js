@@ -9,9 +9,7 @@ function App() {
   const [value, setValue]= useState('')
   const [pic, setPic]=useState([])
   const [data, setData]=useState("shortarticle")
-  const [active, setActive]= useState('')
   const liveLink = { color: "#00ace2", borderBottomColor: "#00ace2"}
-
   useEffect(() => {
     
     axios.get('https://gateway.dev.cpwys.co/api/v1/content/fetch/learnmoney')
@@ -21,14 +19,11 @@ function App() {
           } )
           .catch(e => console.log(e.message))
 
-    
- 
   }, [data])
   useEffect(() => {
     AOS.init();
       AOS.refresh();
    }, [])
-
   function format(x){
     const image = {backgroundImage: `url(${x["thumbnail_url"]})` }
     const date = new Date(x['publish_date'])
@@ -42,8 +37,6 @@ function App() {
     </div>
 
   }
-
-
   return (
     <div className="App">
       <div id="wrap1">
@@ -53,11 +46,11 @@ function App() {
           </div>
           <div id="right-head">
             <div id="list"> 
-              <a href='#'>  Money Account </a>
-              <a href='#'>  Phunds </a>
-              <a href='#'>  Learn Money </a>
-              <a href='#'>  More </a>
-              <a href='#'>  Dondry Taylor </a>
+              <a href='"javascript:void(0);"'>  Money Account </a>
+              <a href='"javascript:void(0);"'>  Phunds </a>
+              <a href='"javascript:void(0);"'>   Learn Money </a>
+              <a href='"javascript:void(0);"'>  More </a>
+              <a href='"javascript:void(0);"'>   Dondry Taylor </a>
             </div>
             <div className='logo'>
                 <div className='icon'> </div>
@@ -79,9 +72,9 @@ function App() {
                 <span onClick={()=>setValue('')} > Sign Me Up</span> 
               </div>
               <div  className='downloads'>
-                <span> Download for IOS </span><span>*</span>
-                <span> Download for Andriod </span><span>*</span>
-                <span> Why You Should Choose CapWay </span>
+                <a href='"javascript:void(0);"'> Download for IOS</a> <span> * </span>
+                <a href='"javascript:void(0);"'> Download for Android</a><span> * </span>
+                <a href='"javascript:void(0);"'> Why You Should Choose CapWay</a>
               </div>
             </div> 
           </div> 
@@ -106,7 +99,6 @@ function App() {
             </div>
             <button> See All Acount Features</button>
           </div>
-
       </div>
       <div id='wrap3'>
         <div className='inner'>
@@ -138,13 +130,12 @@ function App() {
       <div id="wrap6">
         <div className='inner'>
           <h2> Get to Know Money Better </h2>
-         
           <div id='link-wrapper'>
-            <div className='links'  onClick={()=> setData('shortarticle')}>  Articles</div>
-            <div className='links'  onClick={()=> setData('video')} > Videos</div>
-            <div className='links' onClick={()=> setData('knowmoneyfacts')}> Facts & Hacks</div>
-            <div className='links' onClick={()=> setData('infograpics')}> Infographics</div>
-            <div className='links' onClick={()=> setData('trending')}> Money Meanings</div>
+            <div className='links' style={(data === 'shortarticle' )? liveLink: {visibility: "visible"}} onClick={()=> setData('shortarticle')}>  Articles</div>
+            <div className='links' style={(data === 'video' )? liveLink: {visibility: "visible"}} onClick={()=> setData('video')} > Videos</div>
+            <div className='links' style={(data === 'knowmoneyfacts' )? liveLink: {visibility: "visible"}} onClick={()=> setData('knowmoneyfacts')}> Facts & Hacks</div>
+            <div className='links' style={(data === 'infograpics' )? liveLink: {visibility: "visible"}} onClick={()=> setData('infograpics')}> Infographics</div>
+            <div className='links' style={(data === 'trending' )? liveLink: {visibility: "visible"}} onClick={()=> setData('trending')}> Money Meanings</div>
           </div>
           <div id='api'>
             {pic.map(format )}
@@ -161,7 +152,6 @@ function App() {
             <div className="icon" id='bi'> </div>
             <div className="icon" id='inc'> </div>
             <div className="icon" id='forbes'> </div>
-
           </div>
         </div>
       </div>
@@ -195,11 +185,11 @@ function App() {
               <div className='pic'> </div> 
             </div>
             <div id='socials'>
-            <a href='#'>  <div className='icons' id='fb'></div></a>
-            <a href='#'> <div className='icons' id='ig'></div></a>
-            <a href='#'> <div className='icons' id='tw'></div></a>
-            <a href='#'><div className='icons' id='yt'></div></a>
-            <a href='#'> <div className='icons' id='ln'></div></a>
+            <a href='"javascript:void(0);"'>  <div className='icons' id='fb'></div></a>
+            <a href='"javascript:void(0);"'> <div className='icons' id='ig'></div></a>
+            <a href='"javascript:void(0);"'> <div className='icons' id='tw'></div></a>
+            <a href='"javascript:void(0);"'> <div className='icons' id='yt'></div></a>
+            <a href='"javascript:void(0);"'> <div className='icons' id='ln'></div></a>
             </div>
           </div>
           <div id="site-map">
@@ -264,9 +254,7 @@ function App() {
       <div  id="foot3" > 
           <p>© 2019-2022 CapWay Inc. All Rights Reserved. </p>
       </div>
-
     </div>
   );
 }
-
 export default App;

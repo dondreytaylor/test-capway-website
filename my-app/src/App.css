@@ -222,6 +222,11 @@ body {
   padding-top: 30px;
 }
 
+#wrap1 #top #top-right .contain .downloads a {
+  text-decoration: none;
+  color: #fffc;
+}
+
 #wrap2 {
   background-color: #fafafb;
   padding: 10px;
@@ -893,7 +898,7 @@ footer #foot2 .foot-box {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   #wrap6 .inner #api {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -914,8 +919,8 @@ footer #foot2 .foot-box {
 }
 
 #wrap6 .inner #api .pic-box .pic {
-  height: 250px;
-  width: 200px;
+  height: 350px;
+  width: 300px;
   border-radius: 13px;
   z-index: 1;
   background-repeat: no-repeat;
@@ -933,6 +938,12 @@ footer #foot2 .foot-box {
           justify-content: end;
   -webkit-box-shadow: black 0px -50px 36px -28px inset;
           box-shadow: black 0px -50px 36px -28px inset;
+}
+
+@media screen and (max-width: 1300px) {
+  #wrap6 .inner #api .pic-box .pic {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 900px) {
