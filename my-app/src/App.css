@@ -1,0 +1,1061 @@
+body {
+  font-family: Helvetica Neue;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
+#wrap1 {
+  background-image: linear-gradient(230deg, #00CC71 20%, #00ACE2 80%);
+  min-height: 500px;
+  padding: 10px;
+  color: #fffc;
+}
+
+#wrap1 #header1 {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wrap1 #header1 #left-head {
+  height: 60px;
+  min-width: 40%;
+}
+
+#wrap1 #header1 #left-head .logo {
+  background-image: url("https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 190px;
+  height: 50px;
+  background-position: left;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap1 #header1 #left-head .logo {
+    width: 500px;
+  }
+}
+
+#wrap1 #header1 #right-head {
+  height: 60px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap1 #header1 #right-head {
+    width: 40px;
+  }
+}
+
+#wrap1 #header1 #right-head #list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap1 #header1 #right-head #list {
+    width: 0;
+  }
+}
+
+#wrap1 #header1 #right-head #list a {
+  font-size: smaller;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#wrap1 #header1 #right-head .logo {
+  display: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+#wrap1 #header1 #right-head .logo .icon {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/menu-icon-light.svg");
+}
+
+@media screen and (max-width: 800px) {
+  #wrap1 #header1 #right-head .logo .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#wrap1 #top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  min-height: 400px;
+}
+
+#wrap1 #top #top-left {
+  width: 350px;
+  padding-left: 30px;
+}
+
+#wrap1 #top #top-left #phone {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/phone-card.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 500px;
+}
+
+@media screen and (max-width: 400px) {
+  #wrap1 #top #top-left #phone {
+    width: 350px;
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+}
+
+#wrap1 #top #top-right {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap1 #top #top-right .contain {
+  max-width: 800px;
+}
+
+#wrap1 #top #top-right .contain .wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#wrap1 #top #top-right .contain .wrap h1 {
+  font-size: 3.0rem;
+  color: #fff;
+  font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+}
+
+#wrap1 #top #top-right .contain .wrap p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#wrap1 #top #top-right .contain .wrap p span {
+  color: black;
+}
+
+#wrap1 #top #top-right .contain #input {
+  width: 90%;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 2px 4px #0000001a;
+          box-shadow: 0 2px 4px #0000001a;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  min-width: 200px;
+}
+
+#wrap1 #top #top-right .contain #input input {
+  vertical-align: top;
+  width: 70%;
+  border: none;
+  height: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0 0 1rem;
+  line-height: 1;
+}
+
+#wrap1 #top #top-right .contain #input span {
+  vertical-align: top;
+  display: inline-block;
+  width: 32%;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  text-align: center;
+  text-decoration: none;
+  font-size: .9rem;
+  height: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem 0 0;
+  left: -0.5rem;
+  position: relative;
+}
+
+#wrap1 #top #top-right .contain .downloads {
+  display: block;
+  padding-top: 30px;
+}
+
+#wrap1 #top #top-right .contain .downloads a {
+  text-decoration: none;
+  color: #fffc;
+}
+
+#wrap2 {
+  background-color: #fafafb;
+  padding: 10px;
+}
+
+#wrap2 .inner h2 {
+  text-align: center;
+  color: #1c1c1f;
+  font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+  font-weight: normal;
+}
+
+#wrap2 .inner .box-list {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap2 .inner .box-list .box {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7px;
+  text-align: center;
+}
+
+#wrap2 .inner .box-list .box .pic {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrap2 .inner .box-list #box1 {
+  background-color: #c8e6f3;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap2 .inner .box-list #box1 {
+    margin-top: 0;
+    width: 70%;
+    min-width: 200px;
+  }
+}
+
+#wrap2 .inner .box-list #box1 #pic1 {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/debit-cards.svg");
+}
+
+#wrap2 .inner .box-list #box2 {
+  background-color: #fbe9bc;
+  margin-top: -40px;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap2 .inner .box-list #box2 {
+    margin-top: 0;
+    width: 70%;
+    min-width: 200px;
+  }
+}
+
+#wrap2 .inner .box-list #box2 #pic2 {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/withdrawal.svg");
+}
+
+#wrap2 .inner .box-list #box3 {
+  background-color: #a8e1bb;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap2 .inner .box-list #box3 {
+    margin-top: 0;
+    width: 70%;
+    min-width: 200px;
+  }
+}
+
+#wrap2 .inner .box-list #box3 #pic3 {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/money-goals.svg");
+}
+
+#wrap2 .inner button {
+  -webkit-box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+          box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+  background-color: #00ace2;
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  max-width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+
+@media screen and (max-width: 800px) {
+  #wrap2 .inner button {
+    margin-top: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+#wrap2 .inner button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#wrap3 {
+  background-image: linear-gradient(230deg, #00CC71 20%, #00ACE2 80%);
+  text-align: center;
+  padding: 10px;
+}
+
+#wrap3 .inner h2 {
+  color: #fff;
+  font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+#wrap3 .inner .download {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 13rem;
+  height: 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3rem;
+}
+
+#wrap3 .inner #first {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/google-play.svg");
+}
+
+#wrap3 .inner #second {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/app-store.svg");
+}
+
+#wrap4 {
+  background-color: #a9e2bc;
+  min-height: 250px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap4 .inner {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#wrap4 .inner p {
+  font-size: 2.5rem;
+}
+
+#wrap4 .inner #list4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  #wrap4 .inner #list4 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#wrap4 .inner #list4 .icon {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+  padding: 4px;
+  margin: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #wrap4 .inner #list4 .icon {
+    margin: 6px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+#wrap4 .inner #list4 #essence {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/feature-essence.svg");
+}
+
+#wrap4 .inner #list4 #cnn {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/feature-cnn.svg");
+}
+
+#wrap4 .inner #list4 #bi {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/feature-business-insider.svg");
+}
+
+#wrap4 .inner #list4 #inc {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/feature-inc.svg");
+}
+
+#wrap4 .inner #list4 #forbes {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/feature-forbes.svg");
+}
+
+#wrap5 {
+  background-color: #151519;
+  color: #fffc;
+  padding: 10px;
+}
+
+#wrap5 .inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "ph p4 money";
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  #wrap5 .inner {
+    -ms-grid-rows: 1fr 300px 400px;
+        grid-template-rows: 1fr 300px 400px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "ph"  "money"  "p4";
+  }
+}
+
+#wrap5 .inner h2 {
+  font-size: 2rem;
+}
+
+#wrap5 .inner p {
+  line-height: 1.8;
+  color: #d6d6d6;
+  font-family: "Helvetica Neue";
+  font-size: .95rem;
+  margin: 0 0 2rem;
+}
+
+#wrap5 .inner .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  #wrap5 .inner .btn {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+#wrap5 .inner .btn button {
+  -webkit-box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+          box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #f8d88b;
+  color: #4a4a4a;
+  max-width: 20rem;
+}
+
+#wrap5 .inner #phunds {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ph;
+}
+
+#wrap5 .inner #money {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: money;
+}
+
+#wrap5 .inner #pic4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: p4;
+}
+
+#wrap5 .inner #pic4 .img4 {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/partnership.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  #wrap5 .inner #pic4 .img4 {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+#wrap7 {
+  background-color: #fafafb;
+  padding: 10px;
+}
+
+#wrap7 .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  #wrap7 .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+#wrap7 .inner #top7 {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 610px) {
+  #wrap7 .inner #top7 {
+    width: 350px;
+  }
+}
+
+#wrap7 .inner #top7 .wrapper {
+  margin-top: -20px;
+}
+
+#wrap7 .inner #top7 .wrapper h3 {
+  color: #1c1c1f;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+#wrap7 .inner #top7 .wrapper p {
+  font-size: 1rem;
+  font-family: "Helvetica Neue";
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  color: #1c1c1f;
+}
+
+#wrap7 .inner #bottom7 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#wrap7 .inner #bottom7 .card {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#wrap7 .inner #bottom7 #one {
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/card-1.png");
+  width: 260px;
+  height: 267px;
+}
+
+#wrap7 .inner #bottom7 #two {
+  width: 260px;
+  height: 267px;
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/card-2.png");
+}
+
+#wrap7 .inner #bottom7 #three {
+  width: 260px;
+  height: 267px;
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/card-3.png");
+}
+
+#wrap7 .inner #bottom7 #four {
+  width: 260px;
+  height: 267px;
+  background-image: url("https://capway.com/assets/module-site/pages/page-landing/card-4.png");
+}
+
+@media screen and (max-width: 1000px) {
+  #wrap7 .inner #bottom7 {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #wrap7 .inner #bottom7 {
+    -webkit-transform: scale(0.68);
+            transform: scale(0.68);
+  }
+}
+
+footer {
+  background-color: #1c1c1f;
+  padding: 30px;
+  color: white;
+}
+
+footer #foot1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+  footer #foot1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer #foot1 #brand {
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12px;
+}
+
+footer #foot1 #brand .logo .pic {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/logo.svg");
+  width: 12rem;
+  height: 2.5rem;
+}
+
+footer #foot1 #brand #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 13px;
+}
+
+footer #foot1 #brand #socials .icons {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+footer #foot1 #brand #socials #fb {
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/footer-facebook.svg");
+}
+
+footer #foot1 #brand #socials #ig {
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/footer-instagram.svg");
+}
+
+footer #foot1 #brand #socials #tw {
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/footer-twitter.svg");
+}
+
+footer #foot1 #brand #socials #yt {
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/footer-youtube.svg");
+}
+
+footer #foot1 #brand #socials #ln {
+  background-image: url("https://capway.com/assets/module-core/footers/footer-default/footer-linkedin.svg");
+}
+
+footer #foot1 #site-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #foot1 #site-map .foot-section {
+  text-align: left;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  footer #foot1 #site-map .foot-section {
+    text-align: center;
+  }
+}
+
+footer #foot1 #site-map .foot-section p {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: .85rem;
+  margin: 0 0 0.8rem;
+  opacity: .8;
+}
+
+footer #foot2 {
+  margin: 0 auto;
+  width: 90%;
+  border-top: 0.05rem solid #47494a;
+  padding: 3rem 0;
+}
+
+footer #foot2 .foot-box {
+  font-size: .75rem;
+  color: #929596;
+  margin: 0 0 1.2rem;
+  line-height: 1.5;
+}
+
+#foot3 {
+  background-image: linear-gradient(225.47deg, #82D49D, #4BABD8);
+  font-family: Helvetica Neue;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  font-size: smaller;
+  color: #fffc;
+}
+
+#foot3 p {
+  margin-left: 75px;
+}
+
+@media screen and (max-width: 400px) {
+  #foot3 p {
+    margin-left: 29px;
+  }
+}
+
+#wrap6 {
+  background-color: #fafafb;
+  padding: 10px;
+}
+
+#wrap6 .inner h2 {
+  color: #1c1c1f;
+  font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#wrap6 .inner #api {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  #wrap6 .inner #api {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#wrap6 .inner #api .pic-box {
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+#wrap6 .inner #api .pic-box .pic {
+  height: 350px;
+  width: 300px;
+  border-radius: 13px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-shadow: black 0px -50px 36px -28px inset;
+          box-shadow: black 0px -50px 36px -28px inset;
+}
+
+@media screen and (max-width: 1300px) {
+  #wrap6 .inner #api .pic-box .pic {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #wrap6 .inner #api .pic-box .pic {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #wrap6 .inner #api .pic-box .pic {
+    width: 300px;
+  }
+}
+
+#wrap6 .inner #api .pic-box .pic .blur {
+  background-color: rgba(0, 0, 0, 0.445);
+  border-radius: 3px;
+  padding: 7px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+#wrap6 .inner #api .pic-box .pic .blur p {
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#wrap6 .inner #api .pic-box .pic .blur .date {
+  color: #9e9e9e;
+  font-size: small;
+  margin-top: -14px;
+}
+
+#wrap6 .inner #link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap6 .inner #link-wrapper .links {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-bottom: 0.2rem solid transparent;
+  text-align: center;
+  cursor: pointer;
+  color: #4a4a4a;
+}
+
+#wrap6 .inner #link-wrapper .links:hover {
+  color: #00ace2;
+  border-bottom-color: #00ace2;
+}
+
+#wrap6 .inner button {
+  -webkit-box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+          box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+  background-color: #00ace2;
+  display: block;
+  width: 100%;
+  padding: 0.95rem 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  max-width: 20rem;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+  #list {
+    visibility: hidden;
+    width: 0px;
+    z-index: -6;
+  }
+  #left-head .logo {
+    background-size: 100px;
+  }
+  #top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .box-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=app.css.map */
