@@ -2,6 +2,12 @@ body {
   font-family: Helvetica Neue;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
 #wrap1 {
   background-image: linear-gradient(230deg, #00CC71 20%, #00ACE2 80%);
   min-height: 500px;
@@ -645,6 +651,7 @@ body {
   margin: 0 0 1rem;
   font-family: "Helvetica Neue Light",Helvetica,sans-serif;
   font-weight: normal;
+  padding-top: 20px;
 }
 
 #wrap7 .inner #top7 .wrapper p {
@@ -944,7 +951,9 @@ footer #foot2 .foot-box {
   background-color: rgba(0, 0, 0, 0.445);
   border-radius: 3px;
   padding: 7px;
-  margin-top: -23px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 #wrap6 .inner #api .pic-box .pic .blur p {

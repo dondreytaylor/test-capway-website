@@ -8,6 +8,9 @@
 }
 body{
     font-family: Helvetica Neue;
+    @media screen and (max-width: 600px ){
+        width: 100%;
+    }
 }
 $wtext:  #fffc;
 #wrap1{
@@ -495,6 +498,7 @@ $wtext:  #fffc;
                     margin: 0 0 1rem;
                     font-family: "Helvetica Neue Light",Helvetica,sans-serif;
                     font-weight: normal;
+                    padding-top: 20px;
                 }
                 p{
                     font-size: 1rem;
@@ -683,6 +687,7 @@ footer{
                 margin :7px;
                 display: flex;
                 justify-content: center;
+                
                
                 z-index: 2;
 
@@ -701,7 +706,8 @@ footer{
                     box-shadow: rgb(0, 0, 0) 0px -50px 36px -28px inset;
 
                     @media screen and (max-width: 900px ){ 
-                        width:500px;  
+                        width:500px; 
+                         
                          }
                     @media screen and (max-width: 550px ){ 
                             width:300px;  
@@ -710,7 +716,8 @@ footer{
                        background-color: rgba(0, 0, 0, 0.445);
                        border-radius: 3px;
                        padding: 7px;
-                       margin-top: -23px;
+                       height: min-content;
+
                         p{
                             color:white;
                             font-size:larger;

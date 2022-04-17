@@ -1,6 +1,8 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
 import axios  from 'axios';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
@@ -22,12 +24,16 @@ function App() {
     
  
   }, [data])
+  useEffect(() => {
+    AOS.init();
+      AOS.refresh();
+   }, [])
 
   function format(x){
     const image = {backgroundImage: `url(${x["thumbnail_url"]})` }
     const date = new Date(x['publish_date'])
-   return <div className='pic-box'>
-      <div className='pic' style={image} >
+   return <div className='pic-box' data-aos="flip-up" >
+      <div className='pic' style={image}  >
         <div className="blur">
           <p> {x['title']} </p>
           <p className="date"> {  date.toDateString().slice(4)   } </p>
@@ -43,7 +49,7 @@ function App() {
       <div id="wrap1">
         <div id='header1'>
           <div id='left-head'>
-            <div className="logo"> </div>
+            <div className="logo" data-aos="zoom-in" data-aos-duration="900"> </div>
           </div>
           <div id="right-head">
             <div id="list"> 
@@ -60,7 +66,7 @@ function App() {
         </div>
         <div id="top">
           <div id='top-left'>
-            <div id='phone'></div>
+            <div id='phone'  data-aos="zoom-in" data-aos-duration="900" ></div>
           </div>
           <div id='top-right'>
             <div className="contain">  
@@ -69,7 +75,7 @@ function App() {
                 <p>No overdraft or minimum balance fees.<sup>1</sup> Send and receive money.<sup>2</sup>  Get paid early.<sup>3</sup>  Achieve Money Goals.<sup>4</sup>  Learn money.<sup>5</sup> ...and <span>more</span>.</p>
               </div>
               <div id='input'> 
-                <input type='text' placeholder='Enter email address'  value={value} onChange={(e)=> setValue(e.target.value)}   ></input>
+                <input type='email' placeholder='Enter email address'  value={value} onChange={(e)=> setValue(e.target.value)}   ></input>
                 <span onClick={()=>setValue('')} > Sign Me Up</span> 
               </div>
               <div  className='downloads'>
@@ -84,16 +90,16 @@ function App() {
       <div id="wrap2">
           <div className='inner'>
             <h2> Money Account with CapWay</h2>
-            <div className='box-list'>
-              <div className='box' id='box1'>
+            <div className='box-list' >
+              <div className='box' id='box1' data-aos="zoom-in" data-aos-duration="500"  >
                 <div className='pic' id='pic1' ></div>
                 <p>Debit card to access the cashless economy.</p>
               </div>
-              <div className='box' id='box2'>
+              <div className='box' id='box2' data-aos="zoom-in-down" data-aos-duration="500" >
                 <div className='pic' id='pic2' ></div>
                 <p>Withdraw money at ATMs, plus multiple options to deposit funds.</p>
               </div>
-              <div className='box' id='box3'>
+              <div className='box' id='box3'data-aos="zoom-in" data-aos-duration="500" >
                 <div className='pic' id='pic3' ></div>
                 <p>Create and save money towards your Money Goals.</p>
               </div>
