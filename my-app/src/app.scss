@@ -12,25 +12,26 @@ body{
 $wtext:  #fffc;
 #wrap1{
     background-image: linear-gradient(230deg,#00CC71 20%,#00ACE2 80%);
-    height: 500px;
+    min-height: 500px;
     padding: 10px;
     color: $wtext;
-    
-    header{
+    #header1{
         height: 60px;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+
         #left-head{
            height: 60px;
            min-width: 40%;
-            z-index: 2;
            .logo{
             background-image: url("https://capway.com/assets/module-site/headers/header-site-transparent/logo.svg");
             @include backdrop();
             background-size: 190px;
             height: 50px;
             background-position: left;
+            @media screen and (max-width: 800px ){
+                width: 500px;
+             }
            }
         }
         #right-head{
@@ -39,24 +40,46 @@ $wtext:  #fffc;
             width: 60%;
             display: flex;
             align-items: center;
-
+            @media screen and (max-width: 800px ){
+               width: 40px;
+            }
+            
             #list{
                 display: flex;
                 margin-left: auto;
                 margin-right: 10px;
+                @media screen and (max-width: 800px ){
+                    width: 0;
+                 }
                 a{
                     font-size: smaller;
                     color: white;
-                    padding: 4px
+                    padding: 5px;
+                    text-decoration: none;
                 }
-            }
-            
+            }  
+            .logo{
+                display: center;
+                justify-content: center;
+                align-items: center;
+                padding: 2px;
+                .icon{
+                    @include backdrop();
+                    background-image: url('https://capway.com/assets/module-site/pages/page-landing/menu-icon-light.svg');
+                    @media screen and (max-width: 800px ){
+                        width: 30px;
+                        height: 30px;
+                     }
+                }
+            } 
+  
         }
     }
+  
     #top{
         display: flex;
         width: 100vw;
-        height: 400px;
+        min-height: 400px; 
         
         #top-left{
            width: 350px;
@@ -66,8 +89,11 @@ $wtext:  #fffc;
                @include backdrop();
                height: 450px;
                width: 500px;
-            
-               
+               @media screen and (max-width: 400px ){
+                width: 350px;
+                padding-left: 0px; 
+                margin-left: -10px; 
+             }
            }  
         }
         #top-right{
@@ -77,9 +103,25 @@ $wtext:  #fffc;
             display: flex;
             justify-content: center;
             .contain{
-
-            
-            max-width: 800px;
+                max-width: 800px;
+                .wrap{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    h1{
+                        font-size: 3.0rem;
+                        color: #fff;
+                        font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                        color: #fff;
+                        span{
+                            color: black;
+                        }
+                    }
+                }
+                
             
 
                 #input{
@@ -136,6 +178,12 @@ $wtext:  #fffc;
 
         h2{
            text-align: center;
+           color: #1c1c1f;
+            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+            font-weight: normal;
         }
         .box-list{
             min-height: 300px;
@@ -153,16 +201,26 @@ $wtext:  #fffc;
                 justify-content: center;
                 padding: 7px;
                 text-align: center;
+
               
                 .pic{
-                    height: 60px;
-                    @include backdrop()
+
+                    @include backdrop();
+                    width: 100px;
+                    height: 100px;
+                    margin-left: auto;
+                    margin-right: auto;
+
                 }
             }
             #box1{
                 background-color: #c8e6f3;
-               
                 margin-top: 50px;
+                @media screen and (max-width: 800px ){
+                    margin-top: 0;
+                    width: 70%;
+                    min-width: 200px;
+                }
                 #pic1{
                     background-image: url('https://capway.com/assets/module-site/pages/page-landing/debit-cards.svg');
                     
@@ -172,6 +230,11 @@ $wtext:  #fffc;
                 background-color: #fbe9bc;
                 
                 margin-top: -40px;
+                @media screen and (max-width: 800px ){
+                    margin-top: 0;
+                    width: 70%;
+                    min-width: 200px;
+                }
                 #pic2{
                     background-image: url('https://capway.com/assets/module-site/pages/page-landing/withdrawal.svg');
                     
@@ -181,6 +244,11 @@ $wtext:  #fffc;
                 background-color: #a8e1bb;
                 
                 margin-top: 50px;
+                @media screen and (max-width: 800px ){
+                    margin-top: 0;
+                    width: 70%;
+                    min-width: 200px;
+                }
                 #pic3{
                     background-image: url('https://capway.com/assets/module-site/pages/page-landing/money-goals.svg');
                     
@@ -206,6 +274,10 @@ $wtext:  #fffc;
             margin-left: auto;
             margin-right: auto;
             margin-top: -30px;
+            @media screen and (max-width: 800px ){
+                margin-top: 0;
+                transform: scale(.9);
+            }
         }
         button:hover{
             transform: scale(1.2);
@@ -249,7 +321,7 @@ $wtext:  #fffc;
 }
 #wrap4{
     background-color: #a9e2bc;
-    height: 250px;
+    min-height: 250px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -265,6 +337,10 @@ $wtext:  #fffc;
         #list4{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 600px ){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
             .icon{
                 @include backdrop();
@@ -272,6 +348,10 @@ $wtext:  #fffc;
                 width:100px;
                 padding: 4px;
                 margin: 4px;
+                @media screen and (max-width: 600px ){
+                   margin:6px;
+                   transform:scale(.8)
+                }
             }
             #essence{
                 background-image: url('https://capway.com/assets/module-site/pages/page-landing/feature-essence.svg');
@@ -300,14 +380,21 @@ $wtext:  #fffc;
 #wrap5{
     background-color: #151519;
     color: $wtext;
+    padding: 10px;
     .inner{
        
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "ph p4 money" ;
-        align-items: center;
+        align-items: flex-end;
         text-align: center;
+        @media screen and (max-width: 900px ){
+            grid-template-rows: 1fr 300px 400px;
+            grid-template-columns: 100%;
+            grid-template-areas: "ph"  "money"  "p4";
+   
+        } 
         
         h2{
             font-size: 2rem;  
@@ -322,6 +409,10 @@ $wtext:  #fffc;
         .btn{
             display: flex;
             justify-content: center;
+            @media screen and (max-width: 900px ){
+                transform: scale(.8);
+       
+            } 
              button{
                  box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;  
                  display: block;
@@ -342,9 +433,11 @@ $wtext:  #fffc;
         }
         #phunds{
             grid-area: ph;
+ 
         }
         #money{
             grid-area: money;
+ 
         }
         #pic4{
             grid-area: p4;
@@ -358,6 +451,10 @@ $wtext:  #fffc;
                 height: 600px;
                 margin-left: auto;
                 margin-right: auto;
+                @media screen and (max-width: 900px ){
+                    width: 300px;
+                    height: 500px;
+                }
             }
         }
     }
@@ -367,16 +464,33 @@ $wtext:  #fffc;
     padding: 10px;
     .inner{
         display: flex;
+        @media screen and (max-width: 1000px ){
+          
+            flex-direction: column;
+            text-align: center;
+            padding-top: 10px;
+         }
         #top7{
-            width:50%;
+            width:80%;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            @media screen and (max-width: 1000px ){
+
+              
+             }
+             @media screen and (max-width: 610px ){ 
+              width:350px;
+            }
+             
             .wrapper{
-                max-width: 500px;
+                
+                margin-top: -20px;
                 h3{
                     color: #1c1c1f;
-                    font-size: 2.2rem;
+                    font-size: 2.4rem;
                     line-height: 1.5;
                     margin: 0 0 1rem;
                     font-family: "Helvetica Neue Light",Helvetica,sans-serif;
@@ -395,6 +509,9 @@ $wtext:  #fffc;
             width:50%;
             display: flex;
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            transform: scale(.8);
             .card{
                
                 @include backdrop()
@@ -419,6 +536,15 @@ $wtext:  #fffc;
                 height: 267px;
                 background-image: url('https://capway.com/assets/module-site/pages/page-landing/card-4.png');
             }
+            
+             @media screen and (max-width: 1000px ){ 
+              
+             transform: scale(1);
+             }
+             @media screen and (max-width: 610px ){ 
+              
+                transform: scale(.68);
+                }
 
         }
 
@@ -431,13 +557,15 @@ footer{
     #foot1{
         display: flex;
         justify-content: space-around;
+        @media screen and (max-width: 500px ){
+            flex-wrap: wrap;
+            justify-content: center;
+         }
         #brand{
             width: 12rem;
             display: flex;
             flex-direction: column;
             margin-top: 12px;
-            
-        
             .logo{
                 
                 .pic{
@@ -455,8 +583,7 @@ footer{
                 .icons{
                     @include backdrop();
                     width:25px;
-                    height: 25px;
-                 
+                    height: 25px;            
                 }
                 #fb{
                     background-image: url('https://capway.com/assets/module-core/footers/footer-default/footer-facebook.svg');
@@ -482,6 +609,9 @@ footer{
             .foot-section{
                 text-align: left;        
                 padding: 1rem;
+                @media screen and (max-width: 500px ){
+                    text-align: center;
+                 }
                 
                 p{
                     display: block;
@@ -521,8 +651,154 @@ footer{
     color: $wtext;
     p{
         margin-left: 75px;
+        @media screen and (max-width: 400px ) {
+            margin-left: 29px;
+        }
     }
     
 }
+#wrap6{
+
+    background-color: #fafafb;
+    padding: 10px;
+    .inner{
+        h2{
+            color: #1c1c1f;
+            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+            text-align: center;
+            font-size: 2rem;
+        }
+        #api{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content:space-between;
+            padding-top: 10px;
+            @media screen and (max-width: 900px ){ 
+              
+                flex-direction: column;
+                
+                }
+            .pic-box{   
+                margin :7px;
+                display: flex;
+                justify-content: center;
+               
+                z-index: 2;
+
+                .pic{
+                                      
+                    height: 250px;
+                    width: 200px;
+                    border-radius: 13px;
+                    z-index: 1;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    box-shadow: rgb(0, 0, 0) 0px -50px 36px -28px inset;
+
+                    @media screen and (max-width: 900px ){ 
+                        width:500px;  
+                         }
+                    @media screen and (max-width: 550px ){ 
+                            width:300px;  
+                    }
+                    .blur{
+                       background-color: rgba(0, 0, 0, 0.445);
+                       border-radius: 3px;
+                       padding: 7px;
+                       margin-top: -23px;
+                        p{
+                            color:white;
+                            font-size:larger;
+                            font-weight: bolder;
+                        }
+                        .date{
+                            color: rgb(158, 158, 158);
+                            font-size: small;
+                            margin-top: -14px;
+                        }
+                    }    
+                }
+            }
+        }
+        #link-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .links{
+                display: inline-block;
+                padding: 1rem 1.5rem;
+                border-bottom: 0.2rem solid transparent;
+                text-align: center;
+                cursor: pointer;
+                color: #4a4a4a;
+                
+            }
+            .links:hover{
+                color: #00ace2;
+                border-bottom-color: #00ace2;
+            }
+        }
+        button{
+            box-shadow: 0 2px 4px #0000001a, 0 2px 4px #0000001a;
+            background-color: #00ace2;
+            display: block;
+            width: 100%;
+            padding: 0.95rem 0.5rem;
+            box-sizing: border-box;
+            border-radius: 0.3rem;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            max-width: 20rem;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    }
+}
+button:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 800px ) {
+    #list{
+        visibility: hidden;
+        width: 0px;
+        z-index: -6;
+    }
+    #left-head{
+        .logo{
+            background-size: 100px;
+        }
+    }
+    #top{
+        flex-wrap: wrap;
+        flex-direction: column;
+        transform: scale(.8);
+    }
+    
+    .box-list{
+        flex-direction: column;       
+    }
+   
+    
+    
+
+}  
+@media screen and (max-width: 600px ){
+
+   
+} 
+
 
 

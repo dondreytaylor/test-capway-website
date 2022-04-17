@@ -89,11 +89,11 @@ function App() {
         <div className='boxes'>
           <h2> Get to Know Money Better </h2>
           <div id='5th-link-wrapper'>
-            <div className='5th-links'> Articles</div>
-            <div className='5th-links'> Videos</div>
-            <div className='5th-links'> Facts & Hacks</div>
-            <div className='5th-links'> Infographics</div>
-            <div className='5th-links'> Money Meanings</div>
+            <div className='links'> Articles</div>
+            <div className='links'> Videos</div>
+            <div className='links'> Facts & Hacks</div>
+            <div className='links'> Infographics</div>
+            <div className='links'> Money Meanings</div>
           </div>
           <div className='btn'><button> Learn More About Money </button> </div>
         </div>

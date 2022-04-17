@@ -1,11 +1,47 @@
-
 import './App.css';
+import React, {useState, useEffect} from 'react'
+import axios  from 'axios';
+
 
 function App() {
+  const [value, setValue]= useState('')
+  const [pic, setPic]=useState([])
+  const [data, setData]=useState("shortarticle")
+  const [active, setActive]= useState('')
+  const liveLink = { color: "#00ace2", borderBottomColor: "#00ace2"}
+
+  useEffect(() => {
+    
+    axios.get('https://gateway.dev.cpwys.co/api/v1/content/fetch/learnmoney')
+          .then(res => {
+            console.log(res.data)
+            setPic(res.data[data].splice(0, 4).map(x=> x))
+          } )
+          .catch(e => console.log(e.message))
+
+    
+ 
+  }, [data])
+
+  function format(x){
+    const image = {backgroundImage: `url(${x["thumbnail_url"]})` }
+    const date = new Date(x['publish_date'])
+   return <div className='pic-box'>
+      <div className='pic' style={image} >
+        <div className="blur">
+          <p> {x['title']} </p>
+          <p className="date"> {  date.toDateString().slice(4)   } </p>
+        </div>
+      </div>
+    </div>
+
+  }
+
+
   return (
     <div className="App">
       <div id="wrap1">
-        <header>
+        <div id='header1'>
           <div id='left-head'>
             <div className="logo"> </div>
           </div>
@@ -17,19 +53,24 @@ function App() {
               <a href='#'>  More </a>
               <a href='#'>  Dondry Taylor </a>
             </div>
+            <div className='logo'>
+                <div className='icon'> </div>
+            </div>
           </div>
-        </header>
+        </div>
         <div id="top">
           <div id='top-left'>
             <div id='phone'></div>
           </div>
           <div id='top-right'>
             <div className="contain">  
-              <h1> NOT JUST A BANK</h1>
-              <p>No overdraft or minimum balance fees.1 Send and receive money.2 Get paid early.3 Achieve Money Goals.4 Learn money.5...and more.</p>
+              <div className='wrap'> 
+                <h1> NOT JUST A BANK</h1>
+                <p>No overdraft or minimum balance fees.<sup>1</sup> Send and receive money.<sup>2</sup>  Get paid early.<sup>3</sup>  Achieve Money Goals.<sup>4</sup>  Learn money.<sup>5</sup> ...and <span>more</span>.</p>
+              </div>
               <div id='input'> 
-                <input type='text' placeholder='Enter email address'></input>
-                <span > Sign Me Up</span> 
+                <input type='text' placeholder='Enter email address'  value={value} onChange={(e)=> setValue(e.target.value)}   ></input>
+                <span onClick={()=>setValue('')} > Sign Me Up</span> 
               </div>
               <div  className='downloads'>
                 <span> Download for IOS </span><span>*</span>
@@ -71,19 +112,6 @@ function App() {
         </div>
         <div></div>
       </div>
-      <div id='wrap4'>
-        <div className='inner'>
-          <p>As Featured In </p>
-          <div id='list4' >
-            <div className="icon" id='essence'> </div>
-            <div className="icon" id='cnn'> </div>
-            <div className="icon" id='bi'> </div>
-            <div className="icon" id='inc'> </div>
-            <div className="icon" id='forbes'> </div>
-
-          </div>
-        </div>
-      </div>
       <div id='wrap5'>
         <div className='inner' >
           <div id='phunds' >
@@ -98,6 +126,36 @@ function App() {
             <h2> The Money Room</h2>
             <p> The master class of money. Engage and learn money from the financial teachings through our collaborations with brands and influencers.</p>
             <div className='btn'>   <button> Download App </button>  </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrap6">
+        <div className='inner'>
+          <h2> Get to Know Money Better </h2>
+         
+          <div id='link-wrapper'>
+            <div className='links'  onClick={()=> setData('shortarticle')}>  Articles</div>
+            <div className='links'  onClick={()=> setData('video')} > Videos</div>
+            <div className='links' onClick={()=> setData('knowmoneyfacts')}> Facts & Hacks</div>
+            <div className='links' onClick={()=> setData('infograpics')}> Infographics</div>
+            <div className='links' onClick={()=> setData('trending')}> Money Meanings</div>
+          </div>
+          <div id='api'>
+            {pic.map(format )}
+          </div>
+          <div className='btn'><button> Learn More About Money </button> </div>
+        </div>
+      </div>
+      <div id='wrap4'>
+        <div className='inner'>
+          <p>As Featured In </p>
+          <div id='list4' >
+            <div className="icon" id='essence'> </div>
+            <div className="icon" id='cnn'> </div>
+            <div className="icon" id='bi'> </div>
+            <div className="icon" id='inc'> </div>
+            <div className="icon" id='forbes'> </div>
+
           </div>
         </div>
       </div>
@@ -131,11 +189,11 @@ function App() {
               <div className='pic'> </div> 
             </div>
             <div id='socials'>
-              <div className='icons' id='fb'></div>
-              <div className='icons' id='ig'></div>
-              <div className='icons' id='tw'></div>
-              <div className='icons' id='yt'></div>
-              <div className='icons' id='ln'></div>
+            <a href='#'>  <div className='icons' id='fb'></div></a>
+            <a href='#'> <div className='icons' id='ig'></div></a>
+            <a href='#'> <div className='icons' id='tw'></div></a>
+            <a href='#'><div className='icons' id='yt'></div></a>
+            <a href='#'> <div className='icons' id='ln'></div></a>
             </div>
           </div>
           <div id="site-map">
