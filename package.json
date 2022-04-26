@@ -1,0 +1,32 @@
+{
+  "name": "test-capway-website",
+  "version": "1.0.0",
+  "description": "![CapWay](readme-assets/capway.png)",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "start": "webpack-dev-server --env.mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asbillings07/test-capway-website.git"
+  },
+  "author": "Aaron Billings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asbillings07/test-capway-website/issues"
+  },
+  "homepage": "https://github.com/asbillings07/test-capway-website#readme",
+  "devDependencies": {
+    "axios": "^0.27.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "path": "^0.12.7",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
