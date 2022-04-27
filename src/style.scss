@@ -1,6 +1,7 @@
 @use './scss/header.scss';
 @use './scss/firstInner.scss';
 @use './scss/secondInner.scss';
+@use './scss/downloads.scss';
 @use './scss/variables.scss' as *;
 
 @font-face{font-family:Helvetica Neue;src:url("#{$url}/assets/module-core/fonts/helveticaneue/HelveticaNeue-Regular.ttf") format("truetype")}*{font-family:Helvetica Neue;margin:0}
