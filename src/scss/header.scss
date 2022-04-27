@@ -1,0 +1,160 @@
+@use './variables.scss';
+
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    z-index: 5;
+    height: 5.5rem;
+    background-color: #fff;
+    border-bottom: 0.05rem solid #EEEEEE;
+
+    #border-top {
+        height: 1rem;
+        width: 100%;
+        background: linear-gradient(225.47deg, $green 0%, $blue 100%);
+    }
+
+    #header-bottom {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 64rem;
+        position: relative;
+    }
+
+    #header-left {
+        color: transparent;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0.9rem;
+
+        .logo {
+            width: 10rem;
+            height: 3rem;
+            @include bg-image("/assets/module-site/headers/header-site/logo.svg");
+            // background-image: url("#{$url}/assets/module-site/headers/header-site/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+
+    #header-right {
+        .header-menu {
+            display: none;
+            cursor: pointer;
+
+            div {
+                width: 1.5rem;
+                height: 1.5rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("#{$url}/assets/module-site/headers/header-site/menu-icon.svg");
+            }
+        }
+
+        .header-option {
+            font-size: 16px;
+            display: inline-block;
+            margin: 0 1.3rem;
+            position: relative;
+            top: 0.1rem;
+
+                a {
+                    color: #4a4a4a;
+                    text-decoration: none;
+                    font-family: "Helvetica Neue";
+                    font-size: .95rem;
+                    padding: 1.3rem 0 1.5rem;
+                    border-bottom: 0.2rem solid transparent;
+                    display: inline-block;
+                }
+        }
+
+        #learn-money {
+            :after {
+                content: "";
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("#{$url}/assets/module-site/headers/header-site/chevron-down.svg");
+                width: 0.7rem;
+                height: 0.7rem;
+                position: absolute;
+                right: -1rem;
+                bottom: 1.7rem;
+            }
+        }
+
+        .learn-money-options {
+            display: none;
+            width: 13rem;
+            position: absolute;
+            bottom: -15.5rem;
+
+            .learn-money-holder {
+                background: #FFFFFF;
+                box-shadow: 0 8px 23px #00000014;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                position: relative;
+                top: 0.8rem;
+            }
+        }
+    }
+
+}
+
+#bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.8) 100%);
+}
+a {
+    #logo {
+        height: 3rem;
+        background-image: url("#{$url}/assets/module-site/headers/header-site/logo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+.header-container {
+    #header-right {
+        .header-menu {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 1.3rem;
+          }
+    }
+}
+  
+  .header-list-options {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    #header-bottom {
+        max-width: 80rem;
+    }
+}
