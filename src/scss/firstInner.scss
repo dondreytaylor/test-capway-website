@@ -114,8 +114,7 @@
                         width: 30%;
 
                         button {
-                            background-color: $yellow;
-                            color: $gray4;
+                            @include yellow-button()
                         }
                     }
 

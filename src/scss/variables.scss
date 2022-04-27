@@ -26,3 +26,14 @@ $breakpoint-desktop: 80em;
 @mixin bg-image ($image) {
     background-image: url("#{$url}#{$image}");
 }
+
+@mixin yellow-button ($fat: false) {
+    
+    background-color: $yellow;
+    color: $gray4;
+
+    @if $fat {
+        padding: 1.2rem 0.5rem;
+    }
+}
+
