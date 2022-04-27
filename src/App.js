@@ -28,14 +28,15 @@ export function App () {
     return (
         <div className='app'>
             <Header />
-            <FirstInner />
-            <Featured />
-            <SecondInner />
-            <Download />
-            <FinancialEducation />
-            <KnowMoney data={dataLinks} />
-            <Numbers />
-            <Footer />
+            <main className='capWayMain'>
+                <FirstInner />
+                <SecondInner />
+                <Download />
+                <FinancialEducation />
+                <KnowMoney data={dataLinks} />
+                <Numbers />
+                <Footer />
+            </main>
         </div>
     )
 }

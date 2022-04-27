@@ -1,0 +1,74 @@
+
+@use 'variables.scss' as *;
+
+
+.section-two {
+    padding: 5rem 0;
+    background-color: #fafafb;
+
+    &__inner {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 64rem;
+        
+        h2 {
+            color: $gray6;
+            font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+        }
+
+        &__card-list {
+
+            text-align: center;
+            margin: 3rem auto 0;
+
+
+            .card-container {
+                display: inline-block;
+                vertical-align: top;
+                box-sizing: border-box;
+                padding: 1rem;
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                border-radius: 0.5rem;
+                width: 19rem;
+                min-height: 14rem;
+                margin: 0 0 2rem;
+
+                .card-main {
+                    width: 85%;
+                    margin: 0 auto;
+                    min-height: inherit;
+
+                    .card-icon {
+                        height: 6em;
+                        width: 6em;
+                        margin: 3rem auto 1.5rem;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+
+                    .card-text {
+                        font-size: 1.1rem;
+                        line-height: 1.5;
+                        color: $gray5;
+                        font-family: "Helvetica Neue";
+                    }
+                }
+            }
+        }
+        &__card-button {
+            max-width: 20rem;
+            display: block;
+            margin: 0 auto;
+
+            button {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    }
+}

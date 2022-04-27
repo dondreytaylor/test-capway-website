@@ -1,0 +1,200 @@
+@use './variables.scss' as *;
+
+
+.first-section {
+
+    
+    height: 48rem;
+    position: relative;
+    padding: 1rem 0 0;
+    margin: 0 0 8rem;
+
+
+    .first-inner-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        max-width: 64rem;
+
+        #left-holder {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            .left-holder-container {
+                height: 100%;
+                width: 65%;
+                padding: 4rem 0 0;
+                position: relative;
+                box-sizing: border-box;
+
+                h1 {
+                    font-size: 3rem;
+                    color: $gray5;
+                    line-height: 1.3;
+                    max-width: 35rem;
+                    margin: 0 0 2rem;
+                }
+
+                .highlight {
+                    margin: 0 0 3rem;
+
+                    .highlight-list {
+                        max-width: 35rem;
+                        margin: 0 0 1.5rem;
+
+                        strong {
+                            display: block;
+                            margin: 0 0 1rem;
+                            font-family: "Helvetica Neue";
+                            color: $gray5;
+                            font-size: 1rem;
+                        }
+                        
+
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+
+
+                            li {
+                                display: inline-block;
+                                margin: 0 1rem 0.8rem 0;
+                                padding: 0 0 0 1.7rem;
+                                position: relative;
+                                color: $gray3;
+                                font-family: "Helvetica Neue Light",Helvetica,sans-serif;
+                                font-size: .95rem;
+                            }
+                            li:before {
+                                
+                                    content: "";
+                                    position: absolute;
+                                    width: 1.2rem;
+                                    height: 1.2rem;
+                                    top: 0.1rem;
+                                    left: 0;
+                                    background-position: center center;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    @include bg-image("/assets/module-site/pages/page-landing/highlight-checkmark.svg")
+                                
+                            }
+                        }
+                    }
+                }
+
+                #signup-box {
+                    max-width: 30rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0 0 1rem;
+
+                    input {
+                        width: 68%;
+                        border: 0.09rem solid #ebebeb;
+                        border-radius: 0.3rem;
+                        box-sizing: border-box;
+                        padding: 0 1rem;
+                        font-size: .95rem;
+                        font-family: "Helvetica Neue Medium";
+                        outline: none;
+                        transition: border-color .3s ease;
+                    }
+
+                    div {
+                        width: 30%;
+
+                        button {
+                            background-color: $yellow;
+                            color: $gray4;
+                        }
+                    }
+
+
+                }
+                #links {
+                    margin: 0 0 6rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $gray5;
+                        display: inline-block;
+                        margin: 0 0.3rem 0 0;
+                        font-size: .9rem;
+                    }
+                    span {
+                        color: $gray5;
+                        display: inline-block;
+                        margin: 0 1rem 12px 0;
+                        font-size: 1.3rem;
+                        vertical-align: middle;
+                    }
+                }
+                #featured-in {
+                    position: absolute;
+                    width: 100%;
+                    bottom: -2.5rem;
+
+                    strong {
+                        font-size: 1.2rem;
+                        font-family: "Helvetica Neue Thin",Helvetica,sans-serif;
+                        color: $gray3;
+                        margin: 0 0 0.5rem;
+                        display: block;
+                    }
+
+                    #featured-list {
+                        width: 90%;
+                        height: 3rem;
+                        background-position: center center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        @include bg-image('/assets/module-site/pages/page-landing/featured-in.png')
+                    }
+                }
+            }
+        }
+
+        #right-holder {
+            background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
+            height: 100%;
+            width: 30%;
+
+            div {
+                height: 61rem;
+                left: -23rem;
+                top: -4rem;
+                width: 240%;
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
+            }
+        }
+
+        #right-holder:after {
+
+        }
+
+
+
+
+
+
+        
+    }
+
+
+
+}
+

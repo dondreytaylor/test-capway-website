@@ -4,7 +4,7 @@ export const Featured = () => {
     return (
         <div id='featured-container'>
             <div className='inner'>
-                <p>As Featured In </p>
+                <strong>As Featured In </strong>
                 <div id='list4' >
                     <div className="icon" id='essence'> </div>
                     <div className="icon" id='cnn'> </div>

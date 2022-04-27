@@ -18,12 +18,22 @@ export function Header () {
     const headerOptions = Children.toArray(['Benefits', 'Learn Money', 'Partner', 'Discover CapWay', 'Sign In', 'Sign Up'].map(option => {
         return (
             <>
-                <div className='header-option' id={option === 'Learn Money' ? 'learn-money' : ''}>
-                    <a href='"javascript:void(0);"'>
-                        {option}
-                    </a>
+                {
+                    option === 'Sign Up' ? (
+                        <div className='sign-up'>
+                            <button>
+                                {option}
+                            </button>
+                        </div>
+                    ) : (
+                        <div className='header-option' id={option === 'Learn Money' && 'learn-money'}>
+                            <a href='"javascript:void(0);"'>
+                                {option}
+                            </a>
+                        </div>
+                    )
 
-                </div>
+                }
 
                 {
                     option === 'Learn Money' && (

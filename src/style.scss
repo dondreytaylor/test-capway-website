@@ -1,8 +1,15 @@
-@import './scss/header.scss';
-@import './scss/variables.scss';
+@use './scss/header.scss';
+@use './scss/firstInner.scss';
+@use './scss/secondInner.scss';
+@use './scss/variables.scss' as *;
 
-// .app {
-//     font-family: $font;
-//     margin: 0 auto;
-// }
+@font-face{font-family:Helvetica Neue;src:url("#{$url}/assets/module-core/fonts/helveticaneue/HelveticaNeue-Regular.ttf") format("truetype")}*{font-family:Helvetica Neue;margin:0}
 
+.app {
+    font-family: $font;
+    margin: 0 auto;
+}
+
+.capWayMain {
+    margin: 5.5rem 0 0;
+}
