@@ -1,71 +1,70 @@
 import React from 'react'
 
 export const Footer = () => {
+    const uri = 'https://web.dev.cpwys.co/assets/module-core/footers/footer-default/footer-'
+    const icons = ['facebook.svg', 'instagram.svg', 'twitter.svg', 'youtube.svg', 'linkedin.svg']
+    const footSections = [
+        {
+            title: 'Company',
+            sections: ['About', 'Events', 'Shop', 'Parts & Media', 'Sign Up']
+        },
+        {
+            title: 'Money Account',
+            sections: ['Open Account', 'Beneifts', 'Why CapWay', 'Find ATM']
+        },
+        {
+            title: 'Learn Money',
+            sections: ['Learn Money', 'Phunds', 'Money Room', 'Request Content']
+        },
+        {
+            title: 'Work with CapWay',
+            sections: ['Partner', 'Contributions', 'Ambassador', 'Career']
+        },
+        {
+            title: 'Support',
+            sections: ['Legal', 'FAQ', 'Contact Us']
+        },
+        {
+            title: 'Download',
+            sections: ['for iOS', 'for Android']
+        },
+    ]
+    const createIcons = icons.map(icon => {
+        return (
+            <a href='"javascript:void(0);"'><div className='icon' style={{ backgroundImage: `url(${uri}${icon})` }} ></div></a>
+        )
+    })
+
+    const createFooterSection = footSections.map(section => {
+        return (
+            <div className="footer-section">
+                <strong>{section.title.toUpperCase()} </strong><br /><br />
+                {
+                    section.sections.map(sec => (
+                        <p> {sec} </p>
+                    ))
+                }
+            </div>
+        )
+    })
+
     return (
         <footer>
-            <div id='section-one' >
-                <div id='brand' >
-                    <div className='logo'>
-                        <div className='pic'> </div>
+            <div className='section1' >
+                <div className='section1__branding' >
+                    <div>
+                        <div className='logo'> </div>
                     </div>
-                    <div id='socials'>
-                        <a href='"javascript:void(0);"'>  <div className='icons' id='fb'></div></a>
-                        <a href='"javascript:void(0);"'> <div className='icons' id='ig'></div></a>
-                        <a href='"javascript:void(0);"'> <div className='icons' id='tw'></div></a>
-                        <a href='"javascript:void(0);"'> <div className='icons' id='yt'></div></a>
-                        <a href='"javascript:void(0);"'> <div className='icons' id='ln'></div></a>
+                    <div className='social_icons'>
+                        {createIcons}
                     </div>
                 </div>
-                <div id="site-map">
-                    <div className="foot-section">
-                        <strong>Company </strong><br /><br />
-
-                        <p>About </p>
-                        <p>Events </p>
-                        <p>Shop </p>
-                        <p>Parts & Media </p>
-                        <p>Sign Up </p>
-                    </div>
-                    <div className="foot-section">
-                        <strong>Money Account </strong><br /><br />
-
-                        <p>Open Account </p>
-                        <p>Benefits </p>
-                        <p>Why CapWay </p>
-                    </div>
-                    <div className="foot-section">
-                        <strong>Learn Money </strong><br /><br />
-
-                        <p>Learn Money </p>
-                        <p>Phunds </p>
-                        <p>Money Room</p>
-                        <p> Request Content</p>
-                    </div>
-                    <div className="foot-section">
-                        <strong>WORK WITH CAPWAY</strong><br /><br />
-
-                        <p> Partner </p>
-                        <p> Contributors</p>
-                        <p> Ambassador</p>
-                        <p> Career </p>
-                    </div>
-                    <div className="foot-section">
-                        <strong> SUPPORT </strong><br /><br />
-
-                        <p> Legal </p>
-                        <p> FAQ </p>
-                        <p> Contact Us</p>
-                    </div>
-                    <div className="foot-section">
-                        <strong>DOWNLOAD </strong><br /><br />
-
-                        <p>for IOS</p>
-                        <p> for Android </p>
-                    </div>
+                <div className="section1__site-sections">
+                    {createFooterSection}
                 </div>
             </div>
-            <div id="section-two" >
-                <div className="foot-box">
+            <div className="section2" >
+                <div className="section2__legal-text">
                     <p> The CapWay, Inc Debit Visa Card is issued by Metropolitan Commercial Bank (Member FDIC) pursuant to a license from Visa U.S.A. Inc. “Metropolitan Commercial Bank” and “Metropolitan” are registered trademarks of Metropolitan Commercial Bank ©2014. </p>
                     <p> 1. For Money Account holders with a negative balance, the CapWay debit card will go into freeze until funds are deposited to bring account back to current. See terms and conditions </p>
                     <p> 2. Sending or receiving money from other CapWay account holders will be instant. Transfers from other accounts could take up to 48 hours, depending on the financial institution.  </p>
@@ -74,7 +73,7 @@ export const Footer = () => {
                     <p> 5. CapWay offers financial content through Learn Money free of charge, but may include advertisements through affiliates. Phunds, CapWay's literacy program and session, is paid content or co-branded content. </p>
                 </div>
             </div>
-            <div id="section-three" >
+            <div className="copy-right" >
                 <p>© 2019-2022 CapWay Inc. All Rights Reserved. </p>
             </div>
         </footer>
