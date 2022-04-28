@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Children, useState } from 'react'
 
 export const FirstInner = () => {
 
@@ -9,7 +9,7 @@ export const FirstInner = () => {
         { title: 'Learn Money', list: ['Talk money with others', 'Get "Phunds"', 'Money Room master classes'] }
     ]
 
-    const createHighlights = highlights.map(highlight => {
+    const createHighlights = Children.toArray(highlights.map(highlight => {
         return (
             <div className='highlight-list'>
                 <strong>
@@ -24,7 +24,7 @@ export const FirstInner = () => {
                 </ul>
             </div>
         )
-    })
+    }))
 
     return (
         <div className='first-section'>

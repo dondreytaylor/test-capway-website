@@ -3,6 +3,8 @@
 @use './scss/secondInner.scss';
 @use './scss/downloads.scss';
 @use './scss/financialEdu.scss';
+@use './scss/knowMoney.scss';
+@use './scss/numbers.scss';
 @use './scss/variables.scss' as *;
 
 @font-face{font-family:Helvetica Neue;src:url("#{$url}/assets/module-core/fonts/helveticaneue/HelveticaNeue-Regular.ttf") format("truetype")}*{font-family:Helvetica Neue;margin:0}

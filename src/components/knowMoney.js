@@ -12,48 +12,58 @@ export const KnowMoney = ({ data }) => {
             const setBgImage = (imageUrl) => ({ backgroundImage: `url(${imageUrl})` })
             const author = info.user
             return (
-                <ul id='know-money-card'>
-                    <li>
-                        <a>
-                            <div id='bg-image' style={setBgImage(info.thumbnail_url)}></div>
-                            <div id='bg-overlay'></div>
-                            <div id='card-content'>
-                                <div id='read-time'></div>
-                                <div id='card-details'>
-                                    <div id='card-title'>{info.title}</div>
-                                    <div id='published-on'>{date}</div>
-                                    <div id='author-image' style={setBgImage(author.picture)} ></div>
-                                    <div id='author-details'>
-                                        <span id='author-name'>{author.name}</span>
-                                        <div id='card-category'>{info.categories[0]}</div>
+                <div className='know-money-card'>
+                    <ul>
+                        <li>
+                            <a>
+                                <div className='bg-image' style={setBgImage(info.thumbnail_url)}></div>
+                                <div className='bg-overlay'></div>
+                                <div className='card-content'>
+                                    <div className='card-details'>
+                                        <div className='card-title'>{info.title}</div>
+                                        <div className='published-on'>{date}</div>
+                                        <div className='author-image' style={setBgImage(author.picture)} ></div>
+                                        <div className='author-details'>
+                                            <span id='author-name'>{author.name}</span>
+                                            <div id='card-category'>{info.categories[0]}</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             )
         }))
 
     }
+    console.log(data)
 
-    console.log(data[link] && data[link].slice(0, 4).map(x => x))
+    const knowMoneyDict = option => ({
+        shortarticle: 'Articles',
+        video: 'Videos',
+        knowmoneyfacts: 'Facts & Hacks',
+        infographics: 'Infographics',
+        trending: 'Money Meanings'
+    }[option])
+
+    const knowMoneyOptions = data && Children.toArray(Object.keys(data).map(option => {
+        return (
+            <div className={(link === option) ? 'selected' : ''} onClick={() => setLink(option)}>  {knowMoneyDict(option)} </div>
+        )
+    }))
 
     return (
-        <div id="know-money-container">
-            <div className='inner'>
+        <div className="section-five">
+            <div className='know-money-container'>
                 <h2> Get to Know Money Better </h2>
-                <div id='link-wrapper'>
-                    <div className='links' style={(link === 'shortarticle') ? liveLink : { visibility: "visible" }} onClick={() => setLink('shortarticle')}>  Articles</div>
-                    <div className='links' style={(link === 'video') ? liveLink : { visibility: "visible" }} onClick={() => setLink('video')} > Videos</div>
-                    <div className='links' style={(link === 'knowmoneyfacts') ? liveLink : { visibility: "visible" }} onClick={() => setLink('knowmoneyfacts')}> Facts & Hacks</div>
-                    <div className='links' style={(link === 'infograpics') ? liveLink : { visibility: "visible" }} onClick={() => setLink('infograpics')}> Infographics</div>
-                    <div className='links' style={(link === 'trending') ? liveLink : { visibility: "visible" }} onClick={() => setLink('trending')}> Money Meanings</div>
+                <div className='know-money-container__options-wrapper'>
+                    {knowMoneyOptions}
                 </div>
-                <div id='api'>
+                <div className='know-money-container__api-results'>
                     {getImagesByCategory(link)}
                 </div>
-                <div className='btn'><button> Learn More About Money </button> </div>
+                <div className='know-money-container__btn'><button> Learn More About Money </button> </div>
             </div>
         </div>
     )
