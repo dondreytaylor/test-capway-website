@@ -1,8 +1,8 @@
 @use './variables.scss' as *;
 
     @mixin live-link {
-        color: $hover-blue;
-        border-bottom-color: $hover-blue;
+        color: $blue2;
+        border-bottom-color: $blue2;
     }
 
     .section-five {
@@ -162,10 +162,10 @@
                 max-width: 20rem;
                 display: block;
                 margin: 0 auto;
-
                 button {
-                    padding: 1.2rem 0.5rem;
+                    @include button('big')
                 }
+                
             }
         }
     }

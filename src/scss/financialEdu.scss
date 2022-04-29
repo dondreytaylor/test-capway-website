@@ -25,7 +25,7 @@
             margin: 0 auto 3rem;
 
             button {
-                @include yellow-button(true)
+                @include button('big', '$yellow')
             }
         }
     }

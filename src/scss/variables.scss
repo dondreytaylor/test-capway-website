@@ -1,6 +1,7 @@
 // Colors
-$blue: #4BABD8;
-$hover-blue: #00ace2;
+$blue1: #4BABD8;
+$blue2: #00ace2;
+$blue3: #0000001a;
 $tan: #F0F0F0;
 $green: #82D49D;
 $yellow: #F8D88B;
@@ -21,9 +22,13 @@ $black: #000000;
 $font: 'Helvetica Neue';
 $url: 'https://web.dev.cpwys.co';
 
-$breakpoint-tablet: 1100px;
-$breakpoint-desktop: 80em;
-$breakpoint-tab: 55em;
+// breakpoints 
+$breakpoint-large_desktop: 1600px;
+$breakpoint-desktop: 1280px;
+$breakpoint-large_tablet: 960px;
+$breakpoint-medium_tablet: 880px;
+$breakpoint-tablet: 640px;
+
 
 // Mixins
 
@@ -31,13 +36,33 @@ $breakpoint-tab: 55em;
     background-image: url("#{$url}#{$image}");
 }
 
-@mixin yellow-button ($fat: false) {
-    
-    background-color: $yellow;
-    color: $gray4;
+@mixin button ($type: 'normal', $color: $blue2) {
+    box-shadow: 0 2px 4px $blue3, 0 2px 4px $blue3;
+    background-color: $color;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
 
-    @if $fat {
+    @if $type == 'normal' {
+        padding: 0.95rem 0.5rem;
+    }
+
+    @if $type == 'big' {
         padding: 1.2rem 0.5rem;
     }
+
+    @if $color == $yellow {
+        color: $gray4;
+    }
+
+
 }
 

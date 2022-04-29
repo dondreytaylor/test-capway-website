@@ -61,10 +61,10 @@ export const FirstInner = () => {
                     <div></div>
                 </div>
             </div >
-            <div className='first-inner-container-two'>
+            {/* <div className='first-inner-container-two'>
                 <div></div>
                 <div></div>
-            </div>
+            </div> */}
         </div >
     )
 }
