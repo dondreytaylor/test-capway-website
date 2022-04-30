@@ -32,15 +32,45 @@ $url: 'https://web.dev.cpwys.co';
 $breakpoint-desktop: 1280px;
 $breakpoint-medium_desktop: 1100px; 
 $breakpoint-small-desktop: 1024px; 
-$breakpoint-large_tablet: 960px; 
-$breakpoint-tablet: 640px; 
+$breakpoint-tablet: 960px; 
+$breakpoint-small_tablet: 640px; 
 
 
 // Mixins
 
+@mixin media-desktop {
+    @media (max-width: $breakpoint-desktop) {
+        @content
+    }
+};
+
+@mixin media-medium_desktop {
+    @media (max-width: $breakpoint-medium_desktop) {
+        @content
+    }
+};
+
+@mixin media-small_desktop {
+    @media (max-width: $breakpoint-small-desktop) {
+        @content
+    }
+};
+
+@mixin media-tablet {
+    @media (max-width: $breakpoint-tablet) {
+        @content
+    }
+};
+
+@mixin media-small_tablet {
+    @media (max-width: $breakpoint-small_tablet) {
+        @content
+    }
+};
+
 @mixin bg-image ($image) {
     background-image: url("#{$url}#{$image}");
-}
+};
 
 @mixin button ($type: 'normal', $color: $blue2) {
     box-shadow: 0 2px 4px $blue3, 0 2px 4px $blue3;
@@ -68,7 +98,4 @@ $breakpoint-tablet: 640px;
     @if $color == $yellow {
         color: $gray4;
     }
-
-
 }
-

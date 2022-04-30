@@ -124,7 +124,7 @@ button {
 
 }
 
-@media (max-width: $breakpoint-small_desktop) {
+@include media-small_desktop {
 .header-container {
     #header-right {
         .header-menu {
@@ -147,7 +147,7 @@ button {
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@include media-desktop {
     #header-bottom {
         max-width: 80rem;
     }

@@ -81,8 +81,8 @@
             }
         }
     }
-
-    @media (max-width: $breakpoint-small-desktop) {
+     
+    @include media-small_desktop {
         .section-four
         .financial-container {
             flex-direction: column;
@@ -127,7 +127,7 @@
         }
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @include media-small_tablet {
         .section-four
         .financial-container {
         

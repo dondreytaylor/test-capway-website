@@ -28,7 +28,7 @@
 
             .left-holder-container {
                 height: 100%;
-                width: 65%;
+                width: 80%;
                 padding: 4rem 0 0;
                 position: relative;
                 box-sizing: border-box;
@@ -138,7 +138,7 @@
                 #featured-in {
                     position: absolute;
                     width: 100%;
-                    bottom: -2.5rem;
+                    bottom: -4.5rem;
 
                     strong {
                         font-size: 1.2rem;
@@ -203,7 +203,7 @@
 
 }
 
-@media (max-width: $breakpoint-small-desktop) {
+@include media-small-desktop {
     .first-section {
         height: auto;
         margin: 0 0 15rem;
@@ -260,7 +260,7 @@
     }
 }
 
-@media (max-width: $breakpoint-large_tablet) {
+@include media-small_tablet {
     .first-section {
         &__container {
         #left-holder 
@@ -289,7 +289,7 @@
 }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@include media-small_tablet {
     .first-section {
         &__container {
 

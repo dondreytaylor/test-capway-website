@@ -168,7 +168,7 @@
         }
     }
 
-    @media (max-width: $breakpoint-small-desktop) {
+    @include media-small-desktop {
         .section-five 
         .know-money-container__api-results 
         .know-money-card {
@@ -179,7 +179,7 @@
         }
     }
 
-    @media (max-width: $breakpoint-large_tablet) {
+    @include media-small_tablet {
         .section-five 
         .know-money-container__api-results 
         .know-money-card {
