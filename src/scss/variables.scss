@@ -25,9 +25,13 @@ $url: 'https://web.dev.cpwys.co';
 // breakpoints 
 $breakpoint-large_desktop: 1600px;
 $breakpoint-desktop: 1280px;
+$breakpoint-medium_desktop: 1100px;
+$breakpoint-small-desktop: 1024px;
 $breakpoint-large_tablet: 960px;
 $breakpoint-medium_tablet: 880px;
 $breakpoint-tablet: 640px;
+$breakpoint-mobile: 480px;
+$breakpoint-small_mobile: 375px;
 
 
 // Mixins

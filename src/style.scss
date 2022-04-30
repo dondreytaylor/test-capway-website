@@ -8,9 +8,9 @@
 @use './scss/footer.scss';
 @use './scss/variables.scss' as *;
 
-.app {
+* {
     font-family: $font;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .capWayMain {

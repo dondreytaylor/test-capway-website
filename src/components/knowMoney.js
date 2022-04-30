@@ -3,8 +3,6 @@ import React, { useState, children, Children } from 'react'
 export const KnowMoney = ({ data }) => {
 
     const [link, setLink] = useState('shortarticle')
-    const [image, setImage] = useState([])
-    const liveLink = { color: "#00ace2", borderBottomColor: "#00ace2" }
 
     const getImagesByCategory = (category) => {
         return data && data[category] && Children.toArray(data[category].slice(0, 4).map(info => {
@@ -13,25 +11,21 @@ export const KnowMoney = ({ data }) => {
             const author = info.user
             return (
                 <div className='know-money-card'>
-                    <ul>
-                        <li>
-                            <a>
-                                <div className='bg-image' style={setBgImage(info.thumbnail_url)}></div>
-                                <div className='bg-overlay'></div>
-                                <div className='card-content'>
-                                    <div className='card-details'>
-                                        <div className='card-title'>{info.title}</div>
-                                        <div className='published-on'>{date}</div>
-                                        <div className='author-image' style={setBgImage(author.picture)} ></div>
-                                        <div className='author-details'>
-                                            <span id='author-name'>{author.name}</span>
-                                            <div id='card-category'>{info.categories[0]}</div>
-                                        </div>
-                                    </div>
+                    <a>
+                        <div className='bg-image' style={setBgImage(info.thumbnail_url)}></div>
+                        <div className='bg-overlay'></div>
+                        <div className='card-content'>
+                            <div className='card-details'>
+                                <div className='card-title'>{info.title}</div>
+                                <div className='published-on'>{date}</div>
+                                <div className='author-image' style={setBgImage(author.picture)} ></div>
+                                <div className='author-details'>
+                                    <span id='author-name'>{author.name}</span>
+                                    <div id='card-category'>{info.categories[0]}</div>
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             )
         }))

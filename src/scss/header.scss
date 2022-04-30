@@ -19,7 +19,7 @@ button {
     #border-top {
         height: 1rem;
         width: 100%;
-        background: linear-gradient(225.47deg, $green 0%, $blue 100%);
+        background: linear-gradient(225.47deg, $green 0%, $blue1 100%);
     }
 
     #header-bottom {
@@ -145,7 +145,7 @@ a {
 }
 
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-small_desktop) {
 .header-container {
     #header-right {
         .header-menu {

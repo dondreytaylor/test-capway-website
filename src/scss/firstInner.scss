@@ -10,7 +10,7 @@
     margin: 0 0 8rem;
 
 
-    .first-inner-container {
+    &__container {
         display: flex;
         width: 100%;
         height: 100%;
@@ -164,21 +164,23 @@
         }
 
         #right-holder {
-            background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
             height: 100%;
-            width: 30%;
+            width: 35%;
+            // background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
+            // height: 100%;
+            // width: 30%;
 
-            div {
-                height: 61rem;
-                left: -19rem;
-                top: -4rem;
-                width: 240%;
-                position: relative;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
-            }
+            // div {
+            //     height: 61rem;
+            //     left: -19rem;
+            //     top: -4rem;
+            //     width: 240%;
+            //     position: relative;
+            //     background-position: center center;
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            //     @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
+            // }
         }
 
         #right-holder:after {
@@ -193,16 +195,49 @@
         
     }
 
+    &__container-two {
 
+        padding: 1rem 0 0;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        #left {
+            height: 100%;
+            width: 70%;
+        }
+
+        #right {
+            background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
+            height: 100%;
+            width: 30%;
+
+            div {
+                height: 61rem;
+                left: -14rem;
+                top: -4rem;
+                width: 34.06rem;
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
+            }
+        }
+    }
 
 }
 
-@media (max-width: 65em) {
+@media (max-width: 64em) {
     .first-section {
         height: auto;
         margin: 0 0 15rem;
-        .first-inner-container {
-            width: 100%;
+
+        &__container {
             height: auto;
             flex-wrap: wrap;
 
@@ -212,21 +247,41 @@
                     width: 90%;
 
                     #featured-in {
-                        bottom: -50rem;
+                        bottom: -45rem;
                         text-align: center;
                         width: 100%;
-                        margin-left: 1em;
+                    }
+
+                    #links {
+                        margin: 0 0 4rem;
                     }
                 }
 
             #right-holder {
-                width: 80%;
-                margin-left: 17em;
+               width: 100%;
+            }
+        }
+
+        &__container-two {
+
+            height: auto;
+            flex-wrap: wrap;
+            position: relative;
+
+
+            #left {
+                width: 30%;
+            }
+
+
+            #right {
+                width: 70%;
+                height: 35rem;
+
                 div {
+                    left: -50%;
                     width: 100%;
                     height: 40rem;
-                    left: -19rem;
-                    top: -4rem;
                 }
             }
         }
@@ -235,49 +290,55 @@
 }
 
 @media (max-width: 60em) {
-    .first-section 
-    .first-inner-container {
-    #left-holder 
-    .left-holder-container 
-    #signup-box{
-        flex-direction: column;
-        max-width: initial;
-        input {
-            width: 100%;
-            padding: 1.3rem 1rem;
-            margin: 0 0 1rem;
+    .first-section {
+        &__container {
+        #left-holder 
+        .left-holder-container 
+        #signup-box{
+            flex-direction: column;
+            max-width: initial;
+            input {
+                width: 100%;
+                padding: 1.3rem 1rem;
+                margin: 0 0 1rem;
+            }
+
+            div {
+                width: 100%;
+            }
         }
 
-        div {
-            width: 100%;
-        }
-    }
-
-    #right-holder {
-        div {
-            height: 40rem;
-            left: -16rem;
+        #right-holder {
+            div {
+                height: 40rem;
+                left: -16rem;
+            }
         }
     }
 }
 }
 
 @media (max-width: 40em) {
-    .first-section
-    .first-inner-container {
+    .first-section {
+        &__container {
 
-        #left-holder {
-            .left-holder-container {
-                #featured-in {
-                    bottom: -40rem;
+            #left-holder {
+                .left-holder-container {
+                    #featured-in {
+                        bottom: -35rem;
+                    }
                 }
             }
+
         }
 
-        #right-holder {
-            div {
-                height: 30rem;
-                left: -12rem;
+        &__container-two {
+
+            #right {
+                height: 23rem;
+                div {
+                    height: 30rem;
+                }
             }
         }
     }

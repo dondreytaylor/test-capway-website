@@ -86,10 +86,12 @@
         }
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-small-desktop) {
         .section-four
         .financial-container {
             flex-direction: column;
+
+            
             &__phone-image {
                 display: none;
 
@@ -100,6 +102,48 @@
 
             &__phone-image-mobile {
                 display: block;
+
+                div {
+                    height: 30rem;
+                }
             }
+
+            &__phunds {
+                width: 100%;
+                max-width: 40rem;
+                text-align: center;
+                margin: 0 auto 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            &__money-room {
+                width: 100%;
+                max-width: 40rem;
+                text-align: center;
+                margin: 0 auto 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        .section-four
+        .financial-container {
+        
+
+            &__phone-image-mobile {
+                display: block;
+
+                div {
+                    height: 20rem;
+                }
+            }
+
         }
     }

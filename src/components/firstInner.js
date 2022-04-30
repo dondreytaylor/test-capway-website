@@ -28,7 +28,7 @@ export const FirstInner = () => {
 
     return (
         <div className='first-section'>
-            <div className="first-inner-container">
+            <div className="first-section__container">
                 <div id='left-holder'>
                     <div className="left-holder-container">
                         <h1>Creating Financial Access &amp; Opportunities</h1>
@@ -57,14 +57,14 @@ export const FirstInner = () => {
                         </div>
                     </div>
                 </div>
-                <div id='right-holder'>
+                <div id='right-holder'></div>
+            </div >
+            <div className='first-section__container-two'>
+                <div id='left'></div>
+                <div id='right'>
                     <div></div>
                 </div>
-            </div >
-            {/* <div className='first-inner-container-two'>
-                <div></div>
-                <div></div>
-            </div> */}
+            </div>
         </div >
     )
 }

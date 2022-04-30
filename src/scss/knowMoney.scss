@@ -57,11 +57,9 @@
 
                 .know-money-card {
                     display: block;
-                    max-width: 25%;
+                    max-width: 23%;
                     width: 100%;
                     margin: 0 0 1rem;
-                    ul {
-                        list-style: none;
 
                         a {
                             min-height: 20rem;
@@ -153,7 +151,7 @@
                                 }
                             }
                         }
-                    }
+                    
                     
                 }
             }
@@ -166,6 +164,29 @@
                     @include button('big')
                 }
                 
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-small-desktop) {
+        .section-five 
+        .know-money-container__api-results 
+        .know-money-card {
+            max-width: 49%;
+            a {
+                max-width: initial;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-large_tablet) {
+        .section-five 
+        .know-money-container__api-results 
+        .know-money-card {
+            max-width: 100%;
+            
+            a {
+                max-width: initial;
             }
         }
     }
