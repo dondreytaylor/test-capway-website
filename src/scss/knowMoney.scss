@@ -6,9 +6,9 @@
     }
 
     .section-five {
-        background-color: #fafafb;
+        background-color: $white4;
         padding: 5rem 0;
-        border-bottom: 0.05rem solid #DDDDDD;
+        border-bottom: 0.05rem solid $light-gray;
     
         .know-money-container {
         
@@ -17,7 +17,7 @@
             max-width: 64rem;
 
             h2 {
-                color: #1c1c1f;
+                color: $gray6;
                 font-family: "Helvetica Neue Light",Helvetica,sans-serif;
                 text-align: center;
                 font-size: 2rem;
@@ -25,7 +25,7 @@
             }
 
             &__options-wrapper {
-                border-bottom: 0.05rem solid #DDDDDD;
+                border-bottom: 0.05rem solid $light-gray;
                 max-width: 43rem;
                 margin: 0 auto 2rem;
                 text-align: center;
@@ -71,7 +71,7 @@
                             text-decoration: none;
                             display: block;
                             max-width: 16rem;
-                            box-shadow: 0 0 8px #0000000a;
+                            box-shadow: 0 0 8px $blue3;
 
                             .bg-image {
                                 position: absolute;
@@ -115,13 +115,13 @@
                                     .published-on {
                                         display: block;
                                         font-size: .75rem;
-                                        color: #969696;
+                                        color: $gray2;
                                         margin: 0 0 1rem;
                                     }
                                     .author-image {
                                         width: 2.2rem;
                                         height: 2.2rem;
-                                        background-color: #000;
+                                        background-color: $black;
                                         display: inline-block;
                                         background-position: center center;
                                         background-size: cover;
@@ -136,14 +136,14 @@
                                         #author-name {
                                             display: block;
                                             font-size: .95rem;
-                                            color: #fff;
+                                            color: $white;
                                             margin: 0 0 0.3rem;
                                         }
                                         #card-category {
-                                            background-color: #f0f0f0cc;
+                                            background-color: $tan;
                                             border-radius: 1.3rem;
                                             padding: 0.3rem 0.8rem;
-                                            color: #333;
+                                            color: $gray5;
                                             font-size: .8rem;
                                             text-align: center;
                                         }
@@ -184,7 +184,7 @@
         .know-money-container__api-results 
         .know-money-card {
             max-width: 100%;
-            
+
             a {
                 max-width: initial;
             }

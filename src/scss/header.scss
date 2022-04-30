@@ -13,8 +13,8 @@ button {
     width: 100%;
     z-index: 5;
     height: 5.5rem;
-    background-color: #fff;
-    border-bottom: 0.05rem solid #EEEEEE;
+    background-color: $white;
+    border-bottom: 0.05rem solid $white3;
 
     #border-top {
         height: 1rem;
@@ -40,7 +40,6 @@ button {
             width: 10rem;
             height: 3rem;
             @include bg-image("/assets/module-site/headers/header-site/logo.svg");
-            // background-image: url("#{$url}/assets/module-site/headers/header-site/logo.svg");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
@@ -113,8 +112,8 @@ button {
             bottom: -15.5rem;
 
             .learn-money-holder {
-                background: #FFFFFF;
-                box-shadow: 0 8px 23px #00000014;
+                background: $white;
+                box-shadow: 0 8px 23px $blue5;
                 border-radius: 0.5rem;
                 padding: 0.5rem;
                 position: relative;
@@ -124,26 +123,6 @@ button {
     }
 
 }
-
-// #bg-overlay {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     background-image: linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.8) 100%);
-// }
-a {
-    #logo {
-        height: 3rem;
-        background-image: url("#{$url}/assets/module-site/headers/header-site/logo.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-    }
-}
-
 
 @media (max-width: $breakpoint-small_desktop) {
 .header-container {
@@ -158,7 +137,7 @@ a {
 }
   
   .header-list-options {
-    background-color: #fff;
+    background-color: $white;
     position: fixed;
     top: 0;
     left: 0;

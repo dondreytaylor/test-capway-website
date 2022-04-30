@@ -2,15 +2,21 @@
 $blue1: #4BABD8;
 $blue2: #00ace2;
 $blue3: #0000001a;
+$blue4: #151519;
+$blue5: #00000014;
 $tan: #F0F0F0;
 $green: #82D49D;
 $yellow: #F8D88B;
 $light-yellow: #FBE9BC;
 $light-blue: #E3F2F9;
 $white: #FFFFFF;
+$white2: #ebebeb;
+$white3: #EEEEEE;
+$white4: #fafafb;
 $dark-blue: #0000EE;
 $gray1: #D6D6D6;
 $gray2: #969696;
+$light-gray: #DDDDDD;
 $legal-gray: #929596;
 $legal-gray2: #47494a;
 $gray3: #999999;
@@ -23,15 +29,11 @@ $font: 'Helvetica Neue';
 $url: 'https://web.dev.cpwys.co';
 
 // breakpoints 
-$breakpoint-large_desktop: 1600px;
 $breakpoint-desktop: 1280px;
-$breakpoint-medium_desktop: 1100px;
-$breakpoint-small-desktop: 1024px;
-$breakpoint-large_tablet: 960px;
-$breakpoint-medium_tablet: 880px;
-$breakpoint-tablet: 640px;
-$breakpoint-mobile: 480px;
-$breakpoint-small_mobile: 375px;
+$breakpoint-medium_desktop: 1100px; 
+$breakpoint-small-desktop: 1024px; 
+$breakpoint-large_tablet: 960px; 
+$breakpoint-tablet: 640px; 
 
 
 // Mixins

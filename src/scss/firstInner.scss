@@ -51,7 +51,6 @@
                         strong {
                             display: block;
                             margin: 0 0 1rem;
-                            font-family: "Helvetica Neue";
                             color: $gray5;
                             font-size: 1rem;
                         }
@@ -69,11 +68,9 @@
                                 padding: 0 0 0 1.7rem;
                                 position: relative;
                                 color: $gray3;
-                                font-family: "Helvetica Neue Light",Helvetica,sans-serif;
                                 font-size: .95rem;
                             }
                             li:before {
-                                
                                     content: "";
                                     position: absolute;
                                     width: 1.2rem;
@@ -100,7 +97,7 @@
 
                     input {
                         width: 68%;
-                        border: 0.09rem solid #ebebeb;
+                        border: 0.09rem solid $white2;
                         border-radius: 0.3rem;
                         box-sizing: border-box;
                         padding: 0 1rem;
@@ -166,33 +163,7 @@
         #right-holder {
             height: 100%;
             width: 35%;
-            // background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
-            // height: 100%;
-            // width: 30%;
-
-            // div {
-            //     height: 61rem;
-            //     left: -19rem;
-            //     top: -4rem;
-            //     width: 240%;
-            //     position: relative;
-            //     background-position: center center;
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            //     @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
-            // }
         }
-
-        #right-holder:after {
-
-        }
-
-
-
-
-
-
-        
     }
 
     &__container-two {
@@ -212,7 +183,7 @@
         }
 
         #right {
-            background-image: linear-gradient(230deg,#82D39D 0%,#4AABD8 100%);
+            background-image: linear-gradient(230deg, $green 0%, $blue1 100%);
             height: 100%;
             width: 30%;
 
@@ -232,7 +203,7 @@
 
 }
 
-@media (max-width: 64em) {
+@media (max-width: $breakpoint-small-desktop) {
     .first-section {
         height: auto;
         margin: 0 0 15rem;
@@ -289,7 +260,7 @@
     }
 }
 
-@media (max-width: 60em) {
+@media (max-width: $breakpoint-large_tablet) {
     .first-section {
         &__container {
         #left-holder 
@@ -318,7 +289,7 @@
 }
 }
 
-@media (max-width: 40em) {
+@media (max-width: $breakpoint-tablet) {
     .first-section {
         &__container {
 
