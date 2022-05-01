@@ -1,4 +1,5 @@
 import React from 'react'
+import { createMapKey } from './helpers'
 
 export const SecondInner = () => {
   const uri = 'https://web.dev.cpwys.co/assets/module-site/pages/page-landing/'
@@ -20,7 +21,7 @@ export const SecondInner = () => {
     }
 
   ]
-  const createCards = cardData.map(card => {
+  const createCards = createMapKey(cardData.map(card => {
     return (
       <div className='card-container' style={{ backgroundImage: `url(${uri}${card.bgImage})` }} >
         <div className='card-main' >
@@ -29,7 +30,7 @@ export const SecondInner = () => {
         </div>
       </div>
     )
-  })
+  }))
 
 
   return (

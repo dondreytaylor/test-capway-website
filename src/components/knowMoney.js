@@ -1,11 +1,12 @@
-import React, { useState, children, Children } from 'react'
+import React, { useState } from 'react'
+import { createMapKey } from './helpers'
 
 export const KnowMoney = ({ data }) => {
 
     const [link, setLink] = useState('shortarticle')
 
     const getImagesByCategory = (category) => {
-        return data && data[category] && Children.toArray(data[category].slice(0, 4).map(info => {
+        return data && data[category] && createMapKey(data[category].slice(0, 4).map(info => {
             const date = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(info.publish_date))
             const setBgImage = (imageUrl) => ({ backgroundImage: `url(${imageUrl})` })
             const author = info.user
@@ -31,7 +32,6 @@ export const KnowMoney = ({ data }) => {
         }))
 
     }
-    console.log(data)
 
     const knowMoneyDict = option => ({
         shortarticle: 'Articles',
@@ -41,7 +41,7 @@ export const KnowMoney = ({ data }) => {
         trending: 'Money Meanings'
     }[option])
 
-    const knowMoneyOptions = data && Children.toArray(Object.keys(data).map(option => {
+    const knowMoneyOptions = data && createMapKey(Object.keys(data).map(option => {
         return (
             <div className={(link === option) ? 'selected' : ''} onClick={() => setLink(option)}>  {knowMoneyDict(option)} </div>
         )

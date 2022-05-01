@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { createMapKey } from './helpers'
 export const Footer = () => {
     const uri = 'https://web.dev.cpwys.co/assets/module-core/footers/footer-default/footer-'
     const icons = ['facebook.svg', 'instagram.svg', 'twitter.svg', 'youtube.svg', 'linkedin.svg']
@@ -29,24 +29,24 @@ export const Footer = () => {
             sections: ['for iOS', 'for Android']
         },
     ]
-    const createIcons = icons.map(icon => {
+    const createIcons = createMapKey(icons.map(icon => {
         return (
             <a href='"javascript:void(0);"'><div className='icon' style={{ backgroundImage: `url(${uri}${icon})` }} ></div></a>
         )
-    })
+    }))
 
-    const createFooterSection = footSections.map(section => {
+    const createFooterSection = createMapKey(footSections.map(section => {
         return (
             <div className="footer-section">
                 <strong>{section.title.toUpperCase()} </strong><br /><br />
                 {
-                    section.sections.map(sec => (
+                    createMapKey(section.sections.map(sec => (
                         <p> {sec} </p>
-                    ))
+                    )))
                 }
             </div>
         )
-    })
+    }))
 
     return (
         <footer>

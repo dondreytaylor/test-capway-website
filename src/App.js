@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { FirstInner } from './components/firstInner'
-import { Featured } from './components/featured'
 import { SecondInner } from './components/secondInner'
 import { Header } from './components/header'
 import { KnowMoney } from './components/knowMoney'

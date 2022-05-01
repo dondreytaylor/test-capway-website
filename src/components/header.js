@@ -1,10 +1,11 @@
-import React, { Children } from 'react'
+import React from 'react'
+import { createMapKey } from './helpers'
 
 
 
 export function Header () {
 
-    const learnMoneyOptions = Children.toArray(['Learn Money', 'Money Talk', 'Money Meanings', 'Request Content', 'Submit Content'].map(option => {
+    const learnMoneyOptions = createMapKey(['Learn Money', 'Money Talk', 'Money Meanings', 'Request Content', 'Submit Content'].map(option => {
 
         return (
             <div className='learn-money-holder'>
@@ -15,7 +16,7 @@ export function Header () {
         )
     }))
 
-    const headerOptions = Children.toArray(['Benefits', 'Learn Money', 'Partner', 'Discover CapWay', 'Sign In', 'Sign Up'].map(option => {
+    const headerOptions = createMapKey(['Benefits', 'Learn Money', 'Partner', 'Discover CapWay', 'Sign In', 'Sign Up'].map(option => {
         return (
             <>
                 {
@@ -26,7 +27,7 @@ export function Header () {
                             </button>
                         </div>
                     ) : (
-                        <div className='header-option' id={option === 'Learn Money' && 'learn-money'}>
+                        <div className='header-option' id={option === 'Learn Money' ? 'learn-money' : ''}>
                             <a href='"javascript:void(0);"'>
                                 {option}
                             </a>

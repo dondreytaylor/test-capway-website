@@ -1,4 +1,5 @@
 import React from 'react'
+import { createMapKey } from './helpers'
 
 export const Numbers = () => {
     const uri = 'https://web.dev.cpwys.co/assets/module-site/pages/page-landing/'
@@ -24,18 +25,18 @@ export const Numbers = () => {
             }]
         },
     ]
-    const createCards = cardImageData.map((cardObj, i) => {
+    const createCards = createMapKey(cardImageData.map((cardObj, i) => {
         const id = i + 1
         return (
             <div className={`cards_holder${id}`}>
-                {cardObj[`cards${id}`].map(card => (
+                {createMapKey(cardObj[`cards${id}`].map(card => (
                     <img className="card" src={`${uri}${card.src}`} alt={card.alt}></img>
-                ))}
+                )))}
             </div>
         )
 
 
-    })
+    }))
 
     return (
         <div className="section-six">
@@ -48,14 +49,6 @@ export const Numbers = () => {
                 </div>
 
                 <div className='numbers-container__cards'>
-                    {/* <div className='cards_holder'>
-                        <img className="card" id="card-1"></img>
-                        <img className="card" id="card-2"></img>
-                    </div>
-                    <div className='cards_holder'>
-                        <img className="card" id="card-3"></img>
-                        <img className="card" id="card-4"></img>
-                    </div> */}
                     {createCards}
                 </div>
 

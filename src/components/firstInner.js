@@ -1,4 +1,5 @@
-import React, { Children, useState } from 'react'
+import React, { useState } from 'react'
+import { createMapKey } from './helpers'
 
 export const FirstInner = () => {
 
@@ -9,18 +10,18 @@ export const FirstInner = () => {
         { title: 'Learn Money', list: ['Talk money with others', 'Get "Phunds"', 'Money Room master classes'] }
     ]
 
-    const createHighlights = Children.toArray(highlights.map(highlight => {
+    const createHighlights = createMapKey(highlights.map(highlight => {
         return (
             <div className='highlight-list'>
                 <strong>
                     {highlight.title}
                 </strong>
                 <ul>
-                    {highlight.list.map(name => (
+                    {createMapKey(highlight.list.map(name => (
                         <li>
                             {name}
                         </li>
-                    ))}
+                    )))}
                 </ul>
             </div>
         )
