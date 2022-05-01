@@ -1,0 +1,101 @@
+// Colors
+$blue1: #4BABD8;
+$blue2: #00ace2;
+$blue3: #0000001a;
+$blue4: #151519;
+$blue5: #00000014;
+$tan: #F0F0F0;
+$green: #82D49D;
+$yellow: #F8D88B;
+$light-yellow: #FBE9BC;
+$light-blue: #E3F2F9;
+$white: #FFFFFF;
+$white2: #ebebeb;
+$white3: #EEEEEE;
+$white4: #fafafb;
+$dark-blue: #0000EE;
+$gray1: #D6D6D6;
+$gray2: #969696;
+$light-gray: #DDDDDD;
+$legal-gray: #929596;
+$legal-gray2: #47494a;
+$gray3: #999999;
+$gray4: #4A4A4A;
+$gray5: #333333;
+$gray6: #1C1C1F;
+$black: #000000;
+
+$font: 'Helvetica Neue';
+$url: 'https://web.dev.cpwys.co';
+
+// breakpoints 
+$breakpoint-desktop: 1280px;
+$breakpoint-medium_desktop: 1100px; 
+$breakpoint-small-desktop: 1024px; 
+$breakpoint-tablet: 960px; 
+$breakpoint-small_tablet: 640px; 
+
+
+// Mixins
+
+@mixin media-desktop {
+    @media (max-width: $breakpoint-desktop) {
+        @content
+    }
+};
+
+@mixin media-medium_desktop {
+    @media (max-width: $breakpoint-medium_desktop) {
+        @content
+    }
+};
+
+@mixin media-small_desktop {
+    @media (max-width: $breakpoint-small-desktop) {
+        @content
+    }
+};
+
+@mixin media-tablet {
+    @media (max-width: $breakpoint-tablet) {
+        @content
+    }
+};
+
+@mixin media-small_tablet {
+    @media (max-width: $breakpoint-small_tablet) {
+        @content
+    }
+};
+
+@mixin bg-image ($image) {
+    background-image: url("#{$url}#{$image}");
+};
+
+@mixin button ($type: 'normal', $color: $blue2) {
+    box-shadow: 0 2px 4px $blue3, 0 2px 4px $blue3;
+    background-color: $color;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+    @if $type == 'normal' {
+        padding: 0.95rem 0.5rem;
+    }
+
+    @if $type == 'big' {
+        padding: 1.2rem 0.5rem;
+    }
+
+    @if $color == $yellow {
+        color: $gray4;
+    }
+}

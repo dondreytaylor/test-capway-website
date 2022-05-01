@@ -1,0 +1,317 @@
+@use './variables.scss' as *;
+
+
+.first-section {
+
+    
+    height: 48rem;
+    position: relative;
+    padding: 1rem 0 0;
+    margin: 0 0 8rem;
+
+
+    &__container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        max-width: 64rem;
+
+        #left-holder {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            .left-holder-container {
+                height: 100%;
+                width: 80%;
+                padding: 4rem 0 0;
+                position: relative;
+                box-sizing: border-box;
+
+                h1 {
+                    font-size: 3rem;
+                    color: $gray5;
+                    line-height: 1.3;
+                    max-width: 35rem;
+                    margin: 0 0 2rem;
+                }
+
+                .highlight {
+                    margin: 0 0 3rem;
+
+                    .highlight-list {
+                        max-width: 35rem;
+                        margin: 0 0 1.5rem;
+
+                        strong {
+                            display: block;
+                            margin: 0 0 1rem;
+                            color: $gray5;
+                            font-size: 1rem;
+                        }
+                        
+
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+
+
+                            li {
+                                display: inline-block;
+                                margin: 0 1rem 0.8rem 0;
+                                padding: 0 0 0 1.7rem;
+                                position: relative;
+                                color: $gray3;
+                                font-size: .95rem;
+                            }
+                            li:before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1.2rem;
+                                    height: 1.2rem;
+                                    top: 0.1rem;
+                                    left: 0;
+                                    background-position: center center;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    @include bg-image("/assets/module-site/pages/page-landing/highlight-checkmark.svg")
+                                
+                            }
+                        }
+                    }
+                }
+
+                #signup-box {
+                    max-width: 30rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0 0 1rem;
+
+                    input {
+                        width: 68%;
+                        border: 0.09rem solid $white2;
+                        border-radius: 0.3rem;
+                        box-sizing: border-box;
+                        padding: 0 1rem;
+                        font-size: .95rem;
+                        font-family: "Helvetica Neue Medium";
+                        outline: none;
+                        transition: border-color .3s ease;
+                    }
+
+                    div {
+                        width: 30%;
+
+                        button {
+                            @include button('big', $yellow)
+                        }
+                    }
+
+
+                }
+                #links {
+                    margin: 0 0 6rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $gray5;
+                        display: inline-block;
+                        margin: 0 0.3rem 0 0;
+                        font-size: .9rem;
+                    }
+                    span {
+                        color: $gray5;
+                        display: inline-block;
+                        margin: 0 1rem 12px 0;
+                        font-size: 1.3rem;
+                        vertical-align: middle;
+                    }
+                }
+                #featured-in {
+                    position: absolute;
+                    width: 100%;
+                    bottom: -4.5rem;
+
+                    strong {
+                        font-size: 1.2rem;
+                        font-family: "Helvetica Neue Thin",Helvetica,sans-serif;
+                        color: $gray3;
+                        margin: 0 0 0.5rem;
+                        display: block;
+                    }
+
+                    #featured-list {
+                        width: 90%;
+                        height: 3rem;
+                        background-position: center center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        @include bg-image('/assets/module-site/pages/page-landing/featured-in.png')
+                    }
+                }
+            }
+        }
+
+        #right-holder {
+            height: 100%;
+            width: 35%;
+        }
+    }
+
+    &__container-two {
+
+        padding: 1rem 0 0;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        #left {
+            height: 100%;
+            width: 70%;
+        }
+
+        #right {
+            background-image: linear-gradient(230deg, $green 0%, $blue1 100%);
+            height: 100%;
+            width: 30%;
+
+            div {
+                height: 61rem;
+                left: -14rem;
+                top: -4rem;
+                width: 34.06rem;
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                @include bg-image('/assets/module-site/pages/page-landing/phones-card.png')
+            }
+        }
+    }
+
+}
+
+@include media-small-desktop {
+    .first-section {
+        height: auto;
+        margin: 0 0 15rem;
+
+        &__container {
+            height: auto;
+            flex-wrap: wrap;
+
+            #left-holder
+                .left-holder-container {
+                    margin: 0 auto;
+                    width: 90%;
+
+                    #featured-in {
+                        bottom: -45rem;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    #links {
+                        margin: 0 0 4rem;
+                    }
+                }
+
+            #right-holder {
+               width: 100%;
+            }
+        }
+
+        &__container-two {
+
+            height: auto;
+            flex-wrap: wrap;
+            position: relative;
+
+
+            #left {
+                width: 30%;
+            }
+
+
+            #right {
+                width: 70%;
+                height: 35rem;
+
+                div {
+                    left: -50%;
+                    width: 100%;
+                    height: 40rem;
+                }
+            }
+        }
+
+    }
+}
+
+@include media-small_tablet {
+    .first-section {
+        &__container {
+        #left-holder 
+        .left-holder-container 
+        #signup-box{
+            flex-direction: column;
+            max-width: initial;
+            input {
+                width: 100%;
+                padding: 1.3rem 1rem;
+                margin: 0 0 1rem;
+            }
+
+            div {
+                width: 100%;
+            }
+        }
+
+        #right-holder {
+            div {
+                height: 40rem;
+                left: -16rem;
+            }
+        }
+    }
+}
+}
+
+@include media-small_tablet {
+    .first-section {
+        &__container {
+
+            #left-holder {
+                .left-holder-container {
+                    #featured-in {
+                        bottom: -35rem;
+                    }
+                }
+            }
+
+        }
+
+        &__container-two {
+
+            #right {
+                height: 23rem;
+                div {
+                    height: 30rem;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+@use './variables.scss' as *;
+
+    .section-three {
+        background-image: linear-gradient(45deg,rgba(0,204,112,.8823529412),rgba(0,173,226,.8352941176));
+        padding: 3rem 0;
+        position: relative;
+        overflow: hidden;
+        margin-top: 6em;
+
+        .download-container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 64rem;
+
+            h2 {
+                color: $white;
+                text-align: center;
+                font-size: 1.8rem;
+                margin: 0 auto 1rem;
+                line-height: 1.5;
+                position: relative;
+            }
+
+            &__options {
+                text-align: center;
+
+                .download {
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 1rem;
+                    background-position: center center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 13rem;
+                    height: 4rem;
+                    box-sizing: border-box;
+                    border-radius: 0.3rem;
+                }
+
+                #first {
+                    @include bg-image('/assets/module-site/pages/page-landing/google-play.svg')
+                }
+
+                #second {
+                    @include bg-image('/assets/module-site/pages/page-landing/app-store.svg')
+                }
+            }
+        }
+    }

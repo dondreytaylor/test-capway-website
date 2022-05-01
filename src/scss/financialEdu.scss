@@ -1,0 +1,144 @@
+@use './variables.scss' as *;
+
+
+
+    @mixin heading-div-stack {
+        h2 {
+            color: $white;
+            text-align: left;
+            font-size: 2rem;
+            line-height: 1.5;
+            margin: 0 0 1rem;
+        }
+
+        p {
+            line-height: 1.8;
+            color: $gray1;
+            font-size: .95rem;
+            margin: 0 0 2rem;
+        }
+
+        div {
+            display: block;
+            margin: 0 auto 3rem;
+
+            button {
+                @include button('big', '$yellow')
+            }
+        }
+    }
+
+    @mixin money-phone-image {
+        width: 100%;
+        height: 32rem;
+        @include bg-image('/assets/module-site/pages/page-landing/partnership.png');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    .section-four {
+        background-color: $blue4;
+        padding: 5rem 0 0;
+
+
+        .financial-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 64rem;
+            
+
+            &__phunds {
+                width: 27%;
+                @include heading-div-stack
+            }
+
+            &__phone-image {
+                width: 46%;
+
+                div {
+                    @include money-phone-image
+                }
+            }
+
+            &__money-room {
+                width: 27%;
+
+               @include heading-div-stack
+            }
+
+            &__phone-image-mobile {
+                width: 100%;
+                display: none;
+
+                div {
+                    @include money-phone-image
+                }
+            }
+        }
+    }
+     
+    @include media-small_desktop {
+        .section-four
+        .financial-container {
+            flex-direction: column;
+
+            &__phone-image {
+                display: none;
+
+                div {
+                    height: 30rem;
+                }
+            }
+
+            &__phone-image-mobile {
+                display: block;
+
+                div {
+                    height: 30rem;
+                }
+            }
+
+            &__phunds {
+                width: 100%;
+                max-width: 40rem;
+                text-align: center;
+                margin: 0 auto 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            &__money-room {
+                width: 100%;
+                max-width: 40rem;
+                text-align: center;
+                margin: 0 auto 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include media-small_tablet {
+        .section-four
+        .financial-container {
+        
+
+            &__phone-image-mobile {
+                display: block;
+
+                div {
+                    height: 20rem;
+                }
+            }
+
+        }
+    }

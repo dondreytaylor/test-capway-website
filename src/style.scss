@@ -1,0 +1,18 @@
+@use './scss/header.scss';
+@use './scss/firstInner.scss';
+@use './scss/secondInner.scss';
+@use './scss/downloads.scss';
+@use './scss/financialEdu.scss';
+@use './scss/knowMoney.scss';
+@use './scss/numbers.scss';
+@use './scss/footer.scss';
+@use './scss/variables.scss' as *;
+
+* {
+    font-family: $font;
+    margin: 0;
+}
+
+.capWayMain {
+    margin: 5.5rem 0 0;
+}
